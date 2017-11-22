@@ -52,6 +52,25 @@ class SessionForm extends React.Component {
   }
 
   render() {
+
+    let email;
+
+    if (this.props.formType !=='login'){
+      email =
+
+
+            <input type="email"
+              value={this.state.email}
+              onChange={this.update('email')}
+              className="login-input"
+              placeholder ='email'
+            />
+
+    } else {
+      email = <div></div>;
+    }
+
+
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
@@ -75,19 +94,7 @@ class SessionForm extends React.Component {
                 placeholder='username'
               />
 
-
-
-
-            <br/ >
-              <input type="email"
-                value={this.state.email}
-                onChange={this.update('email')}
-                className="login-input"
-                placeholder ='email'
-              />
-            <br/>
-
-
+        {email}
 
               <input type="password"
                 value={this.state.password}

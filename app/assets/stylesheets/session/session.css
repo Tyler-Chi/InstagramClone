@@ -7,11 +7,11 @@
    padding: 20px;
    width: 225px;
    margin: auto;
-   margin-top: 20%;
+   margin-top: 15%;
    background-color: white;
    border-radius: 5px;
-   border-width: 10px;
-
+   border-width: 1px;
+   border-style: solid;
  }
 
 .login-input {
