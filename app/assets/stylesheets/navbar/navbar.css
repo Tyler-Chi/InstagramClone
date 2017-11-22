@@ -2,13 +2,5 @@
   display: inline-flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-around;
-}
-
-.my4pawslink {
-  margin-right: 350px;
-}
-
-.greeting {
-
+  justify-content: space-between;
 }
