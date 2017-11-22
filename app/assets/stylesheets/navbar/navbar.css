@@ -11,10 +11,29 @@
   padding-top: 3px;
 }
 
-.my4pawslink {
+.nav-bar-button{
   margin-left: 30px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  border-radius: 5px;
+  padding-top: 2px;
+  background-color: white;
+}
+
+.li-su {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 30px;
+  margin-top: 7px;
+  padding: 3px;
+  background-color: white;
+  padding-bottom: 5px;
+
 }
 
 .login-signup {
-  margin-right: 30px;
+  margin-top: 5px;
 }

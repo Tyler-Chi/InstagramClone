@@ -18,7 +18,7 @@ const App = () => (
 
     <nav className = "nav-container">
 
-      <Link to="/login" className="my4pawslink">
+      <Link to="/login" className="nav-bar-button">
         Image-in
       </Link>
 
