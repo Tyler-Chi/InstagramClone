@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+@import './reset/reset';
+@import 'main_area/main_area';
+@import 'navbar/navbar';
+@import 'session/session';

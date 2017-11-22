@@ -14,15 +14,15 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 
 const App = () => (
-  <div>
+  <div className = 'main'>
 
     <nav className = "nav-container">
 
       <Link to="/login" className="my4pawslink">
-        My4Paws
+        Image-in
       </Link>
 
-      <GreetingContainer className = "greeting"/>
+      <GreetingContainer />
 
     </nav>
 
@@ -30,7 +30,7 @@ const App = () => (
     <div className = 'main-area'>
 
     <Switch className = "login-signup">
-      <AuthRoute path="/login" component={SessionFormContainer} />
+      <AuthRoute path="/" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
     </Switch>
 

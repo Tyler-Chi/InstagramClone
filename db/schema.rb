@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20171121212030) do
     t.string "email", null: false
     t.string "password_digest", null: false
     t.string "session_token", null: false
-    t.string "image_url", null: false
+    t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -12,12 +12,12 @@ class SessionForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  //
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.loggedIn) {
-  //     this.props.history.push('/');
-  //   }
-  // }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.loggedIn) {
+      this.props.history.push('/');
+    }
+  }
 
   update(field) {
     return e => this.setState({
@@ -55,38 +55,59 @@ class SessionForm extends React.Component {
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          The Fourth Paw
-          <br/>
+
+          <p className='form-header'>
+            Image-in
+          </p>
+
+
+
           <br/>
           Please {this.props.formType} or {this.navLink()}
           {this.renderErrors()}
           <div className="login-form">
             <br/>
-            <label>Username:
+
               <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
                 className="login-input"
+                placeholder='username'
               />
-            </label>
+
+
+
+
             <br/ >
-            <label>Email:
               <input type="email"
                 value={this.state.email}
                 onChange={this.update('email')}
                 className="login-input"
+                placeholder ='email'
               />
-            </label>
             <br/>
-            <label>Password:
+
+
+
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="login-input"
+                placeholder = 'password'
               />
-            </label>
+
             <br/>
-            <input type="submit" value="Submit" />
+            <br/>
+            <br/>
+
+            <div >
+
+              <input type="submit" value="Submit"
+                className = "submit-button"
+                />
+
+            </div>
+
           </div>
         </form>
       </div>
