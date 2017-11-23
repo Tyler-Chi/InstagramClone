@@ -67,7 +67,7 @@ class SessionForm extends React.Component {
 
   renderErrors() {
     return(
-      <ul>
+      <ul className = 'errors'>
         {this.props.errors.map((error, i) => (
           <li key={`error-${i}`}>
             {error}
@@ -120,7 +120,9 @@ class SessionForm extends React.Component {
 
           <br/>
           Please {actionType} or {this.navLink()}
-          {this.renderErrors()}
+
+
+
           <div className="login-form">
 
           <br/>
@@ -152,9 +154,12 @@ class SessionForm extends React.Component {
 
           <br />
 
-
+      {this.renderErrors()}
 
         </form>
+
+
+
       </div>
     );
   }
