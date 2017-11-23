@@ -122,7 +122,8 @@ class SessionForm extends React.Component {
           Please {actionType} or {this.navLink()}
           {this.renderErrors()}
           <div className="login-form">
-            <br/>
+
+          <br/>
 
               <input type="text"
                 value={this.state.username}
@@ -141,19 +142,17 @@ class SessionForm extends React.Component {
               />
 
             <br/>
-            <br/>
 
-
-            <div >
-
-              <input type="submit" value="Submit"
+            <input type="submit" value="Submit"
                 className = "submit-button"
                 />
 
-            </div>
-
+              <button onClick={this.handleDemo} className = "submit-button"> Demo </button>
           </div>
-          <button onClick={this.handleDemo} className = "submit-button"> Demo </button>
+
+          <br />
+
+
 
         </form>
       </div>
