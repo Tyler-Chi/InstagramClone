@@ -30,7 +30,7 @@ const App = () => (
     <div className = 'main-area'>
 
     <Switch className = "login-signup">
-      <AuthRoute path="/login" component={SessionFormContainer} />
+      <AuthRoute path="/" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
     </Switch>
 
