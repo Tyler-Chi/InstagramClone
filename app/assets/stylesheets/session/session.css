@@ -32,6 +32,18 @@
   /*background-color: grey;*/
 }
 
+.switchlink {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.switchlink:hover{
+  background-color: #ff4a4a;
+  color: white;
+}
+
 .submit-button {
   border: 1px solid black;
   padding: 3px;
@@ -45,7 +57,7 @@
 }
 
 .submit-button:hover{
-
+  color: white;
   background-color: #ff4a4a;
 }
 

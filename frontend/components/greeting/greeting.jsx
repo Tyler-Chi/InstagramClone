@@ -9,11 +9,16 @@ const sessionLinks = () => (
   </nav>
 );
 
-const personalGreeting = (currentUser, logout) => (
-	<div className="logged-in-header-right">
-    <p >Welcome back, {currentUser.username}</p>
-    <button className="li-su" onClick={logout}>Log Out</button>
-	</div>
+const personalGreeting = (currentUser, logout, match) => (
+
+
+  	<div className="logged-in-header-right">
+      <p >Welcome back, {currentUser.username}</p>
+      <button className="li-su" onClick={logout}>Log Out</button>
+  	</div>
+
+
+
 );
 
 const Greeting = ({ currentUser, logout }) => (
