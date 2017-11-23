@@ -5,8 +5,10 @@ import { withRouter } from 'react-router';
 class Greeting extends React.Component {
 
 
+  sessionLinks(){
 
-  render(){
+    let currentUser = this.props.currentUser;
+
     if (this.props.formType === 'login'){
       return (
         <div className = "nav-container">
@@ -23,18 +25,28 @@ class Greeting extends React.Component {
         </nav>
         </div>
       )
-    } else {
-      return (
-        <div>
+    } else if (currentUser){
+    return (
 
+      <div className = "nav-container">
+      <nav className="login-signup">
 
+      <button onClick={this.props.logout}>Logout!</button>
 
-        </div>
-      )
-    }
+      </nav>
+      </div>
+    )
+  }
 
+ }
 
+  render() {
 
+    return(
+      <div>
+        {this.sessionLinks()}
+      </div>
+    )
   }
 
 }

@@ -16,11 +16,12 @@ const mapStateToProps = ({ session , location }) => {
 
 };
 
-const mapDispatchToProps = (dispatch, {location}) => {
+const mapDispatchToProps = (dispatch, {location, history}) => {
+  console.log(location)
   const formType = location.pathname.slice(1);
 
   return {
-  logout: () => dispatch(logout()),
+  logout: () => dispatch(logout()).then(()=>history.push('/login')),
   formType
   }
 }

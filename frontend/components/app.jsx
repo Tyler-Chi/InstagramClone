@@ -17,6 +17,18 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 //   <GreetingContainer />
 //
 // </nav>
+    // <AuthRoute path = "/login" className = "nav-container" component={GreetingContainer} />
+
+    //
+    // <AuthRoute path = "/login" className = "nav-container" component={GreetingContainer} />
+    //
+    // <AuthRoute path = "/signup" className = "nav-container" component={GreetingContainer} />
+    //
+    //
+    // <AuthRoute exact path = "/" className = "nav-container" component={GreetingContainer} />
+
+    // <AuthRoute path="/signup" component={SessionFormContainer} />
+
 
 
 const App = () => (
@@ -25,17 +37,23 @@ const App = () => (
     <div className = 'main-area'>
 
     <div className = "login-signup">
+      <Route path = "/" className = "nav-container"
+        component ={GreetingContainer} />
+    </div>
 
+    <Switch>
 
-
-
-      <AuthRoute path = "/" className = "nav-container" component={GreetingContainer} />
-
-
+      <AuthRoute exact path="/" component={SessionFormContainer} />
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
 
-    </div>
+
+    </Switch>
+
+
+
+
+
 
     </div>
 

@@ -14,6 +14,10 @@ class SessionForm extends React.Component {
     this.handleDemo = this.handleDemo.bind(this);
   }
 
+  componentWillUnmount(){
+    this.props.clearErrors();
+  }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.loggedIn) {
       this.props.history.push('/');
@@ -112,7 +116,7 @@ class SessionForm extends React.Component {
 
             <br/>
             <br/>
-            <br/>
+
 
             <div >
 
