@@ -9,7 +9,20 @@ class Greeting extends React.Component {
 
     let currentUser = this.props.currentUser;
 
-    if (this.props.formType === 'login'){
+    if (currentUser){
+      return (
+
+        <div className = "nav-container">
+        <nav className="login-signup">
+
+        <button onClick={this.props.logout}
+          className = 'li-su'>
+          Logout!</button>
+
+        </nav>
+        </div>
+      )
+    } else if (this.props.formType === 'login'){
       return (
         <div className = "nav-container">
           <nav className="login-signup">
@@ -25,26 +38,17 @@ class Greeting extends React.Component {
         </nav>
         </div>
       )
-    } else if (currentUser){
-    return (
+    } else {
+      return (
+        <div className = "nav-container">
+          <nav className="login-signup">
+            <Link to="/signup" className = "li-su">Sign up!</Link>
+          </nav>
+        </div>
+      )
+    }
 
-      <div className = "nav-container">
-      <nav className="login-signup">
 
-      <button onClick={this.props.logout}>Logout!</button>
-
-      </nav>
-      </div>
-    )
-  } else {
-    return (
-      <div className = "nav-container">
-        <nav className="login-signup">
-          <Link to="/signup" className = "li-su">Sign up!</Link>
-        </nav>
-      </div>
-    )
-  }
 
  }
 

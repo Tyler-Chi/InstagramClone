@@ -13,15 +13,26 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDemo = this.handleDemo.bind(this);
   }
-
-  componentWillUnmount(){
-    this.props.clearErrors();
-  }
+  //
+  // componentWillUnmount(){
+  //   this.props.clearErrors();
+  // }
+  //
+  // componentWillMount(){
+  //   this.props.clearErrors();
+  // }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.loggedIn) {
       this.props.history.push('/');
     }
+
+    if (nextProps.location !== this.props.location){
+
+      this.props.clearErrors();
+    }
+
+
   }
 
   update(field) {
