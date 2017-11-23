@@ -8,11 +8,11 @@
    width: 225px;
    margin: auto;
    margin-top: 15%;
-   background-color: white;
+   background-color: #f7f7f7;
    /*border-radius: 5px;*/
    border-width: 1px;
    border-style: solid;
-   border-color: #9eb3d6;
+   border-color: mygrey;
    transition: 1s;
    shadow: 5px;
  }
@@ -45,12 +45,12 @@
   border-width: 1px;
   border-radius: 5px;
   padding: 3px;
-  border-color: #ff4a4a;
-  color: #ff4a4a;
+  border-color: mygrey;
+  color: mygrey;
 }
 
 .switchlink:hover{
-  background-color: #ff4a4a;
+  background-color: mygrey;
   color: white;
 }
 
@@ -60,34 +60,30 @@
   text-align: center;
   margin-bottom: 10px;
   padding: 4px;
-  border-color: #ff4a4a;
-  color: #ff4a4a;
+  border-color: mygrey;
+  color: mygrey;
 }
 
 .submit-button:hover{
-  color: white;
-  background-color: #ff4a4a;
-  border-color:  #ff4a4a;
+  // color: white;
+  background-color: mygrey;
+
+  border-color:  mygrey;
 }
 
 blockquote { background-image: url(http://typespiration.com/wp-content/themes/typespiration/images/quote.png); background-position: 10px 10%; background-repeat: no-repeat no-repeat; padding: 15px 0; }
 
 
-p { color: #f2f2f2; background: #ff4a4a; font-size: 25px; line-height: 12px; font-weight: 300;  padding: 10px;  font-family: 'Libre Baskerville', serif; }
 
 
 .punchline p { background: #f2f2f2; color: #ff4a4a; }
 
 
 .form-header {
+  color: mygrey;
   margin: 0;
   padding-left: 30.5%;
   opacity: 1.0;
   border-radius: 5px;
 
 }
-
-/*a { color: #adadad; font-size: 20px; text-decoration: none; float: right; font-family: 'Libre Baskerville', serif; line-height: 4; }
-
-
-a:hover { color: #ff4a4a; text-decoration: none; }*/
