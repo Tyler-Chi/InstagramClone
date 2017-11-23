@@ -18,7 +18,7 @@ const App = () => (
 
     <nav className = "nav-container">
 
-      <Link to="/login" className="nav-bar-button">
+      <Link to="/" className="nav-bar-button">
         Image-in
       </Link>
 
@@ -30,7 +30,7 @@ const App = () => (
     <div className = 'main-area'>
 
     <Switch className = "login-signup">
-      <AuthRoute path="/" component={SessionFormContainer} />
+      <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
     </Switch>
 
