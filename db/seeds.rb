@@ -22,7 +22,7 @@ User.create!(
 )
 
 User.create!(
-  username: 'maggie',
+  username: 'Maggie',
   email: 'maggie@gmail.com',
   password: 'maggiepassword',
   image_url: 'aoweijfaoweijf'
