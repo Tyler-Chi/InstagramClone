@@ -27,8 +27,12 @@ const App = () => (
     <div className = "login-signup">
 
 
-      <AuthRoute path = "/login" className = "nav-container" component={GreetingContainer} />
-      <AuthRoute path = "/signup" className = "nav-container" component={GreetingContainer} />
+      <AuthRoute exact path = "/login" className = "nav-container" component={GreetingContainer} />
+      <AuthRoute exact path = "/signup" className = "nav-container" component={GreetingContainer} />
+
+
+
+
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
 
