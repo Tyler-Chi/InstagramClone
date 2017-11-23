@@ -24,8 +24,8 @@
   border: 1px solid black;
   margin-top: 5px;
   border-radius: 5px;
-  padding-left: 5px;
-  padding-top: 4px;
+  padding-left: 7px;
+  padding-top: 7px;
   padding-bottom: 2.5px;
   width: 95%;
 
@@ -59,6 +59,7 @@
 .submit-button:hover{
   color: white;
   background-color: #ff4a4a;
+  border-color:  #ff4a4a;
 }
 
 blockquote { background-image: url(http://typespiration.com/wp-content/themes/typespiration/images/quote.png); background-position: 10px 10%; background-repeat: no-repeat no-repeat; padding: 15px 0; }
