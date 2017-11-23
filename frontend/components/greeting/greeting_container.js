@@ -8,8 +8,7 @@ import Greeting from './greeting';
 
 const mapStateToProps = ({ session , location }) => {
 
-  // const formType = location.pathname.slice(1);
-  // const attemptTo = (formType === 'login') ? 'login' : 'signup';
+
 
   return {
   currentUser: session.currentUser
@@ -17,9 +16,13 @@ const mapStateToProps = ({ session , location }) => {
 
 };
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch, {location}) => {
+  const formType = location.pathname.slice(1);
+  const processForm = (formType === 'login') ? login : signup;
+  return {
   logout: () => dispatch(logout())
-})
+  }
+}
 
 export default connect(
   mapStateToProps,

@@ -7,41 +7,34 @@ import {
   Link,
   HashRouter
 } from 'react-router-dom';
-import SessionFormContainer from './session_form/session_form_container'
+import SessionFormContainer from './session_form/session_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
-
+//
+// <nav className = "nav-container">
+//
+//
+//   <GreetingContainer />
+//
+// </nav>
 
 
 const App = () => (
   <div className = 'main'>
 
-    <nav className = "nav-container">
-
-      <Link to="/" className="nav-bar-button">
-        Image-in
-      </Link>
-
-      <GreetingContainer />
-
-    </nav>
-
-
     <div className = 'main-area'>
 
-    <Switch className = "login-signup">
+    <div className = "login-signup">
+
+
+      <AuthRoute path = "/login" className = "nav-container" component={GreetingContainer} />
+      <AuthRoute path = "/signup" className = "nav-container" component={GreetingContainer} />
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
-    </Switch>
 
     </div>
 
-
-
-
-
-
-
+    </div>
 
   </div>
 );
