@@ -28,7 +28,11 @@ class SessionForm extends React.Component {
     }
 
     if (nextProps.location !== this.props.location){
-
+      this.state = {
+        username: '',
+        password: '',
+        email: ''
+      };
       this.props.clearErrors();
     }
 
@@ -75,6 +79,17 @@ class SessionForm extends React.Component {
 
   render() {
 
+
+    let actionType;
+    if (this.props.formType === ''){
+      actionType = 'signup';
+    } else {
+      actionType = this.props.formType;
+    }
+
+
+
+
     let email;
 
     if (this.props.formType !=='login'){
@@ -104,7 +119,7 @@ class SessionForm extends React.Component {
 
 
           <br/>
-          Please {this.props.formType} or {this.navLink()}
+          Please {actionType} or {this.navLink()}
           {this.renderErrors()}
           <div className="login-form">
             <br/>
