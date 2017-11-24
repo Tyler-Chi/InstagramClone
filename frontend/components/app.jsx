@@ -48,8 +48,8 @@ const App = () => (
       <AuthRoute path="/signup" component={SessionFormContainer} />
     </Switch>
 
-    <div className = "main-content">
-      <ProtectedRoute path='/:username' component={IndexContainer} />
+    <div className = "index-area">
+      <ProtectedRoute path='/' component={IndexContainer} />
     </div>
 
 

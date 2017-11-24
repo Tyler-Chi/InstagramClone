@@ -19,7 +19,8 @@ const mapDispatchToProps = (dispatch, { location }) => {
   return {
     processForm: user => dispatch(processForm(user)),
     formType,
-    login: user => dispatch(login(user)),
+
+    login: user => dispatch(login(user)).then(()=> history.push('/maggie')),
     clearErrors: () => dispatch(clearErrors())
   };
 };

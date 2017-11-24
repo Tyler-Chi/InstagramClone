@@ -1,0 +1,22 @@
+.index-area {
+  // opacity: 0.7;
+
+  background-color: rgba(214,201,194,0.5);
+  text-align: center;
+  width: 50%;
+  min-width: 300px;
+  margin-left: 25%;
+  height: 95%;
+  margin-top: 5px;
+
+}
+
+.index-elements {
+  height: 95%;
+  overflow-y: scroll;
+  opacity: 1.0;
+}
+
+.main-area {
+  height: 100%;
+}
