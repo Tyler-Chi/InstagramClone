@@ -31,8 +31,9 @@ post2 = Post.create(description: 'pupper',img_url: 'awefa', authorId: user1.id)
 post3 = Post.create(description: 'bigpupper',img_url: 'awefa', authorId: user1.id)
 post4 = Post.create(description: 'biggerpupper',img_url: 'awefa', authorId: user1.id)
 post5 = Post.create(description: 'smol_pupper',img_url: 'awefa', authorId: user1.id)
-
 post10 = Post.create(description: 'testerpupper',img_url: 'awefa', authorId: user2.id)
+
+
 
 
 
