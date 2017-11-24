@@ -21,6 +21,7 @@
 # end
 
 User.destroy_all
+Post.destroy_all
 
 user1 = User.create( username: 'Maggie', email: 'maggie@gmail.com',  password: 'maggiepassword', image_url: 'aoweijfaoweijf')
 user2 = User.create( username: 'bobrules', email: 'bobrules@gmail.com', password: 'bobpassword', image_url: 'aowiejfaowiejf')
@@ -31,7 +32,7 @@ post3 = Post.create(description: 'bigpupper',img_url: 'awefa', authorId: user1.i
 post4 = Post.create(description: 'biggerpupper',img_url: 'awefa', authorId: user1.id)
 post5 = Post.create(description: 'smol_pupper',img_url: 'awefa', authorId: user1.id)
 
-
+post10 = Post.create(description: 'testerpupper',img_url: 'awefa', authorId: user2.id)
 
 
 
