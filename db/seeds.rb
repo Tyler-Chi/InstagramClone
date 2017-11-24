@@ -25,11 +25,11 @@ User.destroy_all
 user1 = User.create( username: 'Maggie', email: 'maggie@gmail.com',  password: 'maggiepassword', image_url: 'aoweijfaoweijf')
 user2 = User.create( username: 'bobrules', email: 'bobrules@gmail.com', password: 'bobpassword', image_url: 'aowiejfaowiejf')
 
-post1 = Post.create(description: 'doggo',img_url: 'awefa', author_id: user1.id)
-post2 = Post.create(description: 'pupper',img_url: 'awefa', author_id: user1.id)
-post3 = Post.create(description: 'bigpupper',img_url: 'awefa', author_id: user1.id)
-post4 = Post.create(description: 'biggerpupper',img_url: 'awefa', author_id: user1.id)
-post5 = Post.create(description: 'smol_pupper',img_url: 'awefa', author_id: user1.id)
+post1 = Post.create(description: 'doggo',img_url: 'awefa', authorId: user1.id)
+post2 = Post.create(description: 'pupper',img_url: 'awefa', authorId: user1.id)
+post3 = Post.create(description: 'bigpupper',img_url: 'awefa', authorId: user1.id)
+post4 = Post.create(description: 'biggerpupper',img_url: 'awefa', authorId: user1.id)
+post5 = Post.create(description: 'smol_pupper',img_url: 'awefa', authorId: user1.id)
 
 
 
