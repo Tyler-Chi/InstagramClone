@@ -28,27 +28,35 @@ user1 = User.create!( username: 'Maggie', email: 'maggie@gmail.com',  password: 
 user2 = User.create!( username: 'bobrules', email: 'bobrules@gmail.com', password: 'bobpassword', image_url: 'aowiejfaowiejf')
 user3 = User.create!( username: 'loner', email: 'loner@loner.com', password: 'lonerpassword' ,image_url: 'lonerimage')
 
+
+p(user3.id)
 post1 = Post.create!(description: 'trees',img_url: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Nature-View.jpg', authorId: user3.id)
 
-
+p(user3.id)
 post2 = Post.create!(description: 'pupper',img_url: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Yangmingshan_Taipei_Chinese_Pavilion.jpg', authorId: user3.id)
 
+p(user3.id)
 post3 = Post.create!(description: 'stars',img_url: 'https://static.pexels.com/photos/33688/delicate-arch-night-stars-landscape.jpg', authorId: user3.id)
 
+p(user3.id)
 post4 = Post.create!(description: 'wheat',img_url: 'https://get.pxhere.com/photo/landscape-nature-grass-branch-light-sky-sun-fog-sunrise-sunset-mist-field-grain-sunlight-morning-dawn-summer-dusk-evening-harvest-autumn-fields-mood-arable-atmospheric-phenomenon-grass-family-642150.jpg', authorId: user3.id)
 
+p(user3.id)
 post5 = Post.create!(description: 'droplets',img_url: 'https://static.pexels.com/photos/8486/water-rain-raindrops-drops.jpg', authorId: user3.id)
 
 
 
-
+p(user2.id)
 post10 = Post.create!(description: 'wetroad',img_url: 'https://static.pexels.com/photos/39811/pexels-photo-39811.jpeg', authorId: user2.id)
+
+p(user2.id)
 post11 = Post.create!(description: 'taipei101',img_url: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Taipei_101_2008_NewYear_Firework.jpg', authorId: user2.id)
 
+p(user2.id)
 post12 = Post.create!(description: 'sunset',img_url: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Burning_Yellow_Sunset.jpg', authorId: user2.id)
 
 
-
+p(user3.id)
 post13 = Post.create!(description: 'loneralone', img_url: 'loner', authorId: user3.id)
 
 
