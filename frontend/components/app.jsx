@@ -49,7 +49,7 @@ const App = () => (
     </Switch>
 
     <div className = "main-content">
-      <ProtectedRoute path="/" component={IndexContainer} />
+      <ProtectedRoute path='/:username' component={IndexContainer} />
     </div>
 
 
