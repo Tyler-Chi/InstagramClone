@@ -23,6 +23,7 @@
 User.destroy_all
 Post.destroy_all
 
+
 user1 = User.create( username: 'Maggie', email: 'maggie@gmail.com',  password: 'maggiepassword', image_url: 'aoweijfaoweijf')
 user2 = User.create( username: 'bobrules', email: 'bobrules@gmail.com', password: 'bobpassword', image_url: 'aowiejfaowiejf')
 

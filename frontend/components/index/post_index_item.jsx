@@ -8,9 +8,13 @@ const PostIndexItem = ({post}) => {
 
   return (
     <div>
-      <p>
-        {post.description}
-      </p>
+      <li>
+          {post.description}
+          {post.id}
+          {post.authorId}
+      </li>
+
+
     </div>
   )
 

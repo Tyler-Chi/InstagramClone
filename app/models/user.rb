@@ -13,6 +13,20 @@ class User < ApplicationRecord
     foreign_key: :authorId,
     class_name: 'Post'
 
+  has_many :follow_ids,
+    primary_key: :id,
+    foreign_key: :follower_id,
+    class_name: 'Follow'
+
+  has_many :following_id,
+    primary_key: :id,
+    foreign_key: :followee_id,
+    class_name: 'Follow'
+
+  has_many :followers,
+    through: :follow_ids,
+    source: :following_id
+
   # PREFV
 
   def password=(password)

@@ -18,6 +18,8 @@ class Index extends React.Component {
 
     <div className='index-area'>
       <div className='index-elements'>
+        <ul>
+
 
         {
         posts.map( post => (
@@ -25,7 +27,7 @@ class Index extends React.Component {
           )
         )
       }
-
+        </ul>
       </div>
     </div>
     )
