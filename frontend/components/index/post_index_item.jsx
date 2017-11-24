@@ -8,10 +8,11 @@ const PostIndexItem = ({post}) => {
 
   return (
     <div>
-      <li>
+      <li className='index-item'>
           {post.description}
           {post.id}
           {post.author.username}
+          {post.img_url}
       </li>
 
 

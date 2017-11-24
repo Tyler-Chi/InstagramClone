@@ -12,7 +12,7 @@ class Index extends React.Component {
 
   render() {
     const posts = Object.values(this.props.entities.posts)
-    console.log('posts',posts);
+  
 
     return (
 
