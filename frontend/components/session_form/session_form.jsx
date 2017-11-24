@@ -110,6 +110,10 @@ class SessionForm extends React.Component {
 
     return (
       <div className="login-form-container">
+
+        <div className = 'photobox'>
+
+
         <form onSubmit={this.handleSubmit} className="login-form-box">
 
           <p className='form-header'>
@@ -160,6 +164,7 @@ class SessionForm extends React.Component {
       {this.renderErrors()}
 
         </form>
+      </div>
 
 
 

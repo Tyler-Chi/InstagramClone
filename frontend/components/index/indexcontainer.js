@@ -8,4 +8,6 @@
 //   }
 // }
 //
-// const 
+// const
+
+// import { connect } from 'react-redux';

@@ -6,7 +6,7 @@
 
 .login-form-box {
   height: 300px;
-   opacity: 0.9;
+   opacity: 0.75;
    padding: 20px;
    width: 225px;
   //  margin: auto;
@@ -20,8 +20,7 @@
    background-image: url('images/darktrees.jpg');
    background-size: 100% 100%;
 
-   border-style: solid;
-   border-width: 5px;
+
  }
 
  .form-header {
@@ -43,6 +42,7 @@
  }
 
  .login-form {
+  //  opacity: 0.9;
    display: flex;
    flex-direction: column;
    justify-content: center;
