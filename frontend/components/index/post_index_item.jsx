@@ -9,10 +9,13 @@ const PostIndexItem = ({post}) => {
   return (
     <div>
       <li className='index-item'>
+
+        {post.id}
+        {post.author.username}
+
           {post.description}
-          {post.id}
-          {post.author.username}
-          {post.img_url}
+          <img src={post.img_url} alt={post.description}></img>
+
       </li>
 
 
@@ -22,3 +25,6 @@ const PostIndexItem = ({post}) => {
 }
 
 export default PostIndexItem;
+
+// {post.id}
+// {post.author.username}
