@@ -11,7 +11,7 @@ const PostIndexItem = ({post}) => {
       <li>
           {post.description}
           {post.id}
-          {post.authorId}
+          {post.author.username}
       </li>
 
 

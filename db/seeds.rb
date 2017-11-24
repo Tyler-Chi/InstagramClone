@@ -34,7 +34,7 @@ post4 = Post.create(description: 'biggerpupper',img_url: 'awefa', authorId: user
 post5 = Post.create(description: 'smol_pupper',img_url: 'awefa', authorId: user1.id)
 post10 = Post.create(description: 'testerpupper',img_url: 'awefa', authorId: user2.id)
 
-follow1 = Follow.create( follower_id: user2.id , followee_id: user1.id)
+follow1 = Follow.create( follower_id: user1.id , followee_id: user2.id)
 
 
 

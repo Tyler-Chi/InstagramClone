@@ -14,6 +14,15 @@ class Api::PostsController < ApplicationController
 
     @posts = @user.posts
 
+    following = current_user.is_following
+    following.each do |followed|
+      @posts.concat(followed.posts)
+    end
+
+
+
+
+
 
 
 
