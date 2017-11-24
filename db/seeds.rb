@@ -5,6 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#
+# class CreatePosts < ActiveRecord::Migration[5.1]
+#   def change
+#     create_table :posts do |t|
+#
+#       t.integer :authorId
+#       t.string :img_url
+#       t.string :description
+#
+#       t.timestamps
+#     end
+#   end
+# end
+
 User.destroy_all
 
 User.create!(
@@ -22,6 +37,7 @@ User.create!(
 )
 
 User.create!(
+  id: 1,
   username: 'Maggie',
   email: 'maggie@gmail.com',
   password: 'maggiepassword',
