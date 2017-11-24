@@ -9,7 +9,12 @@ class Api::PostsController < ApplicationController
   end
 
   def index
-    # @posts =  Post.all
+    if params[:user_id]
+      user = User.find_by(username: params[:user_id])
+      @posts = user.posts
+    else
+      @posts = [1]
+    end
 
 
 

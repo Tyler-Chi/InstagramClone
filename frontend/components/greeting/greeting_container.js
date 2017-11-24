@@ -17,7 +17,6 @@ const mapStateToProps = ({ session , location }) => {
 };
 
 const mapDispatchToProps = (dispatch, {location, history}) => {
-  console.log(location)
   const formType = location.pathname.slice(1);
 
   return {
