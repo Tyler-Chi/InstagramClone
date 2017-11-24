@@ -14,10 +14,14 @@ class Greeting extends React.Component {
 
         <div className = "nav-container">
 
+          <p className = "currentuser">
+            Logged in as: {this.props.currentUser.username}
+          </p>
 
-        <button onClick={this.props.logout}
-          className = 'li-su logout'>
-          Logout</button>
+
+            <button onClick={this.props.logout}
+              className = 'logout'>
+              Logout</button>
 
         </div>
       )
