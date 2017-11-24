@@ -13,20 +13,22 @@ class Greeting extends React.Component {
       return (
 
         <div className = "nav-container">
-        <nav className="login-signup">
+
 
         <button onClick={this.props.logout}
-          className = 'li-su'>
-          Logout!</button>
+          className = 'li-su logout'>
+          Logout</button>
 
-        </nav>
         </div>
       )
     } else if (this.props.formType === 'login'){
       return (
         <div className = "nav-container">
           <nav className="login-signup">
+
+
             <Link to="/signup" className = "li-su">Sign Up</Link>
+
           </nav>
         </div>
       )
@@ -41,9 +43,9 @@ class Greeting extends React.Component {
     } else {
       return (
         <div className = "nav-container">
-          <nav className="login-signup">
-            <Link to="/signup" className = "li-su">Sign up!</Link>
-          </nav>
+
+            <Link to="/signup" className = "li-su">Sign up</Link>
+
         </div>
       )
     }
