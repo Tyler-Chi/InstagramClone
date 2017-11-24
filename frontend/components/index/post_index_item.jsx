@@ -9,7 +9,7 @@ const PostIndexItem = ({post}) => {
   return (
     <div>
       <p>
-        {post.id}
+        {post.description}
       </p>
     </div>
   )
