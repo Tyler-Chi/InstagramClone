@@ -119,7 +119,10 @@ class SessionForm extends React.Component {
 
 
           <br/>
+
+        <div className = 'pleaseblank'>
           Please {actionType} or {this.navLink()}
+        </div>
 
 
 

@@ -1,4 +1,7 @@
 
+// #f7f7f7;
+
+
 
 
 .login-form-box {
@@ -8,15 +11,17 @@
    width: 225px;
   //  margin: auto;
    margin-top: 50px;;
-   background-color: #f7f7f7;
+   background-color: red;
    margin-left: 10%;
    /*border-radius: 5px;*/
-   border-width: 5px;
-   border-style: ridge;
-   border-color: mygrey;
-   transition: 1s;
-   shadow: 5px;
 
+   transition: 1s;
+
+   background-image: url('images/darktrees.jpg');
+   background-size: 100% 100%;
+
+   border-style: solid;
+   border-width: 5px;
  }
 
  .form-header {
@@ -33,13 +38,15 @@
    border-color: #919191;
    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
    font-size: 25px;
-  
+   color: white;
+
  }
 
  .login-form {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   color: white;
  }
 
  .login-form-box:hover {
@@ -60,18 +67,25 @@
   /*background-color: grey;*/
 }
 
+.pleaseblank {
+  color: white;
+}
+
 .switchlink {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  background-color: #919191;
+  // border-style: solid;
+  // border-width: 1px;
+  // border-radius: 3px;
   padding: 3px;
-  border-color: mygrey;
-  color: mygrey;
+  // border-color: mygrey;
+  color: #f7f7f7;
+  border-radius: 5px;
 }
 
 .switchlink:hover{
-  background-color: #919191;
+  background-color: #c42f0d;
   color: white;
+  transition: 0.5s;
 }
 
 .errors {
@@ -82,7 +96,7 @@
 }
 
 .submit-button {
-
+  background-color: #919191;
   border: 1px solid black;
   text-align: center;
   margin-bottom: 10px;
@@ -93,13 +107,7 @@
 
 .submit-button:hover{
   // color: white;
-  background-color: #919191;
+  background-color: #c42f0d;
   color: white;
+  transition: 0.5s;
 }
-
-blockquote { background-image: url(http://typespiration.com/wp-content/themes/typespiration/images/quote.png); background-position: 10px 10%; background-repeat: no-repeat no-repeat; padding: 15px 0; }
-
-
-
-
-.punchline p { background: #f2f2f2; color: #ff4a4a; }
