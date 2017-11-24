@@ -4,10 +4,15 @@ import { withRouter} from 'react-router';
 
 class Index extends React.Component {
 
+  componentWillMount(){
 
+  }
 
 
   render(){
+
+    console.log('entities',this.props.entities);
+
     return (
   <div className='index-elements'>
     <h1>
@@ -177,6 +182,7 @@ class Index extends React.Component {
 </div>
     )
   }
+
 }
 
 export default Index;

@@ -1,23 +1,14 @@
-// import { connect } from 'react-redux';
-//
-// const mapStateToProps = state => {
-//
-//   return {
-//       loggedIn: Boolean(state.session.currentUser),
-//       errors: state.errors
-//   }
-// }
-//
-// const
+
 
 import { connect } from 'react-redux';
 
 import Index from './index';
 
-const mapStateToProps = ({session , location}) => {
+const mapStateToProps = ({session , location , entities}) => {
 
   return {
-    currentUser: session.currentUser
+    currentUser: session.currentUser,
+    entities
   }
 }
 

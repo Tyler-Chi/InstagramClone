@@ -11,24 +11,6 @@ import SessionFormContainer from './session_form/session_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import IndexContainer from "./index/indexcontainer";
 
-//
-// <nav className = "nav-container">
-//
-//
-//   <GreetingContainer />
-//
-// </nav>
-    // <AuthRoute path = "/login" className = "nav-container" component={GreetingContainer} />
-
-    //
-    // <AuthRoute path = "/login" className = "nav-container" component={GreetingContainer} />
-    //
-    // <AuthRoute path = "/signup" className = "nav-container" component={GreetingContainer} />
-    //
-    //
-    // <AuthRoute exact path = "/" className = "nav-container" component={GreetingContainer} />
-
-    // <AuthRoute path="/signup" component={SessionFormContainer} />
 
 
 
@@ -46,12 +28,13 @@ const App = () => (
       <AuthRoute exact path="/" component={SessionFormContainer} />
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
+
+
     </Switch>
 
     <div className = "index-area">
       <ProtectedRoute path='/' component={IndexContainer} />
     </div>
-
 
 
 
