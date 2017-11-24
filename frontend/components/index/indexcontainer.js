@@ -10,4 +10,28 @@
 //
 // const
 
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
+
+import Index from './index';
+
+const mapStateToProps = ({session , location}) => {
+
+  return {
+    currentUser: session.currentUser
+  }
+}
+
+const mapDispatchToProps = (dispatch, {location, history}) => {
+  console.log(location)
+  const formType = location.pathname.slice(1);
+
+  return {
+  logout: () => dispatch(logout()).then(()=>history.push('/login')),
+  formType
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Index);

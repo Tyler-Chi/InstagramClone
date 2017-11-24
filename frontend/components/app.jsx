@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import SessionFormContainer from './session_form/session_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import IndexContainer from "./index/indexcontainer";
 
 //
 // <nav className = "nav-container">
@@ -42,14 +43,14 @@ const App = () => (
     </div>
 
     <Switch>
-
       <AuthRoute exact path="/" component={SessionFormContainer} />
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
-
     </Switch>
 
-
+    <div className = "main-content">
+      <ProtectedRoute path="/" component={IndexContainer} />
+    </div>
 
 
 
