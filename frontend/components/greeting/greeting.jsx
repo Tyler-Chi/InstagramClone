@@ -26,7 +26,7 @@ class Greeting extends React.Component {
       return (
         <div className = "nav-container">
           <nav className="login-signup">
-            <Link to="/signup" className = "li-su">Sign up!</Link>
+            <Link to="/signup" className = "li-su">Sign Up</Link>
           </nav>
         </div>
       )
