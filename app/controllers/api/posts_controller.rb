@@ -25,7 +25,7 @@ class Api::PostsController < ApplicationController
   private
 
   def post_params
-      params.require(:chirp).permit(:description, :authorId)
+      params.require(:post).permit(:description, :authorId)
   end
 
 end
