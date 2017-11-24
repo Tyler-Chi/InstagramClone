@@ -2,6 +2,8 @@
 
 import { connect } from 'react-redux';
 
+import { fetchPosts } from '../../actions/post_actions';
+
 import Index from './index';
 
 const mapStateToProps = ({session , location , entities}) => {
@@ -17,7 +19,8 @@ const mapDispatchToProps = (dispatch, {location, history}) => {
 
   return {
   logout: () => dispatch(logout()).then(()=>history.push('/login')),
-  formType
+  formType,
+  fetchPosts: () => dispatch(fetchPosts())
   }
 }
 

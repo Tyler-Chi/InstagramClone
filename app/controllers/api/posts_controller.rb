@@ -11,14 +11,15 @@ class Api::PostsController < ApplicationController
   def index
 
     # puts(params)
-
-    if params[:user_id]
-      user = User.find_by(username: params[:user_id])
-      @posts = user.posts
-    else
-      @posts = []
-    end
-
+    #
+    # if params[:user_id]
+    #   user = User.find_by(username: params[:user_id])
+    #   @posts = user.posts
+    # else
+    #   @posts = []
+    # end
+    #
+    @posts = Post.all
 
 
 

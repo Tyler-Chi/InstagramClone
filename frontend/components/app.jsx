@@ -28,13 +28,10 @@ const App = () => (
       <AuthRoute exact path="/" component={SessionFormContainer} />
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
-
-
     </Switch>
 
-    <div className = "index-area">
-      <ProtectedRoute path='/' component={IndexContainer} />
-    </div>
+
+    <ProtectedRoute exact path='/' component={IndexContainer} />
 
 
 
