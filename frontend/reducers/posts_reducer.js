@@ -1,5 +1,5 @@
 import { RECEIVE_POSTS , RECEIVE_POST } from '../actions/post_actions';
-
+import merge from 'lodash/merge';
 
 export default( oldState = {}, action) => {
   Object.freeze(oldState);

@@ -10,7 +10,7 @@ import {
 import SessionFormContainer from './session_form/session_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import IndexContainer from "./index/indexcontainer";
-
+import SideBar from './sidebar/side_bar_container';
 
 
 
@@ -23,6 +23,8 @@ const App = () => (
       <Route path = "/" className = "nav-container"
         component ={GreetingContainer} />
     </div>
+
+    <SideBar />
 
     <Switch>
       <AuthRoute path="/login" component={SessionFormContainer} />
