@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import {login,signup,logout} from './actions/session_actions';
 import configureStore from './store/store';
-import { fetchPosts } from './actions/post_actions';
+import { fetchPosts , createPost } from './actions/post_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.dispatch = store.dispatch;
     window.fetchPosts = () => dispatch(fetchPosts());
     window.logout = logout;
+    window.createPost = post => dispatch(createPost(post));
 
   ReactDOM.render(<Root store={store} />, root);
 });

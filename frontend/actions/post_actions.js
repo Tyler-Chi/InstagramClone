@@ -1,4 +1,4 @@
-import { getPosts, createPost } from '../util/posts';
+import * as PostApiUtil from '../util/posts';
 export const RECEIVE_POSTS = 'RECEIVE_POSTS';
 export const RECEIVE_POST = 'RECEIVE_POST';
 
@@ -14,9 +14,9 @@ const receivePosts = posts => ({
 });
 
 export const fetchPosts = () => dispatch => (
-  getPosts().then(posts => dispatch(receivePosts(posts)))
+  PostApiUtil.getPosts().then(posts => dispatch(receivePosts(posts)))
 )
 
-// export const createPost = post => dispatch => (
-//   createPost(post).then(post => dispatch(receivePost(post)))
-// )
+export const createPost = post => dispatch => (
+  PostApiUtil.createPost(post).then(post => dispatch(receivePost(post)))
+)

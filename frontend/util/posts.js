@@ -6,7 +6,7 @@ export const getPosts = () => $.ajax({
 export const createPost = post => (
   $.ajax({
     method: 'POST',
-    url: '/api/post',
-    data: post
+    url: '/api/posts',
+    data: {post}
   })
 )
