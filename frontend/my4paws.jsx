@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.logout = logout;
 
   let preloadedState = undefined;
+
+
   if (window.currentUser){
     preloadedState = {
       session: {
@@ -21,6 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+
+
+
   const store = configureStore(preloadedState);
 
     window.getState = store.getState;

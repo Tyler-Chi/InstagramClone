@@ -1,5 +1,11 @@
 class Api::PostsController < ApplicationController
   def create
+    @post = current_user.posts.new(post_params)
+    if @post.save
+      render json: @post
+    else
+      render @post.errors.full_messages, status: 401
+    end
   end
 
   def update
@@ -9,6 +15,11 @@ class Api::PostsController < ApplicationController
   end
 
   def index
+
+
+    cloud_name = ENV['CLOUD_NAME']
+    upload_preset = Figaro.env.UPLOAD_PRESET
+    puts "API KEYS: #{cloud_name} #{upload_preset}"
 
     @user = current_user
 
@@ -20,14 +31,6 @@ class Api::PostsController < ApplicationController
       @posts.concat(followed.posts)
     end
 
-
-
-
-
-
-
-
-
   end
 
   def destroy
@@ -36,7 +39,7 @@ class Api::PostsController < ApplicationController
   private
 
   def post_params
-      params.require(:post).permit(:description, :authorId)
+      params.require(:post).permit(:description, :authorId, :img_url)
   end
 
 end
