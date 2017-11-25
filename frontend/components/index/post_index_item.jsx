@@ -10,11 +10,13 @@ const PostIndexItem = ({post}) => {
     <div className = 'i'>
       <li className='index-item'>
 
-        <div className = 'post-text-area'>
+        <div className = 'post-top-text-area'>
           <p className='post-author'>{post.author.name}:</p>
           <p className='post-description'>{post.description}</p>
         </div>
-        <img src={post.img_url} alt={post.description}></img>
+        <img src={post.img_url} alt={post.description}
+          className = 'item-image'
+          ></img>
 
       </li>
 

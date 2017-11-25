@@ -56,8 +56,6 @@ p(user2.id)
 post12 = Post.create!(description: 'sunset',img_url: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Burning_Yellow_Sunset.jpg', authorId: user2.id)
 
 
-p(user3.id)
-post13 = Post.create!(description: 'loneralone', img_url: 'loner', authorId: user3.id)
 
 
 
