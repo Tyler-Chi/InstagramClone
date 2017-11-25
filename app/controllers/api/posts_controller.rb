@@ -27,6 +27,7 @@ class Api::PostsController < ApplicationController
 
 
 
+
   end
 
   def destroy

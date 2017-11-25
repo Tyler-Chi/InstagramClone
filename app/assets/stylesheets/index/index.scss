@@ -22,8 +22,35 @@
 }
 
 .index-item {
-  height: 0%;
+  height: 100%;
   width: 80%;
   margin-left: 10%;
   margin-top: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 60px;
+
+}
+
+.post-author {
+  color: #5342f4;
+  float: left;
+  margin-bottom: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.post-description {
+  font-style: italic;
+  float: left;
+  margin-bottom: 0px;
+}
+
+.post-text-area {
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
