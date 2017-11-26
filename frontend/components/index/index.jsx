@@ -12,21 +12,19 @@ class Index extends React.Component {
 
   render() {
     const posts = Object.values(this.props.entities.posts)
-  
+
 
     return (
 
     <div className='index-area'>
       <div className='index-elements'>
         <ul>
-
-
         {
         posts.map( post => (
           <PostIndexItem key={post.id} post={post} />
           )
         )
-      }
+        }
         </ul>
       </div>
     </div>
