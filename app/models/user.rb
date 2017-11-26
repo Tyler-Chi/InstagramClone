@@ -34,6 +34,11 @@ class User < ApplicationRecord
     through: :followings,
     source: :followee
 
+  has_many :liked,
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: 'Like'
+
   # PREFV
 
   def password=(password)
