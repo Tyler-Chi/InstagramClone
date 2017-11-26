@@ -32,7 +32,7 @@ const App = () => (
       <AuthRoute path="/" component={SessionFormContainer} />
     </Switch>
 
-    <ProtectedRoute path = '/' component={SideBar} />
+
     <ProtectedRoute exact path='/' component={IndexContainer} />
 
 
@@ -41,5 +41,5 @@ const App = () => (
 
   </div>
 );
-
+// <ProtectedRoute path = '/' component={SideBar} />
 export default App;

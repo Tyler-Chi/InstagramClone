@@ -116,9 +116,9 @@ class SessionForm extends React.Component {
 
 
     return (
-      <div className="login-form-container">
+      <div className="login-photobox">
 
-        <div className = 'photobox'>
+        <div className = 'login-form-container'>
 
 
         <form onSubmit={this.handleSubmit} className="login-form-box">
