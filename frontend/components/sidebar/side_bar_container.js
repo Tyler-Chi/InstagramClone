@@ -19,4 +19,4 @@ const mapDispatchToProps = (dispatch, {location,history}) => {
   }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(SideBar);
+export default  connect(mapStateToProps,mapDispatchToProps)(SideBar);

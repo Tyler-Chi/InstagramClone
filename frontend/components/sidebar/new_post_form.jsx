@@ -10,23 +10,45 @@ class NewPostForm extends React.Component {
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    // this.update = this.
   }
 
   handleSubmit(e) {
     e.preventDefault();
     const newPost = Object.assign({}, this.state);
 
+
+
     this.props.createPost(newPost).then(
       () => this.setState({
         description: "",
         img_url: "",
-        authorId: currentUser.id
+        authorId: this.props.currentUser.id
       })
     )
   }
 
+
   update(property) {
     return e => this.setState({[property]: e.target.value})
+  }
+
+  // updateUrl(cloudiranyUrl)
+  // this.setState({img_url: cloudiranyUrl.url})
+
+  upload(e){
+    e.preventDefault();
+    cloudinary.openUploadWidget(window.cloudinary_options,function(error,results)
+
+    // .then(this.updateUrl(result[0].url))
+
+    {
+      console.log('results:',results);
+      console.log('error?',error);
+      if (error === null){
+        this.state.img_url = results[0].url;
+      }
+    });
   }
 
 
@@ -34,7 +56,6 @@ class NewPostForm extends React.Component {
   render() {
 
 
-    console.log('myerrors',this.props.errors)
     return (
     <div>
 
@@ -51,14 +72,13 @@ class NewPostForm extends React.Component {
 
       <form className='new-post-form' onSubmit={this.handleSubmit}>
         <p>{this.props.errors}</p>
-        <label>Image Url
-          <input
-            ref="img_url"
-            value= {this.state.img_url}
-            placeholder="image url"
-            onChange={ this.update('img_url')}
-          />
-        </label>
+
+        <button type='cloud'
+          onClick={this.upload}
+          >Choose File..</button>
+
+
+
             <br/>
         <label>Description
           <input
