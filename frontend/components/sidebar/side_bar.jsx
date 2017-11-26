@@ -3,8 +3,18 @@ import NewPostForm from './new_post_form';
 
 class SideBar extends React.Component {
 
+  constructor(props){
+    super(props);
+    this.state = {isModalOpen: false}
+  }
 
+  openModal(){
+    this.setState({ isModalOpen: true})
+  }
 
+  closeModal(){
+    this.setState({ isModalOpen:false })
+  }
 
 
   render(){
@@ -15,10 +25,21 @@ class SideBar extends React.Component {
     return (
       <div className="sidebar-container">
 
+      <button onClick={()=> this.openModal()}>
+        Open Modal
+      </button>
 
           <NewPostForm createPost={this.props.createPost} errors={this.props.errors}
           currentUser = {this.props.currentUser}
-          />
+          onClose={()=> this.closeModal()}
+          isOpen = {this.state.isModalOpen}
+          >
+
+          <button onClick = {() => this.closeModal()}>
+            Close
+          </button>
+
+        </NewPostForm>
 
 
       </div>

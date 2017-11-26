@@ -15,6 +15,13 @@ class NewPostForm extends React.Component {
     this.upload = this.upload.bind(this);
   }
 
+  close(e){
+    e.preventDefault()
+    if (this.props.onClose){
+      this.props.onClose();
+    }
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const newPost = Object.assign({}, this.state);
@@ -51,11 +58,14 @@ class NewPostForm extends React.Component {
 
 
   render() {
+    console.log('myprops are:',this.props)
 
-    console.log(this.state)
+    if (this.props.isOpen === false ){
+      return null;
+    }
 
     return (
-    <div className = 'new-post-form-container'>
+    <div className = 'form-backdrop' onClick={e => this.close(e)}>
       <div className = 'photobox'>
       <form className='new-post-form' onSubmit={this.handleSubmit}>
         <p>{this.props.errors}</p>
