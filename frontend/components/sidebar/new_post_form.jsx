@@ -70,15 +70,18 @@ class NewPostForm extends React.Component {
 
 
             <br/>
-        <label>Description
+
+
+
           <input
+
             ref="description"
             value= {this.state.description}
             placeholder="description"
             onChange={ this.update('description')}
             className = 'input-description'
           />
-        </label>
+
 
 
           <br/>
