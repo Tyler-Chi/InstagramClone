@@ -10,7 +10,8 @@ class NewPostForm extends React.Component {
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.update = this.
+    this.updateUrl = this.updateUrl.bind(this);
+    this.upload = this.upload.bind(this);
   }
 
   handleSubmit(e) {
@@ -33,20 +34,26 @@ class NewPostForm extends React.Component {
     return e => this.setState({[property]: e.target.value})
   }
 
-  // updateUrl(cloudiranyUrl)
-  // this.setState({img_url: cloudiranyUrl.url})
+  updateUrl(cloudUrl){
+      console.log('i am trying to update the url :D')
+
+    // this.setState({img_url: cloudUrl});
+      this.setState({img_url: 'http://res.cloudinary.com/deaiyjjnf/image/upload/v1511668463/yxxrbwo1dtvebu2sauks.jpg'});
+      console.log('current state:',this.state);
+  }
+
+
 
   upload(e){
     e.preventDefault();
     cloudinary.openUploadWidget(window.cloudinary_options,function(error,results)
-
-    // .then(this.updateUrl(result[0].url))
-
     {
       console.log('results:',results);
-      console.log('error?',error);
+      console.log('errors:',error);
+
       if (error === null){
-        this.state.img_url = results[0].url;
+        console.log('i got past the if statement')
+        return results[0].url;
       }
     });
   }
@@ -55,6 +62,7 @@ class NewPostForm extends React.Component {
 
   render() {
 
+    console.log(this.state)
 
     return (
     <div>
@@ -75,7 +83,9 @@ class NewPostForm extends React.Component {
 
         <button type='cloud'
           onClick={this.upload}
-          >Choose File..</button>
+          >
+          Choose File..
+        </button>
 
 
 
