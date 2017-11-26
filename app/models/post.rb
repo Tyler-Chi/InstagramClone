@@ -8,7 +8,10 @@ class Post < ApplicationRecord
     foreign_key: :authorId,
     class_name: :User
 
-
+  has_many :likes,
+    primary_key: :id,
+    foreign_key: :post_id,
+    class_name: 'Like'
 
 
 end

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
     resource :session, only: [:create,:destroy,:show]
     resources :users, only: [:create]
-
+    resources :likes
     resources :posts
 
   end

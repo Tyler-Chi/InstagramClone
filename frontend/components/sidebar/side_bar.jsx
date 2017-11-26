@@ -5,7 +5,7 @@ class SideBar extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = {isModalOpen: true}
+    this.state = {isModalOpen: false}
   }
 
   openModal(){
@@ -25,7 +25,9 @@ class SideBar extends React.Component {
     return (
       <div className="sidebar-container">
 
-      <button onClick={()=> this.openModal()}>
+      <button onClick={()=> this.openModal()}
+        className ='open-modal'
+      >
         Open Modal
       </button>
 
