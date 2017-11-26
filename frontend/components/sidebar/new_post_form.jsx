@@ -10,7 +10,7 @@ class NewPostForm extends React.Component {
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.updateUrl = this.updateUrl.bind(this);
+    // this.updateUrl = this.updateUrl.bind(this);
     this.upload = this.upload.bind(this);
   }
 
@@ -34,28 +34,25 @@ class NewPostForm extends React.Component {
     return e => this.setState({[property]: e.target.value})
   }
 
-  updateUrl(cloudUrl){
-      console.log('i am trying to update the url :D')
-
-    // this.setState({img_url: cloudUrl});
-      this.setState({img_url: 'http://res.cloudinary.com/deaiyjjnf/image/upload/v1511668463/yxxrbwo1dtvebu2sauks.jpg'});
-      console.log('current state:',this.state);
-  }
+  // updateUrl(cloudUrl){
+  //     console.log('i am trying to update the url :D')
+  //
+  //   // this.setState({img_url: cloudUrl});
+  //     this.setState({img_url: 'http://res.cloudinary.com/deaiyjjnf/image/upload/v1511668463/yxxrbwo1dtvebu2sauks.jpg'});
+  //     console.log('current state:',this.state);
+  // }
 
 
 
   upload(e){
     e.preventDefault();
+
     cloudinary.openUploadWidget(window.cloudinary_options,function(error,results)
     {
-      console.log('results:',results);
-      console.log('errors:',error);
-
       if (error === null){
-        console.log('i got past the if statement')
-        return results[0].url;
+        this.state.img_url = results[0].url;
       }
-    });
+    }.bind(this));
   }
 
 
