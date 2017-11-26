@@ -12,7 +12,7 @@ export default (state = [], action) => {
   switch(action.type) {
     case RECEIVE_SESSION_ERRORS:
       if (action.errors === undefined){
-        return [1,2,3,4,5]
+        return 'Invalid Input';
       }
       return action.errors;
     case RECEIVE_CURRENT_USER:

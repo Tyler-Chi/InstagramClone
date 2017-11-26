@@ -2,10 +2,11 @@ import { connect } from 'react-redux';
 import { createPost } from '../../actions/post_actions';
 import SideBar from './side_bar';
 
-const mapStateToProps = ({session}) => {
+const mapStateToProps = ({errors,session}) => {
 
   return {
-    currentUser: session.currentUser
+    currentUser: session.currentUser,
+    errors
   }
 }
 

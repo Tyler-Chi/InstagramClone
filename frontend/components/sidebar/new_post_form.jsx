@@ -32,8 +32,14 @@ class NewPostForm extends React.Component {
 
 
   render() {
+
+
+    console.log('myerrors',this.props.errors)
     return (
     <div>
+
+
+
       <h1>the name's post form. NEW post form.</h1>
       current user: {currentUser.id}
       author id: {this.state.authorId}
@@ -44,7 +50,7 @@ class NewPostForm extends React.Component {
 
 
       <form className='new-post-form' onSubmit={this.handleSubmit}>
-
+        <p>{this.props.errors}</p>
         <label>Image Url
           <input
             ref="img_url"

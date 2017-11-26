@@ -21,7 +21,7 @@ class SideBar extends React.Component {
             CREATE POST TEST
           </button>
 
-          <NewPostForm createPost={this.props.createPost}/>
+          <NewPostForm createPost={this.props.createPost} errors={this.props.errors}/>
 
 
       </div>
