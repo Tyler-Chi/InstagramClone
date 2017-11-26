@@ -8,7 +8,7 @@ class SideBar extends React.Component {
 
   render(){
 
-    const post = {description: 'createtest', img_url: 'createtest', authorId: 18}
+    const post = {description: 'puppy',img_url: 'aowiejfa',authorId: 18}
 
     return (
       <div>

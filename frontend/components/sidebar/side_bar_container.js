@@ -14,7 +14,7 @@ const mapDispatchToProps = (dispatch, {location,history}) => {
 
 
   return {
-    createPost: () => dispatch(createPost())
+    createPost: (post) => dispatch(createPost(post))
   }
 }
 
