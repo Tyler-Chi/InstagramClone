@@ -65,8 +65,16 @@ class NewPostForm extends React.Component {
     }
 
     return (
-    <div className = 'form-backdrop' onClick={e => this.close(e)}>
+    <div className = 'form-backdrop' >
+
+        <button onClick={this.props.onClose}
+          className = 'close-button'
+          >Close</button>
+
       <div className = 'photobox'>
+
+
+
       <form className='new-post-form' onSubmit={this.handleSubmit}>
         <p>{this.props.errors}</p>
 
