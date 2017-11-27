@@ -26,6 +26,7 @@ class Index extends React.Component {
             post={post}
             likePost={this.props.likePost}
             unlikePost={this.props.unlikePost}
+            history={this.props.history}
           />
           )
         )

@@ -27,6 +27,15 @@ class PostIndexItem extends React.Component {
     return (
         <li className='index-item'>
           <div className = 'post-top-text-area'>
+
+
+            <button
+              className='post-author'
+              onClick={() => this.props.history.push(`/user/${this.props.post.author.name}`)}
+              >
+              {this.props.post.author.name}:
+            </button>
+
             <p className = 'post-author'>
               {this.props.post.author.name}:
             </p>
