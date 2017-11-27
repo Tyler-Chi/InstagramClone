@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PostIndexItem = ({post}) => {
+const PostIndexItem = ({post, likePost, unlikePost}) => {
 
 
   console.log('mypost:',post)
@@ -18,6 +18,7 @@ const PostIndexItem = ({post}) => {
           className = 'item-image'
           ></img>
 
+
       </li>
 
 
@@ -25,5 +26,15 @@ const PostIndexItem = ({post}) => {
   )
 
 }
+
+        //
+        // <button onClick={likePost(post.id)}>
+        //   Like Post
+        // </button>
+        //
+        // <button onClick={unlikePost(post.id)}>
+        //   Unlike Post
+        // </button>
+
 
 export default PostIndexItem;

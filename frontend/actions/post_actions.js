@@ -23,3 +23,13 @@ export const createPost = post => dispatch => (
   .then(post => {dispatch(receivePost(post)); dispatch(clearErrors())},
   err => dispatch(receiveErrors(err.responseJSON)))
 )
+
+export const likePost = id => dispatch => (
+  PostApiUtil.createLikePost(id)
+    .then(post => dispatch(receivePost(post)))
+)
+
+export const unlikePost = id => dispatch (
+  PostApiUtil.deleteLikePost(id)
+    .then(post => dispatch(receivePost(post)))
+)

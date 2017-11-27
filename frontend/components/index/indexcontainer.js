@@ -2,7 +2,7 @@
 
 import { connect } from 'react-redux';
 
-import { fetchPosts } from '../../actions/post_actions';
+import { fetchPosts , likePost, unlikePost} from '../../actions/post_actions';
 
 import Index from './index';
 
@@ -20,7 +20,9 @@ const mapDispatchToProps = (dispatch, {location, history}) => {
   return {
   logout: () => dispatch(logout()).then(()=>history.push('/login')),
   formType,
-  fetchPosts: () => dispatch(fetchPosts())
+  fetchPosts: () => dispatch(fetchPosts()),
+  likePost: id => dispatch(likePost(id)),
+  unlikePost: id => dispatch(unlikePost(id))
   }
 }
 

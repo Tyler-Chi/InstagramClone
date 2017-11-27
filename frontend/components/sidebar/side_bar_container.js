@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { createPost } from '../../actions/post_actions';
+import { createPost , likePost, unlikePost } from '../../actions/post_actions';
 import SideBar from './side_bar';
 
 const mapStateToProps = ({errors,session}) => {

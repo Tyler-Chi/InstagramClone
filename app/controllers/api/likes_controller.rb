@@ -14,8 +14,6 @@ class Api::LikesController < ApplicationController
       render json: @like.errors.full_messages, status: 401
     end
 
-
-
   end
 
   def show
@@ -33,5 +31,13 @@ class Api::LikesController < ApplicationController
 
 
   def destroy
+    @like = Like.find_by(user_id: current_user.id, chirp_id: params[:id])
+    @like.destroy
+    @post = @like.post
+
+    render 'api/chirps/show'
+
+
+
   end
 end

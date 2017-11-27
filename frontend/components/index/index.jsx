@@ -21,7 +21,12 @@ class Index extends React.Component {
         <ul>
         {
         posts.map( post => (
-          <PostIndexItem key={post.id} post={post} />
+          <PostIndexItem
+            key={post.id}
+            post={post}
+            likePost={this.props.likePost}
+            unlikePost={this.props.unlikePost}
+          />
           )
         )
         }
