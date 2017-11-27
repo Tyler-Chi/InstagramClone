@@ -5,8 +5,10 @@ class PostIndexItem extends React.Component {
   constructor(props){
     super(props);
     this.state = this.props;
-    console.log(this.state);
+    console.log('post state',this.state);
   }
+
+
 
 
   render(){
@@ -35,16 +37,19 @@ class PostIndexItem extends React.Component {
             Like Post
           </button>
 
+
           <button
             onClick={()=> this.state.unlikePost(this.state.post.id)}
           >
             Unlike Post
           </button>
 
+          <p>
+            {this.state.post.lbcu}
+            hello world
+          </p>
 
         </li>
-
-
       </div>
     )
   }

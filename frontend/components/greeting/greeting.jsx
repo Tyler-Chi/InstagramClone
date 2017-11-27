@@ -18,6 +18,7 @@ class Greeting extends React.Component {
             Logged in as: {this.props.currentUser.username}
           </p>
 
+            
 
             <button onClick={this.props.logout}
               className = 'logout'>
@@ -47,8 +48,9 @@ class Greeting extends React.Component {
     } else {
       return (
         <div className = "nav-container">
+            {stuff()}
 
-            <Link to="/signup" className = "li-su">Sign up</Link>
+            <Link to="/signup" className = "li-su">Sign Up</Link>
 
         </div>
       )
