@@ -11,6 +11,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import IndexContainer from "./index/indexcontainer";
 import SideBar from './sidebar/side_bar_container';
+import ProfilePage from './profilepage/profilepage_container';
 
 // import ProfilePage from './profilepage/profilepage_container';
 
@@ -41,7 +42,7 @@ const App = () => (
 
     <div className = 'profileflex'>
       <ProtectedRoute path = '/user/:username' component={SideBar} />
-
+      <ProtectedRoute path = '/user/:username' component={ProfilePage} />
     </div>
 
 
