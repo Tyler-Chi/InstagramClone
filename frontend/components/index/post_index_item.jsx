@@ -22,23 +22,27 @@ class PostIndexItem extends React.Component {
             <p className ='post-description'>
               {this.state.post.description}
             </p>
-
-            <img src={this.state.post.img_url}
-              alt={this.state.post.description}
-              className = 'item-image'
-              >
-            </img>
-
-
           </div>
 
+          <img src={this.state.post.img_url}
+              alt={this.state.post.description}
+              className = 'item-image'
+            ></img>
+
+          <button
+            onClick={()=> this.state.likePost(this.state.post.id)}
+          >
+            Like Post
+          </button>
+
+          <button
+            onClick={()=> this.state.unlikePost(this.state.post.id)}
+          >
+            Unlike Post
+          </button>
 
 
         </li>
-
-
-
-
 
 
       </div>
