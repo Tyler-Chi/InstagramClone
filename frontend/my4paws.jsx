@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentUser: window.currentUser
       }
     }
+    delete window.currentUser;
   }
 
 
@@ -30,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.getState = store.getState;
     window.dispatch = store.dispatch;
-    window.fetchPosts = () => dispatch(fetchPosts());
-    window.logout = logout;
-    window.createPost = post => dispatch(createPost(post));
+
+
+
     window.likePost = id => dispatch(likePost(id));
     window.unlikePost = id => dispatch(unlikePost(id));
 

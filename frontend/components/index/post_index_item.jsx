@@ -4,21 +4,27 @@ class PostIndexItem extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = this.props;
+
 
     this.handleClick = this.handleClick.bind(this);
   }
 
 
   handleClick(e){
-    if (this.state.post.lbcu){
-      this.state.unlikePost(this.state.post.id)
+    if (this.props.post.lbcu){
+      this.props.unlikePost(this.props.post.id)
       // .then(()=>this.setState({lbcu:false}))
     } else {
-      this.state.likePost(this.state.post.id)
+      this.props.likePost(this.props.post.id)
       // .then(()=>this.setState({lbcu: true}))
     }
 
+  }
+
+  stuff(){
+    return (
+      <h1> hello world</h1>
+    )
   }
 
   render(){
@@ -27,31 +33,32 @@ class PostIndexItem extends React.Component {
         <li className='index-item'>
           <div className = 'post-top-text-area'>
             <p className = 'post-author'>
-              {this.state.post.author.name}:
+              {this.props.post.author.name}:
             </p>
 
+            {this.stuff()}
+
             <p className ='post-description'>
-              {this.state.post.description}
+              {this.props.post.description}
             </p>
           </div>
 
-          <img src={this.state.post.img_url}
-              alt={this.state.post.description}
+          <img src={this.props.post.img_url}
+              alt={this.props.post.description}
               className = 'item-image'
             ></img>
 
           <button
             onClick={this.handleClick}
             >
-            BORK
+            THE BUTTON
           </button>
 
 
 
           <p>
-            {this.state.post.lbcu}
-            hello world
-            {this.state.post.likes}
+            {this.props.post.lbcu}
+            {this.props.post.likes}
           </p>
 
         </li>
