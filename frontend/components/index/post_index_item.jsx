@@ -21,11 +21,6 @@ class PostIndexItem extends React.Component {
 
   }
 
-  stuff(){
-    return (
-      <h1> hello world</h1>
-    )
-  }
 
   render(){
 
@@ -36,7 +31,7 @@ class PostIndexItem extends React.Component {
               {this.props.post.author.name}:
             </p>
 
-            {this.stuff()}
+
 
             <p className ='post-description'>
               {this.props.post.description}

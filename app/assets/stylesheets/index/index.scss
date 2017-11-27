@@ -2,16 +2,14 @@
 
   background-color: rgba(214,201,194,0.3);
   text-align: center;
-  width: 60%;
+  width: 100%;
   min-width: 350px;
   margin-left: 10%;
   height: 95%;
   margin-top: 5px;
-  justify-content: center;
 }
 
 .indexlist {
-  // background-color: blue;
   overflow: scroll;
   height: 90vh;
 }
@@ -20,14 +18,13 @@
 .index-item {
   width: 30%;
   margin-left: 15%;
-  // margin-top: 50px;
   border-style: solid;
   border-width: 1px;
   border-color: #a5a5a5;
   background-color: white;
 
   // padding-bottom: 80px;
-  // margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .post-author {
