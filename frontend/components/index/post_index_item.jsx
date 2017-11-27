@@ -63,6 +63,10 @@ class PostIndexItem extends React.Component {
 
 export default PostIndexItem;
 
+//
+
+
+
 // <button
 //   onClick={()=> this.state.likePost(this.state.post.id)}
 // >
