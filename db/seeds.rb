@@ -30,7 +30,7 @@ user3 = User.create!( username: 'loner', email: 'loner@loner.com', password: 'lo
 
 
 p(user3.id)
-post1 = Post.create!(description: 'trees',img_url: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Nature-View.jpg', authorId: user3.id)
+post1 = Post.create!(description: 'trees',img_url: 'https://scontent-dft4-3.xx.fbcdn.net/v/t31.0-8/23847222_2043215069284996_5170136937060263513_o.jpg?oh=1555e0ac6f81986d0b57f6b2979aa863&oe=5A8A9ECB', authorId: user3.id)
 
 p(user3.id)
 post2 = Post.create!(description: 'pupper',img_url: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Yangmingshan_Taipei_Chinese_Pavilion.jpg', authorId: user3.id)
