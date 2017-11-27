@@ -17,16 +17,11 @@ class Greeting extends React.Component {
           <p className = "currentuser">
             Logged in as: {this.props.currentUser.username}
           </p>
-
-
-
-
-
           <button onClick={this.props.logout}
             className = 'logout'>
             Logout</button>
 
-        
+
 
         </div>
       )

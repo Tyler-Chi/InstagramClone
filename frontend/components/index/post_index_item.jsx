@@ -36,9 +36,6 @@ class PostIndexItem extends React.Component {
               {this.props.post.author.name}:
             </button>
 
-            <p className = 'post-author'>
-              {this.props.post.author.name}:
-            </p>
 
 
 
