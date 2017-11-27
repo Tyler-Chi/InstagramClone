@@ -7,8 +7,10 @@ import ProfileIndexItem from './profileindexitem';
 class ProfilePage extends React.Component {
 
   componentWillMount(){
-    this.props.getProfilePosts(this.props.match.params.username)
+    this.props.getProfilePosts(this.props.match.params.username);
   }
+
+  
 
 
   render() {
