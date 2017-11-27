@@ -26,3 +26,11 @@ export const deleteLikePost = id => (
     data: { id }
   })
 )
+
+export const getProfilePosts = (id) => (
+  $.ajax({
+    url: `api/posts/${id}`,
+    method: 'GET',
+    data: {id}
+  })
+)

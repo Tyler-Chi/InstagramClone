@@ -26,6 +26,8 @@ class Greeting extends React.Component {
             className = 'logout'>
             Logout</button>
 
+        
+
         </div>
       )
     } else if (this.props.formType === 'login'){

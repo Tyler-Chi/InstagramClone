@@ -31,6 +31,10 @@ class SideBar extends React.Component {
         Open Modal
       </button>
 
+      <button onClick={() => this.props.history.push('/user')}>
+        Profile Page
+      </button>
+
           <NewPostForm createPost={this.props.createPost} errors={this.props.errors}
           currentUser = {this.props.currentUser}
           onClose={()=> this.closeModal()}

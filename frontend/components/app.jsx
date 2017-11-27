@@ -12,6 +12,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import IndexContainer from "./index/indexcontainer";
 import SideBar from './sidebar/side_bar_container';
 
+// import ProfilePage from './profilepage/profilepage_container';
 
 
 const App = () => (
@@ -36,6 +37,10 @@ const App = () => (
       <ProtectedRoute path = '/dashboard' component={SideBar} />
 
       <ProtectedRoute exact path='/dashboard' component={IndexContainer} />
+    </div>
+
+    <div className = 'profileflex'>
+
     </div>
 
 
