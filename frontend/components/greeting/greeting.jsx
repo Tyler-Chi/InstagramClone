@@ -12,6 +12,9 @@ class Greeting extends React.Component {
     if (currentUser){
       return (
         <div className = "nav-container">
+
+
+
           <p className = "currentuser">
             Logged in as: {this.props.currentUser.username}
           </p>
