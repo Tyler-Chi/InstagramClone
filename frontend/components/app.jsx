@@ -40,6 +40,7 @@ const App = () => (
     </div>
 
     <div className = 'profileflex'>
+      <ProtectedRoute path = '/user/:username' component={SideBar} />
 
     </div>
 
