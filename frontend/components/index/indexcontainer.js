@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import { fetchPosts , likePost, unlikePost} from '../../actions/post_actions';
 
+import { withRouter } from 'react-router-dom';
+
 import Index from './index';
 
 const mapStateToProps = ({session , location , entities}) => {
@@ -26,7 +28,7 @@ const mapDispatchToProps = (dispatch, {location, history}) => {
   }
 }
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
-)(Index);
+)(Index));

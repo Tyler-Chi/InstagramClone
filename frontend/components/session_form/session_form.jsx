@@ -41,13 +41,13 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm(user);
+    this.props.processForm(user).then(() => this.props.history.push('/dashboard'));
   }
 
   handleDemo(e){
     e.preventDefault();
     const user = {username: 'testuser', password: 'testpassword'};
-    this.props.login(user);
+    this.props.login(user).then(() => this.props.history.push('/dashboard'));
   }
 
   navLink() {

@@ -6,7 +6,7 @@ class NewPostForm extends React.Component {
     this.state = {
       description: "a",
       img_url: "",
-      authorId: currentUser.id,
+      authorId: this.props.currentUser.id,
       option: "Please choose a file to upload.",
       message: ""
     }
