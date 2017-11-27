@@ -20,9 +20,11 @@ class Greeting extends React.Component {
 
 
 
-            <button onClick={this.props.logout}
-              className = 'logout'>
-              Logout</button>
+
+
+          <button onClick={this.props.logout}
+            className = 'logout'>
+            Logout</button>
 
         </div>
       )
