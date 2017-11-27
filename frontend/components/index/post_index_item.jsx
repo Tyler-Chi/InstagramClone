@@ -5,11 +5,21 @@ class PostIndexItem extends React.Component {
   constructor(props){
     super(props);
     this.state = this.props;
-    console.log('post state',this.state);
+
+    this.handleClick = this.handleClick.bind(this);
   }
 
 
+  handleClick(e){
+    if (this.state.post.lbcu){
+      this.state.unlikePost(this.state.post.id)
+      // .then(()=>this.setState({lbcu:false}))
+    } else {
+      this.state.likePost(this.state.post.id)
+      // .then(()=>this.setState({lbcu: true}))
+    }
 
+  }
 
   render(){
 
@@ -32,21 +42,17 @@ class PostIndexItem extends React.Component {
             ></img>
 
           <button
-            onClick={()=> this.state.likePost(this.state.post.id)}
-          >
-            Like Post
+            onClick={this.handleClick}
+            >
+            BORK
           </button>
 
 
-          <button
-            onClick={()=> this.state.unlikePost(this.state.post.id)}
-          >
-            Unlike Post
-          </button>
 
           <p>
             {this.state.post.lbcu}
             hello world
+            {this.state.post.likes}
           </p>
 
         </li>
@@ -56,3 +62,16 @@ class PostIndexItem extends React.Component {
 }
 
 export default PostIndexItem;
+
+// <button
+//   onClick={()=> this.state.likePost(this.state.post.id)}
+// >
+//   Like Post
+// </button>
+//
+//
+// <button
+//   onClick={()=> this.state.unlikePost(this.state.post.id)}
+// >
+//   Unlike Post
+// </button>
