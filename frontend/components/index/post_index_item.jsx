@@ -19,6 +19,9 @@ const PostIndexItem = ({post, likePost, unlikePost}) => {
           ></img>
 
 
+        <button onClick={()=> likePost(post.id)}>like post</button>
+        <button onClick ={()=> unlikePost(post.id)}>unlike post</button>
+
       </li>
 
 
