@@ -17,8 +17,8 @@ class Index extends React.Component {
     return (
 
     <div className='index-area'>
-      <div className='index-elements'>
-        <ul>
+
+        <ul className='indexlist'>
         {
         posts.map( post => (
           <PostIndexItem
@@ -31,7 +31,7 @@ class Index extends React.Component {
         )
         }
         </ul>
-      </div>
+
     </div>
     )
   }

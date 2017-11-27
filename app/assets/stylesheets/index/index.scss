@@ -1,5 +1,4 @@
 .index-area {
-  // opacity: 0.7;
 
   background-color: rgba(214,201,194,0.3);
   text-align: center;
@@ -9,31 +8,27 @@
   height: 95%;
   margin-top: 5px;
   justify-content: center;
+
 }
 
-.index-elements {
-  height: 95%;
+.indexlist {
+  background-color: blue;
   overflow-y: scroll;
-  opacity: 1.0;
-}
-
-.main-area {
   height: 100%;
 }
+
 
 .index-item {
-  height: 100%;
-  width: 70%;
+  width: 30%;
   margin-left: 15%;
-  margin-top: 50px;
+  // margin-top: 50px;
   border-style: solid;
   border-width: 1px;
   border-color: #a5a5a5;
   background-color: white;
-  // padding-left: 7px;
-  // padding-right: 7px;
-  padding-bottom: 80px;
-  margin-bottom: 70px;
+
+  // padding-bottom: 80px;
+  // margin-bottom: 70px;
 }
 
 .post-author {

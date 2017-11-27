@@ -24,7 +24,6 @@ class PostIndexItem extends React.Component {
   render(){
 
     return (
-      <div className = 'i'>
         <li className='index-item'>
           <div className = 'post-top-text-area'>
             <p className = 'post-author'>
@@ -56,26 +55,8 @@ class PostIndexItem extends React.Component {
           </p>
 
         </li>
-      </div>
     )
   }
 }
 
 export default PostIndexItem;
-
-//
-
-
-
-// <button
-//   onClick={()=> this.state.likePost(this.state.post.id)}
-// >
-//   Like Post
-// </button>
-//
-//
-// <button
-//   onClick={()=> this.state.unlikePost(this.state.post.id)}
-// >
-//   Unlike Post
-// </button>
