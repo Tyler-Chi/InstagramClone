@@ -1,18 +1,5 @@
 import React from 'react';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const PostIndexItem = ({post, likePost, unlikePost}) => {
 
 
