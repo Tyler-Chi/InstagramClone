@@ -33,3 +33,8 @@ export const unlikePost = id => dispatch => (
   PostApiUtil.deleteLikePost(id)
     .then(post => dispatch(receivePost(post)))
 )
+
+export const getProfilePosts = username => dispatch => (
+  PostApiUtil.getProfilePosts(username)
+    .then(posts => dispatch(receivePosts(posts)))
+)
