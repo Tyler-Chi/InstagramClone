@@ -29,7 +29,7 @@ export const likePost = id => dispatch => (
     .then(post => dispatch(receivePost(post)))
 )
 
-export const unlikePost = id => dispatch (
+export const unlikePost = id => dispatch => (
   PostApiUtil.deleteLikePost(id)
     .then(post => dispatch(receivePost(post)))
 )
