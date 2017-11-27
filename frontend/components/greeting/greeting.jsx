@@ -11,28 +11,20 @@ class Greeting extends React.Component {
 
     if (currentUser){
       return (
-
         <div className = "nav-container">
-
           <p className = "currentuser">
             Logged in as: {this.props.currentUser.username}
           </p>
           <button onClick={this.props.logout}
             className = 'logout'>
             Logout</button>
-
-
-
         </div>
       )
     } else if (this.props.formType === 'login'){
       return (
         <div className = "nav-container">
           <nav className="login-signup">
-
-
             <Link to="/signup" className = "li-su">Sign Up</Link>
-
           </nav>
         </div>
       )
