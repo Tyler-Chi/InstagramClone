@@ -4,18 +4,13 @@ class PostIndexItem extends React.Component {
 
   constructor(props){
     super(props);
-
     this.state = {
-      body: 'a',
+      body: '',
       errors:''
     }
-
     this.handleClick = this.handleClick.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-
-
 
   handleClick(e){
     if (this.props.post.lbcu){
@@ -29,9 +24,7 @@ class PostIndexItem extends React.Component {
   }
 
   handleSubmit(e){
-
     this.setState({errors: ''})
-
     e.preventDefault();
     const newComment = Object.assign({},this.state);
     const { createComment, post, currentUser } = this.props;
@@ -47,10 +40,6 @@ class PostIndexItem extends React.Component {
     } else {
       this.setState({errors: 'Comment body cannot be empty'})
     }
-
-
-
-
   }
 
   update(property){
@@ -79,64 +68,58 @@ class PostIndexItem extends React.Component {
 
     return (
         <li className='index-item'>
-          <div className = 'post-top-text-area'>
+          <div className = 'pii-top-area'>
+              <div className = 'post-top-text-area'>
+                <button
+                  className='post-author'
+                  onClick={() => this.props.history.push(`/user/${this.props.post.author.name}`)}
+                  >
+                  {this.props.post.author.name}:
+                </button>
+                <p className ='post-description'>
+                  {this.props.post.description}
+                </p>
+              </div>
 
-
-            <button
-              className='post-author'
-              onClick={() => this.props.history.push(`/user/${this.props.post.author.name}`)}
-              >
-              {this.props.post.author.name}:
-            </button>
-
-
-
-
-            <p className ='post-description'>
-              {this.props.post.description}
-            </p>
+              <img src={this.props.post.img_url}
+                  alt={this.props.post.description}
+                  className = 'item-image'
+                ></img>
           </div>
 
-          <img src={this.props.post.img_url}
-              alt={this.props.post.description}
-              className = 'item-image'
-            ></img>
+          <div className= 'pii-bottom-area'>
 
-          <button
-            className = 'pii-button'
-            onClick={this.handleClick}
-            >
-            {this.button()}
-          </button>
-
-
-
-          <p className = 'numlikes'>likes: {this.props.post.likes}</p>
-          <p className='numcomments'>comments: {this.props.post.numcomments}</p>
-          <p>view comments</p>
-          <p>add comment</p>
-
-
-          <form
-            className='new-comment-form'
-            onSubmit={this.handleSubmit}
-            >
-
-            <textarea
-              ref='body'
-              value= {this.state.body}
-              placeholder="comment..."
-              onChange={ this.update('body')}
-              className='body-input'
+            <button
+              className = 'pii-button'
+              onClick={this.handleClick}
               >
+              {this.button()}
+            </button>
 
-            </textarea>
+            <p className = 'numlikes'>likes: {this.props.post.likes}</p>
 
-            <button className='comment-submit'> submit comment</button>
-          </form>
 
-          <p>{this.state.errors}</p>
+            <button type='view'> view all comments({this.props.post.numcomments})</button>
 
+
+            <form
+              className='new-comment-form'
+              onSubmit={this.handleSubmit}
+              >
+              <textarea
+                ref='body'
+                value= {this.state.body}
+                placeholder="comment..."
+                onChange={ this.update('body')}
+                className='body-input'
+                >
+
+              </textarea>
+
+              <button className='comment-submit'> submit comment</button>
+            </form>
+            <p>{this.state.errors}</p>
+          </div>
         </li>
     )
   }
