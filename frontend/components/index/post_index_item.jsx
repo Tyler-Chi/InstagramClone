@@ -12,6 +12,7 @@ class PostIndexItem extends React.Component {
     }
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
 
@@ -29,7 +30,16 @@ class PostIndexItem extends React.Component {
   }
 
   handleSubmit(e){
+    e.preventDefault();
+    const newComment = Object.assign({},this.state);
 
+    this.props.createComment(newComment).then(
+      () => this.setState({
+        body: '',
+        writer_id: this.props.currentUser.id,
+        post_id: this.props.post.id
+      })
+    )
   }
 
   update(property){
@@ -111,7 +121,7 @@ class PostIndexItem extends React.Component {
 
             </textarea>
 
-
+            <button className='comment-submit'> submit comment</button>
           </form>
 
         </li>

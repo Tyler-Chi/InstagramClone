@@ -30,6 +30,8 @@ class Index extends React.Component {
             createPost={this.props.createPost}
             deletePost={this.props.deletePost}
             currentUser={this.props.currentUser}
+            createComment={this.props.createComment}
+            deleteComment={this.props.deleteComment}
           />
           )
         )
