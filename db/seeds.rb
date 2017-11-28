@@ -31,10 +31,10 @@ user3 = User.create!( username: 'loner', email: 'loner@loner.com', password: 'lo
 
 
 
-post1 = Post.create!(description: 'trees',img_url: 'https://scontent-dft4-3.xx.fbcdn.net/v/t31.0-8/23847222_2043215069284996_5170136937060263513_o.jpg?oh=1555e0ac6f81986d0b57f6b2979aa863&oe=5A8A9ECB', authorId: user3.id)
+post1 = Post.create!(description: 'testpost',img_url: 'https://scontent-dft4-3.xx.fbcdn.net/v/t31.0-8/23847222_2043215069284996_5170136937060263513_o.jpg?oh=1555e0ac6f81986d0b57f6b2979aa863&oe=5A8A9ECB', authorId: user1.id)
 
 
-post2 = Post.create!(description: 'pupper',img_url: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Yangmingshan_Taipei_Chinese_Pavilion.jpg', authorId: user3.id)
+post2 = Post.create!(description: 'pupper',img_url: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Yangmingshan_Taipei_Chinese_Pavilion.jpg', authorId: user1.id)
 
 
 post3 = Post.create!(description: 'stars',img_url: 'https://static.pexels.com/photos/33688/delicate-arch-night-stars-landscape.jpg', authorId: user3.id)
@@ -57,15 +57,9 @@ post11 = Post.create!(description: 'taipei101',img_url: 'https://upload.wikimedi
 post12 = Post.create!(description: 'sunset',img_url: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Burning_Yellow_Sunset.jpg', authorId: user2.id)
 
 
-
-
-
-
-
-
-
 follow1 = Follow.create!( follower_id: user1.id , followee_id: user2.id)
 follow2 = Follow.create!( follower_id: user1.id, followee_id: user3.id)
+
 
 
 
