@@ -1,3 +1,7 @@
 .profileflex {
   display: flex;
 }
+.profile-list {
+  overflow: scroll;
+  height: 95vh;
+}

@@ -57,11 +57,10 @@ class PostIndexItem extends React.Component {
 
 
 
-          <p>
-            {this.props.post.lbcu}
-            {this.props.post.likes}
-          </p>
-
+          <p>likes: {this.props.post.likes}</p>
+          <p>comments: {this.props.post.numcomments}</p>
+          <p>view comments</p>
+          <p>add comment</p>
         </li>
     )
   }

@@ -1,21 +1,22 @@
 .index-area {
 
-  background-color: rgba(214,201,194,0.3);
+  // background-color: rgba(214,201,194,0.3);
   text-align: center;
   width: 100%;
   min-width: 350px;
-  margin-left: 10%;
+  // margin-left: 10%;
   height: 95%;
-  margin-top: 5px;
+  // margin-top: 5px;
 }
 
 .indexlist {
   overflow: scroll;
-  height: 90vh;
+  height: 95vh;
 }
 
 
 .index-item {
+  margin-top: 15px;
   width: 30%;
   margin-left: 15%;
   border-style: solid;
@@ -23,7 +24,6 @@
   border-color: #a5a5a5;
   background-color: white;
 
-  // padding-bottom: 80px;
   margin-bottom: 70px;
 }
 

@@ -19,7 +19,7 @@ class ProfilePage extends React.Component {
 
     const posts = Object.values(this.props.entities.posts)
     return (
-      <ul>
+      <ul className = 'profile-list'>
         {
         posts.map( post => (
           <ProfileIndexItem
