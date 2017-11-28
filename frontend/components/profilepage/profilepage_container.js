@@ -2,6 +2,8 @@ import { connect } from 'react-redux';
 
 import { fetchPosts, likePost, unlikePost ,getProfilePosts } from '../../actions/post_actions';
 
+import { fetchUserInfo } from '../../actions/user_actions';
+
 import { withRouter } from 'react-router-dom';
 
 import ProfilePage from './profilepage';
@@ -22,7 +24,8 @@ const mapDispatchToProps = (dispatch, {location, history}) => {
     fetchPosts: () => dispatch(fetchPosts()),
     likePost: id => dispatch(likePost(id)),
     unlikePost: id => dispatch(unlikePost(id)),
-    getProfilePosts: username => dispatch(getProfilePosts(username))
+    getProfilePosts: username => dispatch(getProfilePosts(username)),
+    fetchUserInfo: username => dispatch(fetchUserInfo(username))
   }
 
 
