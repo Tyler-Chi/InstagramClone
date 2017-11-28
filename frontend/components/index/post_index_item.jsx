@@ -5,9 +5,16 @@ class PostIndexItem extends React.Component {
   constructor(props){
     super(props);
 
+    this.state = {
+      body: 'a',
+      writer_id: this.props.currentUser.id,
+      post_id: this.props.post.id
+    }
 
     this.handleClick = this.handleClick.bind(this);
   }
+
+
 
 
   handleClick(e){
@@ -39,6 +46,7 @@ class PostIndexItem extends React.Component {
 
 
   render(){
+    console.log('pii props',this.props);
 
     return (
         <li className='index-item'>
@@ -79,9 +87,6 @@ class PostIndexItem extends React.Component {
           <p>view comments</p>
           <p>add comment</p>
 
-          <form>
-            
-          </form>
 
         </li>
     )

@@ -43,3 +43,8 @@ export const createComment = (id, body) => dispatch => (
   PostApiUtil.createComment(id,body)
     .then(post => dispatch(receivePost(post)))
 )
+
+export const deleteComment = id => dispatch => (
+  PostApiUtil.deleteComment(id)
+    .then(post => dispatch(receivePost(post)))
+)

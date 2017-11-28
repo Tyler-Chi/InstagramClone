@@ -2,7 +2,7 @@
 
 import { connect } from 'react-redux';
 
-import { fetchPosts , likePost, unlikePost} from '../../actions/post_actions';
+import { fetchPosts , likePost, unlikePost, createComment, deleteComment} from '../../actions/post_actions';
 
 import { withRouter } from 'react-router-dom';
 
@@ -24,7 +24,9 @@ const mapDispatchToProps = (dispatch, {location, history}) => {
   formType,
   fetchPosts: () => dispatch(fetchPosts()),
   likePost: id => dispatch(likePost(id)),
-  unlikePost: id => dispatch(unlikePost(id))
+  unlikePost: id => dispatch(unlikePost(id)),
+  createComment: (id,body) => dispatch(createComment(id,body)),
+  deleteComment: id => dispatch(deleteComment(id))
   }
 }
 
