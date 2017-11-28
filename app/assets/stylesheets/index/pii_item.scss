@@ -1,9 +1,14 @@
-.pii-button {
-  float: left;
+.likes-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.like-button {
   margin-left: 5%;
 }
 
 .numlikes {
-  float: right;
   margin-right: 5%;
 }

@@ -36,7 +36,8 @@ class PostIndexItem extends React.Component {
           writer_id: currentUser.id,
           post_id: post.id
         })
-      )
+      );
+
     } else {
       this.setState({errors: 'Comment body cannot be empty'})
     }
@@ -89,15 +90,16 @@ class PostIndexItem extends React.Component {
 
           <div className= 'pii-bottom-area'>
 
-            <button
-              className = 'pii-button'
-              onClick={this.handleClick}
-              >
-              {this.button()}
-            </button>
+            <div className='likes-area'>
+              <button
+                className = 'like-button'
+                onClick={this.handleClick}
+                >
+                {this.button()}
+              </button>
 
-            <p className = 'numlikes'>likes: {this.props.post.likes}</p>
-
+              <p className = 'numlikes'>likes: {this.props.post.likes}</p>
+            </div>
 
             <button type='view'> view all comments({this.props.post.numcomments})</button>
 
