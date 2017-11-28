@@ -55,7 +55,7 @@ class SideBar extends React.Component {
         className='explorer-button'
         onClick={()=> this.props.history.push('/explorer')}
         >
-        go to explorer
+        explorer
       </button>
 
 

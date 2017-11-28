@@ -7,8 +7,7 @@ import ProfileIndexItem from './profileindexitem';
 class ProfilePage extends React.Component {
 
   componentWillMount(){
-    console.log('profile props');
-    console.log(this.props);
+
     this.props.getProfilePosts(this.props.match.params.username);
   }
 
@@ -19,19 +18,29 @@ class ProfilePage extends React.Component {
 
     const posts = Object.values(this.props.entities.posts)
     return (
-      <ul className = 'profile-list'>
-        {
-        posts.map( post => (
-          <ProfileIndexItem
-            key={post.id}
-            post={post}
-            likePost={this.props.likePost}
-            unlikePost={this.props.unlikePost}
-          />
-        ))
-      }
 
-      </ul>
+      <div className = 'profile-area'>
+
+        <h1 className='person-area'> they call me area....person area</h1>
+
+        <ul className = 'profile-list'>
+          {
+            posts.map( post => (
+              <ProfileIndexItem
+                key={post.id}
+                post={post}
+                likePost={this.props.likePost}
+                unlikePost={this.props.unlikePost}
+                />
+            ))
+          }
+
+        </ul>
+
+      </div>
+
+
+
     )
   }
 }
