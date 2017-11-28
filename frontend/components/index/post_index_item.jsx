@@ -30,12 +30,13 @@ class PostIndexItem extends React.Component {
   handleSubmit(e){
     e.preventDefault();
     const newComment = Object.assign({},this.state);
+    const { createComment, post, currentUser } = this.props;
 
-    this.props.createComment(this.props.post.id,this.state.body).then(
+    createComment(post.id,this.state.body).then(
       () => this.setState({
         body: '',
-        writer_id: this.props.currentUser.id,
-        post_id: this.props.post.id
+        writer_id: currentUser.id,
+        post_id: post.id
       })
     )
   }
