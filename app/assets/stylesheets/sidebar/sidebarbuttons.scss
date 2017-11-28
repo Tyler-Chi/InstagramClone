@@ -1,0 +1,45 @@
+.open-modal {
+  border-radius: 50%;
+ width: 55px;
+ height: 55px;
+ background-color: white;
+ position: relative;
+
+ margin-left: 20%;
+ margin-top: 150px;
+ border-style: solid;
+ border-color: black;
+ border-width: 2px;
+ transition: 0.5s;
+}
+
+.open-modal:hover {
+  background-color: #70a6ff;
+  transition: 0.5s;
+}
+
+
+.open-modal::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: black;
+  height: 9px;
+  margin-top: -5px;
+  top: 50%;
+  left: 8px;
+  right: 8px;
+  z-index: 9;
+}
+.open-modal::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: black;
+  width: 9px;
+  margin-left: -5px;
+  left: 50%;
+  top: 8px;
+  bottom: 8px;
+  z-index: 9;
+}

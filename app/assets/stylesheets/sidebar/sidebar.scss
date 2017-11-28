@@ -12,7 +12,7 @@
 }
 
 .sidebar-container {
-  background: #353535;
+  background: #848484;
   height: 1000px;
   border-right-style: solid;
   border-width: 1px;
@@ -21,47 +21,6 @@
   min-width: 100px;
   flex-direction: column;
 }
-
-.open-modal {
-  border-radius: 50%;
- width: 55px;
- height: 55px;
- background-color: white;
- position: relative;
-
- margin-left: 20%;
- margin-top: 150px;
- border-style: solid;
- border-color: black;
- border-width: 1px;
-
-}
-
-.open-modal::after {
-  content: " ";
-  position: absolute;
-  display: block;
-  background-color: #063582;
-  height: 10px;
-  margin-top: -5px;
-  top: 50%;
-  left: 8px;
-  right: 8px;
-  z-index: 9;
-}
-.open-modal::before {
-  content: " ";
-  position: absolute;
-  display: block;
-  background-color: #063582;
-  width: 10px;
-  margin-left: -5px;
-  left: 50%;
-  top: 8px;
-  bottom: 8px;
-  z-index: 9;
-}
-
 
 .photobox {
   z-index: 4;
