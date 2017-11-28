@@ -15,6 +15,10 @@ class Api::CommentsController < ApplicationController
   end
 
   def create
+
+      puts('the create params are...')
+      puts(params)
+
       @comment = Comment.new
       @comment.writer_id = current_user.id
       @comment.post_id = params[:id]

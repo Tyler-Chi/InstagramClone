@@ -34,3 +34,11 @@ export const getProfilePosts = (username) => (
     data: {username}
   })
 )
+
+export const createComment = (id,body) => (
+  $.ajax({
+    url: 'api/comments',
+    method: 'POST',
+    data: {id, body}
+  })
+)

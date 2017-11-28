@@ -16,6 +16,9 @@ import ProfilePage from './profilepage/profilepage_container';
 // import ProfilePage from './profilepage/profilepage_container';
 
 
+
+
+
 const App = () => (
   <div className = 'main'>
 
@@ -32,7 +35,12 @@ const App = () => (
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
 
+      <AuthRoute path="/" component={SessionFormContainer} />
+
+
     </Switch>
+
+
 
     <div className = 'mainflex'>
       <ProtectedRoute path = '/dashboard' component={SideBar} />
