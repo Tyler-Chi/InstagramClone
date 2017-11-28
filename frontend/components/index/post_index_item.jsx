@@ -25,8 +25,10 @@ class PostIndexItem extends React.Component {
   }
 
   handleSubmit(e){
+      e.preventDefault();
+    console.log('submit called');
     this.setState({errors: ''})
-    e.preventDefault();
+
     const newComment = Object.assign({},this.state);
     const { createComment, post, currentUser } = this.props;
 
@@ -81,7 +83,7 @@ class PostIndexItem extends React.Component {
 
 
   render(){
-    console.log('pii props',this.props);
+
 
     return (
         <li className='index-item'>
@@ -156,7 +158,8 @@ class PostIndexItem extends React.Component {
               className='new-comment-form'
               onSubmit={this.handleSubmit}
               >
-              <textarea
+              <input
+                type='text'
                 ref='body'
                 value= {this.state.body}
                 placeholder="comment..."
@@ -164,9 +167,16 @@ class PostIndexItem extends React.Component {
                 className='body-input'
                 >
 
-              </textarea>
+              </input>
 
-              <button className='comment-submit'> submit comment</button>
+              <button
+                type="submit"
+                className='comment-submit'> submit comment
+              </button>
+
+
+
+
             </form>
 
             <p>{this.state.errors}</p>
