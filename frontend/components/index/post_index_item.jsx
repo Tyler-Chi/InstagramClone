@@ -101,9 +101,34 @@ class PostIndexItem extends React.Component {
               <p className = 'numlikes'>likes: {this.props.post.likes}</p>
             </div>
 
-            <button type='view'> view all comments({this.props.post.numcomments})</button>
 
-            <p> placeholder for top comments </p>
+            <div className = 'top-comments'>              
+              <button type='view'
+                > view all comments({this.props.post.numcomments})</button>
+            </div>
+
+
+
+            <p className='top-comments'> placeholder for top comments </p>
+
+            <div className ="pii-comment-area">
+              {this.props.post.comments.map(comment => (
+
+                <div className='individual-comment'>
+                  <button
+                    className='comment-author'
+                    onClick={() => this.props.history.push(`/user/${comment.writer}`)}
+                    >
+                    {comment.writer}:
+                  </button>
+                  <p>{comment.body}</p>
+
+                </div>
+              )
+            )
+
+            }
+            </div>
 
 
             <form

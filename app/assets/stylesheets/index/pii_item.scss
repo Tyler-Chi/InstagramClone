@@ -12,3 +12,29 @@
 .numlikes {
   margin-right: 5%;
 }
+
+.view-comments {
+  text-align: center;
+}
+
+.top-comments {
+  text-align: center;
+}
+
+.pii-comment-area {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: blue;
+  margin: 0 auto;
+  padding: 5px;
+
+}
+
+.individual-comment {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
