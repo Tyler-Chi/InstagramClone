@@ -31,7 +31,8 @@ const App = () => (
     <Switch>
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
-
+      <AuthRoute path = "/"
+        component={SessionFormContainer} />
     </Switch>
 
     <div className = 'mainflex'>
