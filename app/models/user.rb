@@ -36,6 +36,11 @@ class User < ApplicationRecord
     foreign_key: :user_id,
     class_name: 'Like'
 
+  has_many :written_comments,
+    primary_key: :id,
+    foreign_key: :writer_id,
+    class_name: 'Comment'
+
   # PREFV
 
   def password=(password)
