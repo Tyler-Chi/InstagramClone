@@ -21,6 +21,22 @@ class PostIndexItem extends React.Component {
 
   }
 
+  button(){
+    if (this.props.post.lbcu){
+      return (
+        <div>
+          Unlike
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          Like
+        </div>
+      )
+    }
+  }
+
 
   render(){
 
@@ -50,17 +66,23 @@ class PostIndexItem extends React.Component {
             ></img>
 
           <button
+            className = 'pii-button'
             onClick={this.handleClick}
             >
-            THE BUTTON
+            {this.button()}
           </button>
 
 
 
-          <p>likes: {this.props.post.likes}</p>
-          <p>comments: {this.props.post.numcomments}</p>
+          <p className = 'numlikes'>likes: {this.props.post.likes}</p>
+          <p className='numcomments'>comments: {this.props.post.numcomments}</p>
           <p>view comments</p>
           <p>add comment</p>
+
+          <form>
+            
+          </form>
+
         </li>
     )
   }
