@@ -6,7 +6,8 @@ class PostIndexItem extends React.Component {
     super(props);
     this.state = {
       body: '',
-      errors:''
+      errors:'',
+      username: this.props.currentUser.username
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -43,13 +44,24 @@ class PostIndexItem extends React.Component {
     }
   }
 
+  deleteButton(comment){
+    if (this.props.currentUser.username === comment.writer){
+      return(
+        <button onClick={()=>deleteComment(comment.id)}
+          className='delete-comment-button'
+          >
+          x
+        </button>
+      )
+    }
+
+
+  }
+
   update(property){
     return e => this.setState({[property]: e.target.value    })
   }
 
-  // deleteButton(){
-  //
-  // }
 
   button(){
     if (this.props.post.lbcu){
@@ -69,7 +81,7 @@ class PostIndexItem extends React.Component {
 
 
   render(){
-    console.log('pii post props',this.props.post);
+    console.log('pii props',this.props);
 
     return (
         <li className='index-item'>
@@ -115,16 +127,24 @@ class PostIndexItem extends React.Component {
             <div className ="pii-comment-area">
               {this.props.post.comments.map(comment => (
 
-                <div className='individual-comment'>
-                  <button
-                    className='comment-author'
-                    onClick={() => this.props.history.push(`/user/${comment.writer}`)}
-                    >
-                    {comment.writer}:
-                  </button>
-                  <p>{comment.body}</p>
+                <div className="comment-and-delete"
+                  key={comment.id}>
+                  <div className='individual-comment'
 
+                    >
+                    <button
+                      className='comment-author'
+                      onClick={() => this.props.history.push(`/user/${comment.writer}`)}
+                      >
+                      {comment.writer}:
+                    </button>
+                    <p>{comment.body}</p>
+                  </div>
+
+
+                  {this.deleteButton(comment)}
                 </div>
+
               )
             )
 

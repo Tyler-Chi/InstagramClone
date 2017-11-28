@@ -35,6 +35,12 @@
   margin-bottom: 10px;
 }
 
+.comment-and-delete {
+  display: flex;
+  flex: 1 0 auto;
+  
+}
+
 .individual-comment {
   width: 100%;
   padding-top: 2px;
@@ -42,6 +48,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1 0 auto;
+}
+
+.delete-comment-button {
+  border: 1px solid black;
+  margin-right: 10px;
 }
 
 .new-comment-form {
