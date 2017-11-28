@@ -8,6 +8,8 @@
 
   height: 30px;
   overflow: hidden;
+
+  border-bottom: 1px solid black;
 }
 
 .currentuser {
@@ -24,6 +26,7 @@
   height: 100%;
   transition: 0.5s;
   padding-top: 10px;
+  border-color: black;
 }
 
 .li-su:hover {
@@ -42,6 +45,7 @@
   border-radius: 0px;
   height: 100%;
   transition: 0.5s;
+  border-color: black;
 }
 
 .logout:hover {
