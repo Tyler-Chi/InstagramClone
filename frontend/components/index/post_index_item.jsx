@@ -85,6 +85,13 @@ class PostIndexItem extends React.Component {
 
   render(){
 
+    if (!this.props.post){
+      return(
+        <div> LOADING </div>
+      )
+    } else {
+
+
 
     return (
         <li className='index-item'>
@@ -187,6 +194,7 @@ class PostIndexItem extends React.Component {
           </div>
         </li>
     )
+  }
   }
 }
 

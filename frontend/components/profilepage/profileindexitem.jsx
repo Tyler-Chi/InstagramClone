@@ -21,8 +21,6 @@ class ProfileIndexItem extends React.Component {
 
   render(){
 
-    console.log('profile props', this.props);
-
     return (
       <li className='index-item'>
         <div className = 'post-top-text-area'>

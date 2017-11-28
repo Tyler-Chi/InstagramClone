@@ -11,10 +11,20 @@ class Index extends React.Component {
 
 
   render() {
-    const posts = Object.values(this.props.entities.posts)
 
+
+    if (!this.props.entities.posts){
+      return(
+        <div> LOADING </div>
+      )
+    } else {
+
+      const posts = Object.values(this.props.entities.posts)
 
     return (
+
+
+
 
     <div className='index-area'>
 
@@ -41,7 +51,7 @@ class Index extends React.Component {
     </div>
     )
   }
-
+  }
 }
 
 export default Index;
