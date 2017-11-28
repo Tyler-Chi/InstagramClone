@@ -47,7 +47,7 @@ class SideBar extends React.Component {
       <button onClick={()=> this.openModal()}
         className ='open-modal'
       >
-      Open Modal
+  
       </button>
 
       <button onClick={() => this.props.history.push(`/user/${this.props.currentUser.username}`)}>
