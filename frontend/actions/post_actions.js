@@ -48,3 +48,7 @@ export const deleteComment = id => dispatch => (
   PostApiUtil.deleteComment(id)
     .then(post => dispatch(receivePost(post)))
 )
+
+export const fetchAllPosts = () => dispatch => (
+  PostApiUtil.fetchAllPosts().then(posts => dispatch(receivePosts(posts)))
+)

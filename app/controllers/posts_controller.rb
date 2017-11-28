@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
   def index
 
-
+    @posts = Post.all
+    render 'api/posts/index'
 
   end
 
@@ -17,6 +18,7 @@ class PostsController < ApplicationController
     puts(@user.id)
 
     @posts = @user.posts
+
 
   end
 

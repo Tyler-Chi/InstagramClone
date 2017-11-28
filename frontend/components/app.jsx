@@ -12,6 +12,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import IndexContainer from "./index/indexcontainer";
 import SideBar from './sidebar/side_bar_container';
 import ProfilePage from './profilepage/profilepage_container';
+import ExplorerContainer from "./explorer/explorer_container";
 
 // import ProfilePage from './profilepage/profilepage_container';
 
@@ -28,6 +29,18 @@ const Test = () => (
         <ProtectedRoute path = '/user/:username' component={SideBar} />
         <ProtectedRoute path = '/user/:username' component={ProfilePage} />
       </div>
+
+      <div className = 'explorerflex'>
+
+        <ProtectedRoute path = '/explorer' component={SideBar} />
+
+        <ProtectedRoute exact path='/explorer' component={ExplorerContainer} />
+
+      </div>
+
+
+
+
   </div>
 )
 

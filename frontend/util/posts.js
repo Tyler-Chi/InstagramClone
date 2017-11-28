@@ -50,3 +50,10 @@ export const deleteComment = id => (
     data: {id}
   })
 )
+
+export const fetchAllPosts = () => (
+  $.ajax({
+    url: '/posts',
+    method: 'GET'
+  })
+)
