@@ -38,3 +38,8 @@ export const getProfilePosts = username => dispatch => (
   PostApiUtil.getProfilePosts(username)
     .then(posts => dispatch(receivePosts(posts)))
 )
+
+export const createComment = (id, body) => dispatch => (
+  PostApiUtil.createComment(id,body)
+    .then(post => dispatch(receivePost(post)))
+)

@@ -7,3 +7,5 @@ json.lbcu !!@post.likes.find_by(user_id: current_user.id)
 json.author do
   json.name @post.author.username
 end
+
+json.comments @post.comments

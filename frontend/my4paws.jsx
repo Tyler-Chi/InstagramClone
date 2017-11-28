@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import {login,signup,logout} from './actions/session_actions';
 import configureStore from './store/store';
-import { fetchPosts , createPost , likePost , unlikePost ,getProfilePosts } from './actions/post_actions';
+import { fetchPosts , createPost , likePost , unlikePost ,getProfilePosts, createComment } from './actions/post_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.unlikePost = id => dispatch(unlikePost(id));
 
     window.getProfilePosts = username => dispatch(getProfilePosts(username))
+
+    window.createComment = (id,body) => dispatch(createComment(id,body))
 
   ReactDOM.render(<Root store={store} />, root);
 });
