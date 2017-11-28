@@ -38,7 +38,5 @@ class Api::LikesController < ApplicationController
 
     render 'api/posts/show'
 
-
-
   end
 end

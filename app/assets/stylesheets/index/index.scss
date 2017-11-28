@@ -16,15 +16,17 @@
 
 
 .index-item {
-  margin-top: 15px;
-  width: 30%;
-  margin-left: 15%;
+  width: 60%;
   border-style: solid;
   border-width: 1px;
   border-color: #a5a5a5;
   background-color: white;
-
-  margin-bottom: 70px;
+  max-width: 500px;
+  min-width: 400px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  // margin-right: 40%
 }
 
 .post-author {

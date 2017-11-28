@@ -120,6 +120,7 @@ class PostIndexItem extends React.Component {
 
               <button className='comment-submit'> submit comment</button>
             </form>
+
             <p>{this.state.errors}</p>
           </div>
         </li>

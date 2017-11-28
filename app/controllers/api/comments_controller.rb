@@ -20,7 +20,7 @@ class Api::CommentsController < ApplicationController
       puts(params)
 
       @comment = Comment.new
-      
+
       @comment.writer_id = current_user.id
       @comment.post_id = params[:id]
       @comment.body = params[:body]
@@ -34,5 +34,11 @@ class Api::CommentsController < ApplicationController
   end
 
   def destroy
+    @comment = Comment.find_by_id(params[:id])
+    @comment.destroy
+    @post = @comment.parent_post
+
+    render 'api/posts/show'
+
   end
 end
