@@ -16,7 +16,6 @@ class Explorer extends React.Component {
     return(
       <div className = 'explorer-area'>
 
-        <h1> i am the explorer area</h1>
           <ul className='explorerlist'>
 
             {

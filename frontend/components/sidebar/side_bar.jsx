@@ -40,17 +40,23 @@ class SideBar extends React.Component {
       </button>
 
 
-          <NewPostForm createPost={this.props.createPost} errors={this.props.errors}
+        <NewPostForm createPost={this.props.createPost}
+          errors={this.props.errors}
           currentUser = {this.props.currentUser}
           onClose={()=> this.closeModal()}
           isOpen = {this.state.isModalOpen}
           >
-
           <button onClick = {() => this.closeModal()}>
             Close
           </button>
-
         </NewPostForm>
+
+      <button
+        className='explorer-button'
+        onClick={()=> this.props.history.push('/explorer')}
+        >
+        go to explorer
+      </button>
 
 
       </div>
