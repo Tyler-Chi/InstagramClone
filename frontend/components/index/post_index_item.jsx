@@ -6,7 +6,8 @@ class PostIndexItem extends React.Component {
     super(props);
 
     this.state = {
-      body: 'a'
+      body: 'a',
+      errors:''
     }
 
     this.handleClick = this.handleClick.bind(this);
@@ -28,17 +29,28 @@ class PostIndexItem extends React.Component {
   }
 
   handleSubmit(e){
+
+    this.setState({errors: ''})
+
     e.preventDefault();
     const newComment = Object.assign({},this.state);
     const { createComment, post, currentUser } = this.props;
 
-    createComment(post.id,this.state.body).then(
-      () => this.setState({
-        body: '',
-        writer_id: currentUser.id,
-        post_id: post.id
-      })
-    )
+    if (this.state.body !== ''){
+      createComment(post.id,this.state.body).then(
+        () => this.setState({
+          body: '',
+          writer_id: currentUser.id,
+          post_id: post.id
+        })
+      )
+    } else {
+      this.setState({errors: 'Comment body cannot be empty'})
+    }
+
+
+
+
   }
 
   update(property){
@@ -122,6 +134,8 @@ class PostIndexItem extends React.Component {
 
             <button className='comment-submit'> submit comment</button>
           </form>
+
+          <p>{this.state.errors}</p>
 
         </li>
     )
