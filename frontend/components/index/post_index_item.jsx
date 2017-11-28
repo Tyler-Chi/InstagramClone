@@ -47,6 +47,10 @@ class PostIndexItem extends React.Component {
     return e => this.setState({[property]: e.target.value    })
   }
 
+  // deleteButton(){
+  //
+  // }
+
   button(){
     if (this.props.post.lbcu){
       return (

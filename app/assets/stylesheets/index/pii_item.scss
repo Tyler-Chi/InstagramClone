@@ -32,6 +32,7 @@
   height: 70px;
   overflow: scroll;
   border: 1px solid black;
+  margin-bottom: 10px;
 }
 
 .individual-comment {
@@ -45,11 +46,16 @@
 
 .new-comment-form {
   margin-top: 10px;
-  border: 1px solid black;
+  // border: 1px solid black;
   margin: 0 auto;
   width: 88%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 
+}
+
+.body-input {
+  border: 1px solid black;
+  padding: 4px;
 }
