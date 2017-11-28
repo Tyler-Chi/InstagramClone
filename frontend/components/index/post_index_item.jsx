@@ -65,7 +65,7 @@ class PostIndexItem extends React.Component {
 
 
   render(){
-    console.log('pii props',this.props);
+    console.log('pii post props',this.props.post);
 
     return (
         <li className='index-item'>
@@ -102,6 +102,8 @@ class PostIndexItem extends React.Component {
             </div>
 
             <button type='view'> view all comments({this.props.post.numcomments})</button>
+
+            <p> placeholder for top comments </p>
 
 
             <form

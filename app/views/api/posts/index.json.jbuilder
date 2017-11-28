@@ -17,9 +17,27 @@
       json.name post.author.username
     end
 
-    json.comments post.comments
+    # json.comments post.comments.each do |comment|
+    #   json.set! comment.id do
+    #     json.body comment.body
+    #     json.writer comment.writer.username
+    #   end
+    #   end
+    # end
+
+    json.comments post.comments.each do |comment|
+
+        json.id comment.id
+        json.body comment.body
+        json.writer comment.writer.username
+
+    end
+
 
     json.numcomments post.comments.count
+
+
+
   end
 
 
