@@ -102,14 +102,11 @@ class PostIndexItem extends React.Component {
             </div>
 
 
-            <div className = 'top-comments'>              
+            <div className = 'top-comments'>
               <button type='view'
                 > view all comments({this.props.post.numcomments})</button>
             </div>
 
-
-
-            <p className='top-comments'> placeholder for top comments </p>
 
             <div className ="pii-comment-area">
               {this.props.post.comments.map(comment => (
