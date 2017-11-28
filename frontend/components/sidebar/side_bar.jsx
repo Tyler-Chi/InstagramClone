@@ -16,24 +16,7 @@ class SideBar extends React.Component {
     this.setState({ isModalOpen:false })
   }
 
-  // dashboardprofile(){
-  //   console.log('these are my props',this.props);
-  //
-  //   if (this.props.match.params.path === '/user/:username'){
-  //     return (
-  //       <div>
-  //         back to dashboard
-  //       </div>
-  //     );
-  //   } else {
-  //     return (
-  //     <button onClick={() => this.props.history.push(`/user/${this.props.currentUser.username}`)}>
-  //       Profile Page
-  //     </button>
-  //   )
-  //   }
-  //
-  // }
+
 
 
   render(){
@@ -53,7 +36,7 @@ class SideBar extends React.Component {
       <button
         className='profile-button'
         onClick={() => this.props.history.push(`/user/${this.props.currentUser.username}`)}>
-        Profile Page
+        Profile
       </button>
 
 
