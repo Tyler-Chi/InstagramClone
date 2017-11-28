@@ -20,6 +20,7 @@ class Api::CommentsController < ApplicationController
       puts(params)
 
       @comment = Comment.new
+      
       @comment.writer_id = current_user.id
       @comment.post_id = params[:id]
       @comment.body = params[:body]

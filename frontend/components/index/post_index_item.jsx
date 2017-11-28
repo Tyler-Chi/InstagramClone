@@ -6,9 +6,7 @@ class PostIndexItem extends React.Component {
     super(props);
 
     this.state = {
-      body: 'a',
-      writer_id: this.props.currentUser.id,
-      post_id: this.props.post.id
+      body: 'a'
     }
 
     this.handleClick = this.handleClick.bind(this);
@@ -33,7 +31,7 @@ class PostIndexItem extends React.Component {
     e.preventDefault();
     const newComment = Object.assign({},this.state);
 
-    this.props.createComment(newComment).then(
+    this.props.createComment(this.props.post.id,this.state.body).then(
       () => this.setState({
         body: '',
         writer_id: this.props.currentUser.id,
