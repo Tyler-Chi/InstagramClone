@@ -28,6 +28,14 @@ class PostIndexItem extends React.Component {
 
   }
 
+  handleSubmit(e){
+
+  }
+
+  update(property){
+    return e => this.setState({[property]: e.target.value    })
+  }
+
   button(){
     if (this.props.post.lbcu){
       return (
@@ -87,6 +95,24 @@ class PostIndexItem extends React.Component {
           <p>view comments</p>
           <p>add comment</p>
 
+
+          <form
+            className='new-comment-form'
+            onSubmit={this.handleSubmit}
+            >
+
+            <textarea
+              ref='body'
+              value= {this.state.body}
+              placeholder="comment..."
+              onChange={ this.update('body')}
+              className='body-input'
+              >
+
+            </textarea>
+
+
+          </form>
 
         </li>
     )
