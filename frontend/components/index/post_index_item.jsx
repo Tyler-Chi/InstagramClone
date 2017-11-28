@@ -60,6 +60,7 @@ class PostIndexItem extends React.Component {
 
   }
 
+
   update(property){
     return e => this.setState({[property]: e.target.value    })
   }
@@ -130,7 +131,9 @@ class PostIndexItem extends React.Component {
               {this.props.post.comments.map(comment => (
 
                 <div className="comment-and-delete"
-                  key={comment.id}>
+                  key={comment.id}
+                  id='comment-list'
+                  >
                   <div className='individual-comment'
 
                     >
@@ -165,6 +168,7 @@ class PostIndexItem extends React.Component {
                 placeholder="comment..."
                 onChange={ this.update('body')}
                 className='body-input'
+                id="comment-input"
                 >
 
               </input>
