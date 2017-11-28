@@ -16,7 +16,20 @@ import ProfilePage from './profilepage/profilepage_container';
 // import ProfilePage from './profilepage/profilepage_container';
 
 
+const Test = () => (
+  <div>
+      <div className = 'mainflex'>
+        <ProtectedRoute path = '/dashboard' component={SideBar} />
 
+        <ProtectedRoute exact path='/dashboard' component={IndexContainer} />
+      </div>
+
+      <div className = 'profileflex'>
+        <ProtectedRoute path = '/user/:username' component={SideBar} />
+        <ProtectedRoute path = '/user/:username' component={ProfilePage} />
+      </div>
+  </div>
+)
 
 
 const App = () => (
@@ -35,23 +48,13 @@ const App = () => (
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
 
-      <AuthRoute path="/" component={SessionFormContainer} />
+      <ProtectedRoute path="/" component={Test} />
 
 
     </Switch>
 
 
 
-    <div className = 'mainflex'>
-      <ProtectedRoute path = '/dashboard' component={SideBar} />
-
-      <ProtectedRoute exact path='/dashboard' component={IndexContainer} />
-    </div>
-
-    <div className = 'profileflex'>
-      <ProtectedRoute path = '/user/:username' component={SideBar} />
-      <ProtectedRoute path = '/user/:username' component={ProfilePage} />
-    </div>
 
 
     </div>
