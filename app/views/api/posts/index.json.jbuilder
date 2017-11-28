@@ -16,6 +16,10 @@
     json.author do
       json.name post.author.username
     end
+
+    json.comments post.comments
+
+    json.numcomments post.comments.count
   end
 
 
