@@ -4,13 +4,6 @@ import { Route, Redirect, withRouter } from 'react-router-dom';
 
 
 
-// !loggedIn ? (
-//   <Component {...props} />
-// ) : (
-//   <Redirect to="/" />
-// )
-
-
 
 const Auth = ({ component: Component, path, loggedIn }) => (
   <Route path={path} render={(props) => (

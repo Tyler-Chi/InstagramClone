@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :users, only: [:create]
     resources :likes
     resources :posts
-
+    resources :comments
   end
 
   resources :posts, :defaults => { :format => 'json' }
