@@ -20,8 +20,6 @@ import ExplorerContainer from "./explorer/explorer_container";
 const Test = () => (
   <div>
       <div className = 'mainflex'>
-        <ProtectedRoute path = '/dashboard' component={SideBar} />
-
         <ProtectedRoute exact path='/dashboard' component={IndexContainer} />
       </div>
 
@@ -31,8 +29,6 @@ const Test = () => (
       </div>
 
       <div className = 'explorerflex'>
-
-        <ProtectedRoute path = '/explorer' component={SideBar} />
 
         <ProtectedRoute exact path='/explorer' component={ExplorerContainer} />
 

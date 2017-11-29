@@ -7,7 +7,7 @@ class Greeting extends React.Component {
   logo(){
     return(
     <div className='n-logo-area'>
-      <p> Image-in </p>
+      <button className= 'logo'>Image-in</button>
     </div>
     )
   }
@@ -19,17 +19,21 @@ class Greeting extends React.Component {
       return (
         <div className='n-logged-in-buttons'>
           <button
+            className = 'my-page'
             onClick={() => this.props.history.push(`/user/${this.props.currentUser.username}`)}>
             My Page
           </button>
 
           <button
+            className = 'explorer-but'
             onClick={()=> this.props.history.push('/explorer')}
             >
             Explorer
           </button>
 
-          <button>
+          <button
+            className='le-add-photo'
+            >
             Add Photo
           </button>
 

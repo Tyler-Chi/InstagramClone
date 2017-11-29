@@ -22,15 +22,57 @@
 .n-topright {
     display: flex;
     flex-direction: row;
-    margin-right: 10px;
-    border: 2px solid black;
+    margin-right: 15px;
+    // border: 2px solid black;
 }
 
 .n-logged-in-buttons {
-  border: 2px solid black;
+
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  height: 100%;
+
+
+
 }
 
 .n-logo-area {
-  border: 2px solid black;
-  margin-left: 10px;
+  margin-left: 50px;
+  height: 100%;
+}
+
+.logo {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.n-logo-area:hover {
+  background-color: white;
+}
+
+
+.currentuser {
+  margin-right: 15px;
+}
+
+.my-page {
+  height: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.explorer-but {
+  height: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.le-add-photo {
+  height: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
