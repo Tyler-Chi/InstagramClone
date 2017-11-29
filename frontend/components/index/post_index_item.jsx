@@ -27,7 +27,7 @@ class PostIndexItem extends React.Component {
   handleSubmit(e){
       e.preventDefault();
     console.log('submit called');
-    this.setState({errors: ''})
+    this.setState({errors: '',body: ''})
 
     const newComment = Object.assign({},this.state);
     const { createComment, post, currentUser } = this.props;

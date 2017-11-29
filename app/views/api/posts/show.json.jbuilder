@@ -17,4 +17,7 @@ json.comments @post.comments.each do |comment|
 
 end
 
+json.numcomments @post.comments.count
+
+
 # json.comments @post.comments
