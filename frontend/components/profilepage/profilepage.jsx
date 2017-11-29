@@ -87,6 +87,11 @@ class ProfilePage extends React.Component {
 
             </div>
 
+            <div className = 'description-area'>
+              i am the description. look at me! im so cool. im such a cool person. im so popular n shit. i hope u get the gud vibez from this description.
+
+            </div>
+
 
 
           </div>

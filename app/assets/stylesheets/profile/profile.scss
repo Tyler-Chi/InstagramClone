@@ -14,7 +14,7 @@
   padding-top: 10px;
   width: 60%;
   margin: 0 auto;
-  background-color: white;
+  // background-color: white;
   height: 133.7px;
   display: flex;
   flex-direction: row;
@@ -26,6 +26,11 @@
   margin-right: 5%;
 }
 
+.viewed-username {
+  // margin-right: 30px;
+  font-size: x-large;
+}
+
 .profile-info {
   width: 75%;
 }
@@ -33,7 +38,9 @@
 .profile-info-top-area {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   border: 1px solid black;
+  height: 30%;
 }
 
 .profile-info-middle-area {
@@ -41,4 +48,10 @@
   flex-direction: row;
   border: 1px solid black;
   justify-content: space-around;
+  height: 20%;
+}
+
+.description-area {
+  border: 1px solid black;
+  height: 45%;
 }
