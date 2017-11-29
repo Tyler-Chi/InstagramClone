@@ -4,9 +4,12 @@ import { logout } from '../../actions/session_actions';
 
 import Greeting from './greeting';
 
+import { createPost } from '../../actions/post_actions';
+
+
 // import {withRouter} from 'react-router-dom';
 
-const mapStateToProps = ({ session , location }) => {
+const mapStateToProps = ({ errors,session , location }) => {
 
 
 
@@ -21,7 +24,8 @@ const mapDispatchToProps = (dispatch, {location, history}) => {
 
   return {
   logout: () => dispatch(logout()).then(()=>history.push('/login')),
-  formType
+  formType,
+  createPost: post => dispatch(createPost)
   }
 }
 

@@ -26,7 +26,7 @@ const Test = () => (
       </div>
 
       <div className = 'profileflex'>
-        <ProtectedRoute path = '/user/:username' component={SideBar} />
+
         <ProtectedRoute path = '/user/:username' component={ProfilePage} />
       </div>
 

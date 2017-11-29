@@ -20,7 +20,7 @@ class ProfilePage extends React.Component {
         <button
           onClick={ () => this.props.destroyFollow(viewed.id) }
           >
-          delete follow
+          unfollow
         </button>
       )
     } else {
@@ -28,7 +28,7 @@ class ProfilePage extends React.Component {
         <button
           onClick={ () => this.props.createFollow(viewed.id)}
           >
-          create follow
+          follow
         </button>
       )
     }

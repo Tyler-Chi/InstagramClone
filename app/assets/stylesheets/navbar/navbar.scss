@@ -2,65 +2,35 @@
   display: inline-flex;
   flex-direction: row;
   width: 100%;
-  justify-content: flex-end;
   align-items: center;
-  // background-color: #e5e5e5;
   background-color: #f1f1f1;
   height: 40px;
   overflow: hidden;
   box-shadow: 2px 2px 2px #c2c2c2;
   border-bottom: 1px solid #a5a5a5;
   z-index: 5;
-}
-
-.logo-button1 {
-  float: left;
-}
-
-.logo-button {
-  float: left;
-}
-
-
-.li-su {
-  padding-left: 8px;
-  padding-right: 8px;
-  border-left-style: solid;
-  border-width: 1px;
-  border-radius: 0px;
-  height: 100%;
   transition: 0.5s;
-  padding-top: 10px;
-  border-color: #a5a5a5;
+  justify-content: space-between;
 }
 
-.li-su:hover {
-  background-color: #383838;
-  color: white;
+.nav-container:hover{
+  height: 45px;
   transition: 0.5s;
 }
 
-.currentuser {
-  padding-left: 5px;
-  padding-right: 15px;
-  font-size: 18px;
+
+.n-topright {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    border: 2px solid black;
 }
 
-.logout {
-  padding-left: 15px;
-  padding-right: 15px;
-  border-left-style: solid;
-  border-width: 1px;
-  border-radius: 0px;
-  height: 100%;
-  transition: 0.5s;
-  border-color: #a5a5a5;
-  font-size: 18px;
-  font-weight: 100;
+.n-logged-in-buttons {
+  border: 2px solid black;
 }
 
-.logout:hover {
-  background-color: #383838;
-  color: white;
-  transition: 0.5s;
+.n-logo-area {
+  border: 2px solid black;
+  margin-left: 10px;
 }
