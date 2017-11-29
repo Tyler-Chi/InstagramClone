@@ -11,3 +11,13 @@ export const fetchUserInfo = username => dispatch => (
   UserUtil.fetchUserInfo(username)
   .then( user => dispatch(receiveUserInfo(user)))
 )
+
+export const createFollow = followee_id => dispatch => (
+  UserUtil.createFollow(followee_id)
+    .then( user => dispatch(receiveUserInfo(user)))
+)
+
+export const destroyFollow = (follower_id, followee_id) => dispatch =>(
+  UserUtil.destroyFollow(follower_id,followee_id)
+    .then( user => dispatch(receiveUserInfo(user)))
+)
