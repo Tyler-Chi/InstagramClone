@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.fetchAllPosts = () => dispatch(fetchAllPosts())
 
     window.createFollow = id => dispatch(createFollow(id))
-    
+
+    window.destroyFollow = id => dispatch(destroyFollow(id))
+
   ReactDOM.render(<Root store={store} />, root);
 });

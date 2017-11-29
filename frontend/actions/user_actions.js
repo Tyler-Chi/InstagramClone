@@ -17,7 +17,7 @@ export const createFollow = followee_id => dispatch => (
     .then( user => dispatch(receiveUserInfo(user)))
 )
 
-export const destroyFollow = (follower_id, followee_id) => dispatch =>(
-  UserUtil.destroyFollow(follower_id,followee_id)
+export const destroyFollow = (followee_id) => dispatch =>(
+  UserUtil.destroyFollow(followee_id)
     .then( user => dispatch(receiveUserInfo(user)))
 )

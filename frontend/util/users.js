@@ -14,9 +14,10 @@ export const createFollow = followee_id => (
   })
 )
 
-export const destroyFollow = (follower_id,followee_id)=>(
+export const destroyFollow = (followee_id)=>(
   $.ajax({
-    url: `follows/${follower_id}`,
-    data: {follower_id, followee_id}
+    url: `follows/${followee_id}`,
+    data: {followee_id},
+    method: 'DELETE'
   })
 )

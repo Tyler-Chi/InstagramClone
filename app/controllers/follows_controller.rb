@@ -29,5 +29,14 @@ class FollowsController < ApplicationController
   end
 
   def destroy
+    # right now i have access to followee_id in the data
+
+    @follow = Follow.find_by(follower_id: current_user.id, followee_id: params[:followee_id])
+
+    @follow.destroy
+
+    @user = @follow.followee
+    render 'users/show'
+
   end
 end
