@@ -8,6 +8,8 @@ import { withRouter } from 'react-router-dom';
 
 import ProfilePage from './profilepage';
 
+import { createFollow, destroyFollow } from '../../actions/user_actions';
+
 const mapStateToProps = ({session, location, entities}) => {
 
 
@@ -25,7 +27,9 @@ const mapDispatchToProps = (dispatch, {location, history}) => {
     likePost: id => dispatch(likePost(id)),
     unlikePost: id => dispatch(unlikePost(id)),
     getProfilePosts: username => dispatch(getProfilePosts(username)),
-    fetchUserInfo: username => dispatch(fetchUserInfo(username))
+    fetchUserInfo: username => dispatch(fetchUserInfo(username)),
+    createFollow: id => dispatch(createFollow(id)),
+    destroyFollow: id => dispatch(destroyFollow(id))
   }
 
 

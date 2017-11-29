@@ -32,6 +32,22 @@ class ProfilePage extends React.Component {
           <p>#Following: {viewed.numfollowing} </p>
           <p>Username: {viewed.username}</p>
 
+
+          <button
+            onClick={ () => this.props.createFollow(viewed.id)}
+            >
+            create follow
+          </button>
+
+          <button
+            onClick={ () => this.props.destroyFollow(viewed.id) }
+            >
+            delete follow
+          </button>
+
+
+
+
         </div>
 
         <ul className = 'profile-list'>
