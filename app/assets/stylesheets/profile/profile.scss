@@ -15,4 +15,30 @@
   width: 60%;
   margin: 0 auto;
   background-color: white;
+  height: 133.7px;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-image {
+  width: 20%;
+  background-color: red;
+  margin-right: 5%;
+}
+
+.profile-info {
+  width: 75%;
+}
+
+.profile-info-top-area {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.profile-info-middle-area {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  justify-content: space-around;
 }

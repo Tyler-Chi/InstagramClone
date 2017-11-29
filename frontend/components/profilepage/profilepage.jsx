@@ -15,6 +15,15 @@ class ProfilePage extends React.Component {
 
   followButton(){
     const { viewed } = this.props.entities;
+
+    if (viewed.id === this.props.currentUser.id){
+      return (
+        <div>
+
+        </div>
+      )
+    }
+
     if (viewed.fbcu){
       return (
         <button
@@ -41,21 +50,56 @@ class ProfilePage extends React.Component {
     const { viewed } = this.props.entities;
     const posts = Object.values(this.props.entities.posts)
 
+    console.log('current props',this.props);
 
     return (
 
       <div className = 'profile-area'>
 
         <div className = 'person-area'>
-          <p>{viewed.email}</p>
-          <p> id: {viewed.id} (placeholder, wont have this) </p>
-          <p>#Followers: {viewed.numfollowers} </p>
-          <p>#Following: {viewed.numfollowing} </p>
-          <p>Username: {viewed.username}</p>
 
-          {this.followButton()}
+          <div className ='profile-image'>
+            FUTURE IMAGE
+          </div>
+
+
+          <div className='profile-info'>
+
+            <div className = 'profile-info-top-area'>
+              <p className='viewed-username'>{viewed.username}</p>
+              {this.followButton()}
+            </div>
+
+            <div className='profile-info-middle-area'>
+
+              <p className='posts-count'>
+                {Object.keys(this.props.entities.posts).length} posts
+              </p>
+
+              <p className='followers-count'>
+                {viewed.numfollowers} followers
+              </p>
+
+              <p>
+                {viewed.numfollowing} following
+              </p>
+
+
+            </div>
+
+
+
+          </div>
+
+
+
+
+
 
         </div>
+
+
+
 
         <ul className = 'profile-list'>
           {
