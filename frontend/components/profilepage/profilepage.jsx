@@ -9,18 +9,39 @@ class ProfilePage extends React.Component {
   componentWillMount(){
     this.props.fetchUserInfo(this.props.match.params.username);
     this.props.getProfilePosts(this.props.match.params.username);
+
   }
 
+
+  followButton(){
+    const { viewed } = this.props.entities;
+    if (viewed.fbcu){
+      return (
+        <button
+          onClick={ () => this.props.destroyFollow(viewed.id) }
+          >
+          delete follow
+        </button>
+      )
+    } else {
+      return (
+        <button
+          onClick={ () => this.props.createFollow(viewed.id)}
+          >
+          create follow
+        </button>
+      )
+    }
+  }
 
 
 
   render() {
 
     const { viewed } = this.props.entities;
-
-    console.log('viewed',viewed);
-
     const posts = Object.values(this.props.entities.posts)
+
+
     return (
 
       <div className = 'profile-area'>
@@ -32,21 +53,7 @@ class ProfilePage extends React.Component {
           <p>#Following: {viewed.numfollowing} </p>
           <p>Username: {viewed.username}</p>
 
-
-          <button
-            onClick={ () => this.props.createFollow(viewed.id)}
-            >
-            create follow
-          </button>
-
-          <button
-            onClick={ () => this.props.destroyFollow(viewed.id) }
-            >
-            delete follow
-          </button>
-
-
-
+          {this.followButton()}
 
         </div>
 
