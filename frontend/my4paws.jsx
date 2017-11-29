@@ -5,6 +5,8 @@ import {login,signup,logout} from './actions/session_actions';
 import configureStore from './store/store';
 import { fetchPosts , createPost , likePost , unlikePost ,getProfilePosts, createComment , deleteComment , fetchAllPosts} from './actions/post_actions';
 
+import { createFollow, destroyFollow} from './actions/user_actions';
+
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
 
@@ -42,5 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.deleteComment = id => dispatch(deleteComment(id))
     window.fetchAllPosts = () => dispatch(fetchAllPosts())
 
+    window.createFollow = id => dispatch(createFollow(id))
+    
   ReactDOM.render(<Root store={store} />, root);
 });
