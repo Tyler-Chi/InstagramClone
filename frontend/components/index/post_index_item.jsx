@@ -90,7 +90,10 @@ class PostIndexItem extends React.Component {
         <div> LOADING </div>
       )
     } else {
-
+      let unsorted_comments = this.props.post.comments;
+      let sorted_comments = unsorted_comments.sort(function(a,b){
+        return (a.id - b.id)
+      });
 
 
     return (
@@ -135,7 +138,7 @@ class PostIndexItem extends React.Component {
 
 
             <div className ="pii-comment-area">
-              {this.props.post.comments.map(comment => (
+              {sorted_comments.map(comment => (
 
                 <div className="comment-and-delete"
                   key={comment.id}
