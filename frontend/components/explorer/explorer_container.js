@@ -6,11 +6,12 @@ import { withRouter } from 'react-router-dom';
 
 import Explorer from './explorer'
 
-const mapStateToProps = ({session , location , entities}) => {
+const mapStateToProps = ({session , location , entities, ui}) => {
 
   return {
     currentUser: session.currentUser,
-    entities
+    entities,
+    ui
   }
 }
 

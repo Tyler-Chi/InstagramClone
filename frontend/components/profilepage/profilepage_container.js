@@ -10,12 +10,13 @@ import ProfilePage from './profilepage';
 
 import { createFollow, destroyFollow } from '../../actions/user_actions';
 
-const mapStateToProps = ({session, location, entities}) => {
+const mapStateToProps = ({session, location, entities, ui}) => {
 
 
   return {
     currentUser: session.currentUser,
-    entities
+    entities,
+    ui
   }
 
 }

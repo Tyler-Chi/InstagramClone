@@ -13,6 +13,10 @@ class Explorer extends React.Component {
     console.log('explorer props',this.props);
     const posts = Object.values(this.props.entities.posts)
 
+    if (this.props.ui.loading){
+      return <p className='.loading-item'> loading </p>
+    } else {
+
     return(
       <div className = 'explorer-area'>
 
@@ -37,6 +41,7 @@ class Explorer extends React.Component {
       </div>
 
     )
+   }
   }
 
 

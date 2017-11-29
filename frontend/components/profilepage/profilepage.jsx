@@ -52,6 +52,10 @@ class ProfilePage extends React.Component {
 
     console.log('current props',this.props);
 
+    if (this.props.ui.loading){
+      return <p className='.loading-item'> loading </p>
+    } else {
+
     return (
 
       <div className = 'profile-area'>
@@ -125,6 +129,7 @@ class ProfilePage extends React.Component {
 
 
     )
+    }
   }
 }
 
