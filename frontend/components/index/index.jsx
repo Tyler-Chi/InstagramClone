@@ -21,6 +21,11 @@ class Index extends React.Component {
 
       const posts = Object.values(this.props.entities.posts)
 
+      const sorted_posts = posts.sort(function(a,b){
+        return (a.id - b.id)
+      });
+
+
     return (
 
 
@@ -30,7 +35,7 @@ class Index extends React.Component {
 
         <ul className='indexlist'>
         {
-        posts.map( post => (
+        sorted_posts.reverse().map( post => (
           <PostIndexItem
             key={post.id}
             post={post}
