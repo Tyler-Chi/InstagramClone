@@ -27,9 +27,9 @@ class SideBar extends React.Component {
     return (
       <div className="sidebar-container">
 
-      <button onClick={()=> this.openModal()}
-        className ='open-modal'
-      >
+        <button onClick={()=> this.openModal()}
+          className ='open-modal'
+        >
 
       </button>
 

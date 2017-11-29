@@ -4,18 +4,23 @@
   width: 100%;
   justify-content: flex-end;
   align-items: center;
-  background-color: #e5e5e5;
-
+  // background-color: #e5e5e5;
+  background-color: #f1f1f1;
   height: 40px;
   overflow: hidden;
-
-  border-bottom: 1px solid black;
+  box-shadow: 2px 2px 2px #c2c2c2;
+  border-bottom: 1px solid #a5a5a5;
+  z-index: 5;
 }
 
-.currentuser {
-  padding-left: 5px;
-  padding-right: 20px;
+.logo-button1 {
+  float: left;
 }
+
+.logo-button {
+  float: left;
+}
+
 
 .li-su {
   padding-left: 8px;
@@ -26,7 +31,7 @@
   height: 100%;
   transition: 0.5s;
   padding-top: 10px;
-  border-color: black;
+  border-color: #a5a5a5;
 }
 
 .li-su:hover {
@@ -35,18 +40,23 @@
   transition: 0.5s;
 }
 
-
+.currentuser {
+  padding-left: 5px;
+  padding-right: 15px;
+  font-size: 18px;
+}
 
 .logout {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   border-left-style: solid;
   border-width: 1px;
   border-radius: 0px;
   height: 100%;
   transition: 0.5s;
-  border-color: black;
-  font-size: 20px;
+  border-color: #a5a5a5;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .logout:hover {

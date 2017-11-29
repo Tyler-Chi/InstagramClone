@@ -4,6 +4,13 @@ import { withRouter } from 'react-router';
 
 class Greeting extends React.Component {
 
+  logo(){
+    return(
+      <Link to="dashboard" className='logo-button'>Image-in</Link>
+    )
+  }
+
+
 
   sessionLinks(){
 
@@ -13,7 +20,10 @@ class Greeting extends React.Component {
       return (
         <div className = "nav-container">
 
+          <div className='logo-button1'>
 
+            {this.logo()}
+          </div>
 
           <p className = "currentuser">
             Logged in as: {this.props.currentUser.username}
@@ -26,12 +36,14 @@ class Greeting extends React.Component {
     } else if (this.props.formType === 'login'){
       return (
         <div className = "nav-container">
+            {this.logo()}
             <Link to="/signup" className = "li-su">Sign Up</Link>
         </div>
       )
     } else if (this.props.formType === 'signup') {
       return (
         <div className = "nav-container">
+          {this.logo()}
           <Link to="/login" className = "li-su">Login</Link>
         </div>
       )

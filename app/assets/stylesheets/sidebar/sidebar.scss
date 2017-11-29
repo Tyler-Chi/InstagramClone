@@ -12,17 +12,18 @@
 }
 
 .sidebar-container {
-  // background: #4d0d13;
 
-  background: rgba(77,13,19,0.7);
+  background-color: #818fa5;
+  height: 550px;
 
-  height: 1000px;
-  border-right-style: solid;
-  border-width: 1px;
+  // border-right-style: solid;
+  // border-width: 1px;
   border-color: #333333;
-  width: 100px;
-  min-width: 100px;
+  height: 1000px;
+  width: 80px;
   flex-direction: column;
+  // margin-top: 70px;
+  // margin: 0 auto;
 }
 
 .photobox {
