@@ -1,8 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
+import NewPostForm from '../shared_components/new_post_form';
 
 class Greeting extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {isModalOpen: false}
+  }
+
+  openModal(){
+    this.setState({ isModalOpen: true})
+  }
+
+  closeModal(){
+    this.setState({ isModalOpen:false })
+  }
+
+
 
   logo(){
     return(
@@ -11,6 +27,8 @@ class Greeting extends React.Component {
     </div>
     )
   }
+
+
 
   // user should be able to add post, go to their own profile,
   // and go to the explorer
@@ -33,9 +51,23 @@ class Greeting extends React.Component {
 
           <button
             className='le-add-photo'
+            onClick={()=>this.openModal()}
             >
             Add Photo
           </button>
+
+          <NewPostForm
+          createPost={this.props.createPost}
+          errors={this.props.errors}
+          currentUser = {this.props.currentUser}
+          onClose={()=> this.closeModal()}
+          isOpen = {this.state.isModalOpen}
+          >
+          <button onClick = {() => this.closeModal()}>
+            Close
+          </button>
+        </NewPostForm>
+
 
 
         </div>

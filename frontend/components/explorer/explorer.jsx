@@ -10,16 +10,21 @@ class Explorer extends React.Component {
   }
 
   render(){
-    console.log('explorer props',this.props);
-    const posts = Object.values(this.props.entities.posts)
 
-    const sorted_posts = posts.sort(function(a,b){
-      return (a.id - b.id)
-    });
 
-    if (this.props.ui.loading){
+
+
+
+    if (this.props.ui.loading === true ){
       return <p className='.loading-item'> loading </p>
     } else {
+
+      console.log('explorer props',this.props);
+      const posts = Object.values(this.props.entities.posts)
+
+      const sorted_posts = posts.sort(function(a,b){
+        return (a.id - b.id)
+      });
 
     return(
       <div className = 'explorer-area'>
@@ -52,4 +57,4 @@ class Explorer extends React.Component {
 
 }
 
-export default Explorer;
+export default withRouter(Explorer);

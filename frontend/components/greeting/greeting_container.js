@@ -25,7 +25,7 @@ const mapDispatchToProps = (dispatch, {location, history}) => {
   return {
   logout: () => dispatch(logout()).then(()=>history.push('/login')),
   formType,
-  createPost: post => dispatch(createPost)
+  createPost: post => dispatch(createPost(post))
   }
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import NewPostForm from './new_post_form';
+
 
 class SideBar extends React.Component {
 

@@ -22,7 +22,7 @@ export const currentlyLoading = () => ({
 
 
 export const fetchPosts = () => dispatch => {
-  // dispatch(currentlyLoading());
+  dispatch(currentlyLoading());
   PostApiUtil.getPosts().then(posts => dispatch(receivePosts(posts)))
 }
 
@@ -45,24 +45,24 @@ export const unlikePost = id => dispatch => {
 }
 
 export const getProfilePosts = username => dispatch => {
-  // dispatch(currentlyLoading());
+  dispatch(currentlyLoading());
   PostApiUtil.getProfilePosts(username)
     .then(posts => dispatch(receivePosts(posts)))
 }
 
 export const createComment = (id, body) => dispatch => {
-  // dispatch(currentlyLoading());
+  dispatch(currentlyLoading());
   PostApiUtil.createComment(id,body)
     .then(post => dispatch(receivePost(post)))
 }
 
 export const deleteComment = id => dispatch => {
-  // dispatch(currentlyLoading());
+  dispatch(currentlyLoading());
   PostApiUtil.deleteComment(id)
     .then(post => dispatch(receivePost(post)))
 }
 
 export const fetchAllPosts = () => dispatch => {
-  // dispatch(currentlyLoading());
+  dispatch(currentlyLoading());
   PostApiUtil.fetchAllPosts().then(posts => dispatch(receivePosts(posts)))
 }
