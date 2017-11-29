@@ -27,9 +27,6 @@ class ProfileIndexItem extends React.Component {
           <p className = 'post-author'>
             {this.props.post.author.name}:
           </p>
-
-
-
           <p className ='post-description'>
             {this.props.post.description}
           </p>
