@@ -11,16 +11,23 @@ class Explorer extends React.Component {
 
   render(){
 
+  console.log('explorer props',this.props);
+
+  if (this.props.ui.loading){
+    return (
+      <p> LOADING </p>
+    )
+  }
 
 
 
 
-    if (this.props.ui.loading === true ){
-      return <p className='.loading-item'> loading </p>
-    } else {
 
-      console.log('explorer props',this.props);
+
+
       const posts = Object.values(this.props.entities.posts)
+
+      console.log('the posts are:',posts);
 
       const sorted_posts = posts.sort(function(a,b){
         return (a.id - b.id)
@@ -50,7 +57,7 @@ class Explorer extends React.Component {
       </div>
 
     )
-   }
+
   }
 
 

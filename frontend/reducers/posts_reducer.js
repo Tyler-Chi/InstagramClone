@@ -3,9 +3,13 @@ import merge from 'lodash/merge';
 
 export default( oldState = {}, action) => {
 
-  let newState = oldState;
 
-  // Object.freeze(oldState);
+  Object.freeze(oldState);
+  let newState = Object.assign({},oldState);
+
+
+
+
 
   switch (action.type) {
     case RECEIVE_POSTS:
@@ -15,11 +19,9 @@ export default( oldState = {}, action) => {
 
       console.log('old state',oldState);
 
-      const newPost = {[action.post.id]: action.post}
+      newState[action.post.id] = action.post
 
-      delete oldState[action.post.id];
-
-      return merge({},oldState, newPost)
+      return newState;
 
     default:
       return oldState;

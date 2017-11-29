@@ -84,11 +84,21 @@ class ExplorerIndexItem extends React.Component {
 
 
   render(){
+    // debugger
+
+    let sorted_comments = [];
+
+    if (this.props.post.comments)
+    {
 
     let unsorted_comments = this.props.post.comments;
-    let sorted_comments = unsorted_comments.sort(function(a,b){
+
+
+    sorted_comments = unsorted_comments.sort(function(a,b){
       return (a.id - b.id)
     });
+
+    }
 
     return (
         <li className='index-item'>
