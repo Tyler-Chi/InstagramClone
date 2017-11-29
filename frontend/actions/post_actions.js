@@ -21,9 +21,10 @@ export const currentlyLoading = () => ({
 })
 
 
-export const fetchPosts = () => dispatch => (
+export const fetchPosts = () => dispatch => {
+  dispatch(currentlyLoading());
   PostApiUtil.getPosts().then(posts => dispatch(receivePosts(posts)))
-)
+}
 
 export const createPost = post => dispatch => (
   PostApiUtil.createPost(post)
@@ -31,31 +32,37 @@ export const createPost = post => dispatch => (
   err => dispatch(receiveErrors(err.responseJSON)))
 )
 
-export const likePost = id => dispatch => (
+export const likePost = id => dispatch => {
+  dispatch(currentlyLoading());
   PostApiUtil.createLikePost(id)
     .then(post => dispatch(receivePost(post)))
-)
+}
 
-export const unlikePost = id => dispatch => (
+export const unlikePost = id => dispatch => {
+  dispatch(currentlyLoading());
   PostApiUtil.deleteLikePost(id)
     .then(post => dispatch(receivePost(post)))
-)
+}
 
-export const getProfilePosts = username => dispatch => (
+export const getProfilePosts = username => dispatch => {
+  dispatch(currentlyLoading());
   PostApiUtil.getProfilePosts(username)
     .then(posts => dispatch(receivePosts(posts)))
-)
+}
 
-export const createComment = (id, body) => dispatch => (
+export const createComment = (id, body) => dispatch => {
+  dispatch(currentlyLoading());
   PostApiUtil.createComment(id,body)
     .then(post => dispatch(receivePost(post)))
-)
+}
 
-export const deleteComment = id => dispatch => (
+export const deleteComment = id => dispatch => {
+  dispatch(currentlyLoading());
   PostApiUtil.deleteComment(id)
     .then(post => dispatch(receivePost(post)))
-)
+}
 
-export const fetchAllPosts = () => dispatch => (
+export const fetchAllPosts = () => dispatch => {
+  dispatch(currentlyLoading());
   PostApiUtil.fetchAllPosts().then(posts => dispatch(receivePosts(posts)))
-)
+}
