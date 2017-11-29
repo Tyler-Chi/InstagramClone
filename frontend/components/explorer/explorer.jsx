@@ -13,11 +13,11 @@ class Explorer extends React.Component {
 
   console.log('explorer props',this.props);
 
-  if (this.props.ui.loading){
-    return (
-      <p> LOADING </p>
-    )
-  }
+  // if (this.props.ui.loading){
+  //   return (
+  //     <p> LOADING </p>
+  //   )
+  // }
 
 
 
