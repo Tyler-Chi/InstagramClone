@@ -1,6 +1,7 @@
 import * as PostApiUtil from '../util/posts';
 export const RECEIVE_POSTS = 'RECEIVE_POSTS';
 export const RECEIVE_POST = 'RECEIVE_POST';
+export const CURRENTLY_LOADING = 'CURRENTLY_LOADING';
 import { clearErrors, receiveErrors } from './session_actions';
 
 
@@ -13,6 +14,12 @@ const receivePosts = posts => ({
   type: RECEIVE_POSTS,
   posts
 });
+
+
+export const currentlyLoading = () => ({
+  type: CURRENTLY_LOADING
+})
+
 
 export const fetchPosts = () => dispatch => (
   PostApiUtil.getPosts().then(posts => dispatch(receivePosts(posts)))
