@@ -13,6 +13,10 @@ class Explorer extends React.Component {
     console.log('explorer props',this.props);
     const posts = Object.values(this.props.entities.posts)
 
+    const sorted_posts = posts.sort(function(a,b){
+      return (a.id - b.id)
+    });
+
     if (this.props.ui.loading){
       return <p className='.loading-item'> loading </p>
     } else {
@@ -23,7 +27,7 @@ class Explorer extends React.Component {
           <ul className='explorerlist'>
 
             {
-              posts.map ( post => (
+              sorted_posts.reverse().map ( post => (
                 <ExplorerIndexItem
                   key={post.id}
                   post={post}
