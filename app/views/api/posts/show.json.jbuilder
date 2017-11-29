@@ -8,4 +8,13 @@ json.author do
   json.name @post.author.username
 end
 
-json.comments @post.comments
+
+json.comments @post.comments.each do |comment|
+
+    json.id comment.id
+    json.body comment.body
+    json.writer comment.writer.username
+
+end
+
+# json.comments @post.comments
