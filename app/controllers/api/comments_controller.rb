@@ -38,7 +38,7 @@ class Api::CommentsController < ApplicationController
     @comment.destroy
     @post = @comment.parent_post
 
-    Comment.destroy(params[:id])
+
 
     render 'api/posts/show'
 
