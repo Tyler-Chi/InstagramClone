@@ -66,8 +66,6 @@ class ExplorerIndexItem extends React.Component {
         </button>
       )
     }
-
-
   }
 
 
@@ -95,6 +93,8 @@ class ExplorerIndexItem extends React.Component {
 
   render(){
     // debugger
+
+    console.log('eii props',this.props);
 
     let sorted_comments = [];
 
@@ -132,8 +132,21 @@ class ExplorerIndexItem extends React.Component {
                 ></img>
             </button>
 
-            <ShowPost>
+            <ShowPost
               isOpen = {this.state.isModalOpen}
+              createComment = {this.props.createComment}
+              deleteComment = {this.props.deleteComment}
+              currentUser = {this.props.currentUser}
+              likePost = {this.props.likePost}
+              unlikePost = {this.props.unlikePost}
+              onClose={()=> this.closeModal()}
+              post={this.props.post}
+            >
+
+
+              <button onClick = {() => this.closeModal()}>
+                Close
+              </button>
 
             </ShowPost>
 

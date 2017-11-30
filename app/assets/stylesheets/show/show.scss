@@ -1,0 +1,51 @@
+.show-backdrop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show-modal-area {
+  background-color: white;
+  width: 80%;
+  height: 70%;
+  z-index: 9000;
+  margin: auto auto;
+  display: flex;
+}
+
+.show-modal-photo {
+  background-color: blue;
+  width: 65%;
+  height: 100%;
+}
+
+.modal-ui {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+}
+
+.modal-name-area {
+  height: 15%;
+  background-color: red;
+  width: 100%;
+}
+
+.modal-like-unlike {
+  height: 10%;
+  background-color: green;
+}
+
+.modal-comment-list {
+  height: 60%;
+  background-color: blue;
+  overflow-y: scroll;
+}

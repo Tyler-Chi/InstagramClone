@@ -58,6 +58,7 @@ export const createComment = (id, body) => dispatch => {
 
 export const deleteComment = id => dispatch => {
   dispatch(currentlyLoading());
+
   PostApiUtil.deleteComment(id)
     .then(post => dispatch(receivePost(post)))
 }
