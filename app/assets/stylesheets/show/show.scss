@@ -18,13 +18,18 @@
   z-index: 9000;
   margin: auto auto;
   display: flex;
+  box-shadow: 2px 2px 2px #c2c2c2;
 }
 
 .show-modal-photo {
-  background-color: blue;
+  background-color: black;
   width: 65%;
   height: 100%;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid black;
 }
 
 .modal-ui {
@@ -36,17 +41,74 @@
 
 .modal-name-area {
   height: 15%;
-  background-color: red;
+
   width: 100%;
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px #c2c2c2;
 }
 
 .modal-like-unlike {
   height: 10%;
-  background-color: green;
+  background-color: #70a6ff;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+
 }
+
+.show-modal-likes {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+  font-size: 16px;
+}
+
+
 
 .modal-comment-list {
   height: 60%;
-  background-color: blue;
+  background-color: #cacda1;
   overflow-y: scroll;
+}
+
+.new-comment-form {
+  height: 20%;
+  width: 100%;
+}
+
+.close-modal-button {
+  height: 5%;
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.show-input-area {
+  height: 66%;
+  width: 96%;
+  padding: 2%;
+}
+
+.show-comment-form {
+  height: 20%;
+}
+
+.show-submit {
+  border-radius: 0px;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.show-submit:hover{
+  background-color: blue;
+  transition: 0.5s;
 }

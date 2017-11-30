@@ -111,12 +111,23 @@ class ShowPost extends React.Component {
       <div className = 'show-backdrop'
         >
 
+
+
         <div className = 'show-modal-area'>
+
+
           <div className='show-modal-photo'>
             <img src={this.props.post.img_url}/>
           </div>
 
           <div className = 'modal-ui'>
+
+            <button onClick = {this.props.onClose}
+              className='close-modal-button'
+              >
+              X
+            </button>
+
             <div className = 'modal-name-area'>
               <p>{this.props.post.author.name}</p>
             </div>
@@ -126,6 +137,10 @@ class ShowPost extends React.Component {
               <button onClick={this.handleClick}>
                 {this.button()}
               </button>
+
+              <p className = 'show-modal-likes'>
+                Likes: {this.props.post.likes}
+              </p>
 
             </div>
 
@@ -150,10 +165,11 @@ class ShowPost extends React.Component {
             </div>
 
             <form
-              className='new-comment-form'
+              className='show-comment-form'
               onSubmit={this.handleSubmit}
               >
-              <input
+              <textarea
+                className = 'show-input-area'
                 type='text'
                 ref='body'
                 value= {this.state.body}
@@ -161,14 +177,16 @@ class ShowPost extends React.Component {
                 onChange={ this.update('body')}
                 >
 
-              </input>
+              </textarea>
 
-              <button type="submit"/>
+              <button
+                className='show-submit'
+                type="submit">
+                Submit Comment
+              </button>
             </form>
 
-            <button onClick = {this.props.onClose}>
-              CLOSE ME
-            </button>
+
 
           </div>
 
