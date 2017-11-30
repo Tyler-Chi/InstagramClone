@@ -6,8 +6,22 @@ class ProfileIndexItem extends React.Component {
   constructor(props){
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.likeUnlike = this.likeUnlike.bind(this);
     this.state = {
       isModalOpen: false
+    }
+  }
+
+  likeUnlike(){
+    if (this.props.post.lbcu){
+      return(
+        <p>Unlike</p>
+      )
+    } else {
+      return (
+        <p>Like</p>
+
+      )
     }
   }
 
@@ -34,36 +48,32 @@ class ProfileIndexItem extends React.Component {
 
 
     return (
-      <li className='profile-index-item'>
+      <li className='profile-index-item'
+        onClick={this.handleClick}
+        >
         <div className = 'profile-post-description'>
             {this.props.post.description}
         </div>
 
-        <button onClick={()=> this.openModal()}>
           <img src={this.props.post.img_url}
             alt={this.props.post.description}
             className = 'profile-item-image'
             ></img>
-        </button>
 
 
 
-        <button
-          onClick={this.handleClick}
+
+
+          <ShowPost
+            isOpen = {this.state.isModalOpen}
+            createComment = {this.props.createComment}
+            deleteComment = {this.props.deleteComment}
+            currentUser = {this.props.currentUser}
+            likePost = {this.props.likePost}
+            unlikePost = {this.props.unlikePost}
+            onClose={()=> this.closeModal()}
+            post={this.props.post}
           >
-          THE BUTTON
-        </button>
-
-        <ShowPost
-          isOpen = {this.state.isModalOpen}
-          createComment = {this.props.createComment}
-          deleteComment = {this.props.deleteComment}
-          currentUser = {this.props.currentUser}
-          likePost = {this.props.likePost}
-          unlikePost = {this.props.unlikePost}
-          onClose={()=> this.closeModal()}
-          post={this.props.post}
-        >
 
 
           <button onClick = {() => this.closeModal()}>
@@ -73,10 +83,15 @@ class ProfileIndexItem extends React.Component {
         </ShowPost>
 
 
+      <div className='pii-info'>
+
         <p>
-          {this.props.post.lbcu}
-          {this.props.post.likes}
+          Like Count: {this.props.post.likes}
         </p>
+
+
+      </div>
+
 
       </li>
     )

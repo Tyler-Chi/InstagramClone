@@ -7,7 +7,8 @@
   flex-wrap: wrap;
   overflow: scroll;
   height: 95vh;
-
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-area {
@@ -79,10 +80,16 @@
 
 .profile-index-item:hover {
   width: 32%;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 
 .profile-index-item:last-child{
   margin-bottom: 150px;
+}
+
+.pii-info {
+  height: 30px;
+  display: flex;
+  justify-content: center;
 }
