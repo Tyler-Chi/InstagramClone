@@ -132,6 +132,10 @@ class ExplorerIndexItem extends React.Component {
                 ></img>
             </button>
 
+            <ShowPost>
+              isOpen = {this.state.isModalOpen}
+
+            </ShowPost>
 
 
 
