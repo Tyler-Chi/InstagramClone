@@ -93,27 +93,33 @@ class PostIndexItem extends React.Component {
 
 
     return (
-        <li className='index-item'>
+        <li className='eii'>
           <div className = 'pii-top-area'>
-              <div className = 'post-top-text-area'>
+              <div className = 'e-post-top-text-area'>
                 <button
-                  className='post-author'
+                  className='e-post-author'
                   onClick={() => this.props.history.push(`/user/${this.props.post.author.name}`)}
                   >
                   {this.props.post.author.name}:
                 </button>
-                <p className ='post-description'>
+                <p className ='e-post-description'>
                   {this.props.post.description}
                 </p>
               </div>
 
+            <button
+              className = 'e-image-area'>
+
               <img src={this.props.post.img_url}
-                  alt={this.props.post.description}
-                  className = 'item-image'
+                alt={this.props.post.description}
+                className = 'item-image'
                 ></img>
+            </button>
+
+
           </div>
 
-          <div className= 'pii-bottom-area'>
+          <div className= 'eii-bottom-area'>
 
             <div className='likes-area'>
               <button
@@ -133,14 +139,14 @@ class PostIndexItem extends React.Component {
             </div>
 
 
-            <div className ="pii-comment-area">
+            <div className ="e-comment-area">
               {sorted_comments.map(comment => (
 
                 <div className="comment-and-delete"
                   key={comment.id}
                   id='comment-list'
                   >
-                  <div className='individual-comment'
+                  <div className='e-individual-comment'
 
                     >
                     <button
@@ -149,11 +155,12 @@ class PostIndexItem extends React.Component {
                       >
                       {comment.writer}:
                     </button>
-                    <p>{comment.body}</p>
+                    <p className = 'e-commeny-body'>{comment.body}</p>
                   </div>
 
-
-                  {this.deleteButton(comment)}
+                  <p className = 'e-comment-x'>
+                    {this.deleteButton(comment)}
+                  </p>
                 </div>
 
               )
