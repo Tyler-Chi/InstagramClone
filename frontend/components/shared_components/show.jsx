@@ -8,6 +8,7 @@ class ShowPost extends React.Component {
   constructor(props){
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       body: '',
       errors: '',
@@ -80,6 +81,11 @@ class ShowPost extends React.Component {
     }
   }
 
+  update(property){
+    return e => this.setState({[property]: e.target.value    })
+  }
+
+
   render(){
 
     let sorted_comments = [];
@@ -141,6 +147,23 @@ class ShowPost extends React.Component {
               }
 
             </div>
+
+            <form
+              className='new-comment-form'
+              onSubmit={this.handleSubmit}
+              >
+              <input
+                type='text'
+                ref='body'
+                value= {this.state.body}
+                placeholder="comment..."
+                onChange={ this.update('body')}
+                >
+
+              </input>
+
+              <button type="submit"/>
+            </form>
 
 
           </div>
