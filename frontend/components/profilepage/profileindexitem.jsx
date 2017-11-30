@@ -1,10 +1,14 @@
 import React from 'react';
+import ShowPost from '../shared_components/show';
 
 class ProfileIndexItem extends React.Component {
 
   constructor(props){
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      isModalOpen: false
+    }
   }
 
 
@@ -18,8 +22,17 @@ class ProfileIndexItem extends React.Component {
     }
 
   }
+  openModal(){
+    this.setState({ isModalOpen: true})
+  }
+
+  closeModal(){
+    this.setState({ isModalOpen:false })
+  }
 
   render(){
+
+    console.log('pii props',this.props);
 
     return (
       <li className='index-item'>
@@ -32,10 +45,14 @@ class ProfileIndexItem extends React.Component {
           </p>
         </div>
 
-        <img src={this.props.post.img_url}
+        <button onClick={()=> this.openModal()}>
+          <img src={this.props.post.img_url}
             alt={this.props.post.description}
             className = 'item-image'
-          ></img>
+            ></img>
+        </button>
+
+
 
         <button
           onClick={this.handleClick}
@@ -43,6 +60,23 @@ class ProfileIndexItem extends React.Component {
           THE BUTTON
         </button>
 
+        <ShowPost
+          isOpen = {this.state.isModalOpen}
+          createComment = {this.props.createComment}
+          deleteComment = {this.props.deleteComment}
+          currentUser = {this.props.currentUser}
+          likePost = {this.props.likePost}
+          unlikePost = {this.props.unlikePost}
+          onClose={()=> this.closeModal()}
+          post={this.props.post}
+        >
+
+
+          <button onClick = {() => this.closeModal()}>
+            Close
+          </button>
+
+        </ShowPost>
 
 
         <p>

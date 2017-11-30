@@ -30,7 +30,9 @@ const mapDispatchToProps = (dispatch, {location, history}) => {
     getProfilePosts: username => dispatch(getProfilePosts(username)),
     fetchUserInfo: username => dispatch(fetchUserInfo(username)),
     createFollow: id => dispatch(createFollow(id)),
-    destroyFollow: id => dispatch(destroyFollow(id))
+    destroyFollow: id => dispatch(destroyFollow(id)),
+    createComment: (id,body) => dispatch(createComment(id,body)),
+    deleteComment: id => dispatch(deleteComment(id))
   }
 
 

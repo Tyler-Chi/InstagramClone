@@ -108,7 +108,8 @@ class ShowPost extends React.Component {
 
 
     return (
-      <div className = 'show-backdrop'>
+      <div className = 'show-backdrop'
+        >
 
         <div className = 'show-modal-area'>
           <div className='show-modal-photo'>
@@ -165,6 +166,9 @@ class ShowPost extends React.Component {
               <button type="submit"/>
             </form>
 
+            <button onClick = {this.props.onClose}>
+              CLOSE ME
+            </button>
 
           </div>
 

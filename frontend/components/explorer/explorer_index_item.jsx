@@ -227,10 +227,6 @@ class ExplorerIndexItem extends React.Component {
                 type="submit"
                 className='comment-submit'> submit comment
               </button>
-
-
-
-
             </form>
 
             <p>{this.state.errors}</p>

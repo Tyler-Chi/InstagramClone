@@ -118,6 +118,9 @@ class ProfilePage extends React.Component {
                 post={post}
                 likePost={this.props.likePost}
                 unlikePost={this.props.unlikePost}
+                currentUser = {this.props.currentUser}
+                createComment = {this.props.createComment}
+                deleteComment = {this.props.deleteComment}
                 />
             ))
           }
