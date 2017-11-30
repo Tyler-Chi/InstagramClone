@@ -155,7 +155,7 @@ class ExplorerIndexItem extends React.Component {
 
           </div>
 
-          <div className= 'pii-bottom-area'>
+          <div className= 'eii-bottom-area'>
 
             <div className='likes-area'>
               <button
@@ -175,7 +175,7 @@ class ExplorerIndexItem extends React.Component {
             </div>
 
 
-            <div className ="pii-comment-area">
+            <div className ="e-comment-area">
               {
 
 
@@ -222,7 +222,7 @@ class ExplorerIndexItem extends React.Component {
 
 
             <form
-              className='new-comment-form'
+              className='e-new-comment-form'
               onSubmit={this.handleSubmit}
               >
               <input
@@ -231,7 +231,7 @@ class ExplorerIndexItem extends React.Component {
                 value= {this.state.body}
                 placeholder="comment..."
                 onChange={ this.update('body')}
-                className='body-input'
+                className='e-body-input'
                 id="comment-input"
                 >
 

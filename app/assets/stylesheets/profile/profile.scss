@@ -83,6 +83,11 @@
   transition: 1s;
 }
 
+.pii-bottom-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .profile-index-item:last-child{
   margin-bottom: 150px;
