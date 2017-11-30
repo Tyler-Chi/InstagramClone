@@ -8,7 +8,7 @@ import { withRouter } from 'react-router-dom';
 
 import Index from './index';
 
-const mapStateToProps = ({session , location , entities}) => {
+const mapStateToProps = ({ui, session , location , entities}) => {
 
   return {
     currentUser: session.currentUser,
