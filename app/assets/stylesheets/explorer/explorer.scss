@@ -1,15 +1,27 @@
 
 
+.explorerlist {
+  overflow: scroll;
+  height: 95vh;
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .eii {
-  width: 60%;
   border-style: solid;
   border-width: 1px;
   border-color: #a5a5a5;
   background-color: white;
-  max-width: 500px;
-  min-width: 400px;
   margin: 0 auto;
-  // height: 50vh;
+
+  width: 30%;
+  height: auto;
+}
+
+.item-image {
+  height: 300px;
+
 }
 
 .e-comment-area {
@@ -30,14 +42,7 @@
 }
 
 
-.explorerlist {
-  overflow: scroll;
-  height: 95vh;
-  margin-top: 3px;
-  display: flex;
-  flex-wrap: wrap;
 
-}
 
 .e-individual-comment {
   display: flex;
