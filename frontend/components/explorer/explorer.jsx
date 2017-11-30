@@ -5,7 +5,6 @@ import ExplorerIndexItem from './explorer_index_item';
 
 import { CSSTransitionGroup } from 'react-transition-group';
 
-import Loading from '../shared_components/loading';
 import OtherLoading from '../shared_components/other_loading';
 
 

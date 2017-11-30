@@ -17,7 +17,6 @@
 
 @import './reset/reset';
 
-
 @import 'index/index';
 @import 'colors.scss';
 
@@ -29,3 +28,8 @@
 @import 'sidebar/add-photo';
 @import 'sidebar/profile-button';
 @import 'index/pii_item';
+
+@import 'explorer/explorer';
+@import 'index/pii_item';
+@import 'profile/profile';
+@import 'show/show';

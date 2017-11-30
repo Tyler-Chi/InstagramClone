@@ -1,0 +1,1664 @@
+/* line 3, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.explorerlist {
+  overflow: scroll;
+  height: 95vh;
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 13, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.eii {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a5a5a5;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 420px;
+  height: auto;
+  box-shadow: 2px 2px 2px #716363;
+}
+
+/* line 25, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-post-author {
+  color: black;
+  margin-right: 5px;
+}
+
+/* line 30, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-post-description {
+  color: #444469;
+}
+
+/* line 34, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-post-top-text-area {
+  height: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 43, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-image-area {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  width: 90%;
+  border-radius: 0px;
+}
+
+/* line 55, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.item-image {
+  height: 300px;
+  width: auto;
+  max-width: 400px;
+}
+
+/* line 64, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-comment-area {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  padding: 5px;
+  height: 70px;
+  overflow: scroll;
+  border: 0.5px solid #e2e1e1;
+  border-style: inset;
+  margin-bottom: 10px;
+}
+
+/* line 81, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-comment-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 95%;
+}
+
+/* line 92, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-individual-comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+/* line 100, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.individual-comment:hover {
+  box-shadow: 1px 1px 1px #888888;
+}
+
+/* line 106, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-comment-author {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* line 112, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-comment-x {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* line 120, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.eii-bottom-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 126, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.delete-comment-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 3px;
+  width: 10px;
+}
+
+/* line 134, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.body-input {
+  margin-bottom: 5px;
+  width: 90%;
+}
+
+/* line 139, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-comment-body {
+  color: #303030;
+}
+
+/* line 143, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.comment-and-delete {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 148, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-new-comment-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  height: 100%;
+}
+
+/* line 156, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-body-input {
+  width: 88%;
+  background-color: #e3e3e3;
+  height: 100%;
+  padding: 3px;
+  padding-left: 4px;
+  border-radius: 5px;
+  border: 0.5px solid #a8a1a1;
+}
+
+/* line 166, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/explorer/explorer.scss */
+.e-body-input:focus {
+  box-shadow: 1px 1px 1px #888888;
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.index-area {
+  width: 100%;
+  min-width: 350px;
+  height: 95%;
+}
+
+/* line 12, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.indexlist {
+  overflow: scroll;
+  height: 95vh;
+}
+
+/* line 18, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.index-item {
+  width: 60%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a5a5a5;
+  background-color: white;
+  max-width: 500px;
+  min-width: 400px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+/* line 32, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.post-author {
+  color: #5342f4;
+  float: left;
+  margin-bottom: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* line 40, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.post-description {
+  font-style: italic;
+  float: left;
+  margin-bottom: 0px;
+}
+
+/* line 46, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.post-top-text-area {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-left: 2.5%;
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.likes-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+/* line 8, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.like-button {
+  margin-left: 5%;
+}
+
+/* line 12, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.numlikes {
+  margin-right: 5%;
+}
+
+/* line 16, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.view-comments {
+  text-align: center;
+}
+
+/* line 20, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.top-comments {
+  text-align: center;
+}
+
+/* line 40, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.individual-comment {
+  width: 100%;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+}
+
+/* line 51, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.new-comment-form {
+  margin-top: 10px;
+  margin: 0 auto;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* line 62, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.body-input {
+  border: 1px solid black;
+  padding: 4px;
+}
+/* line 2, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/main_area/main_area.scss */
+html, body, main {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 8, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/main_area/main_area.scss */
+.main {
+  font-family: "Trebuchet MS";
+  background-image: url("https://static.pexels.com/photos/167699/pexels-photo-167699.jpeg");
+  background-size: 100% 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+/* line 17, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/main_area/main_area.scss */
+.mainflex {
+  display: flex;
+}
+
+/* line 21, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/main_area/main_area.scss */
+.loading-item-wrapper {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 28, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/main_area/main_area.scss */
+.loading-item {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.nav-container {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  background-color: #f1f1f1;
+  height: 40px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px #c2c2c2;
+  border-bottom: 1px solid #a5a5a5;
+  z-index: 5;
+  transition: 0.5s;
+  justify-content: space-between;
+}
+
+/* line 16, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.nav-container:hover {
+  height: 45px;
+  transition: 0.5s;
+}
+
+/* line 22, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.n-topright {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15px;
+  height: 100%;
+  align-items: center;
+}
+
+/* line 31, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.n-logged-in-buttons {
+  margin-left: 50px;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* line 44, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.n-logo-area {
+  margin-left: 50px;
+  height: 100%;
+}
+
+/* line 49, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.logo {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 55, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.n-logo-area:hover {
+  background-color: black;
+  color: white;
+}
+
+/* line 61, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.currentuser {
+  margin-right: 15px;
+}
+
+/* line 65, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.my-page {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* line 73, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.my-page:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 79, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.explorer-but {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* line 87, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.explorer-but:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 93, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.le-add-photo {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* line 101, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.le-add-photo:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 107, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.logout {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* line 115, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.logout:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 121, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.dashboard-but {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* line 128, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.dashboard-but:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profileflex {
+  display: flex;
+}
+
+/* line 4, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profile-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 14, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profile-area {
+  width: 100%;
+}
+
+/* line 18, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.person-area {
+  padding-top: 10px;
+  width: 60%;
+  margin: 0 auto;
+  height: 133.7px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 28, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profile-image {
+  width: 20%;
+  background-color: red;
+  margin-right: 5%;
+}
+
+/* line 34, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.viewed-username {
+  font-size: x-large;
+}
+
+/* line 39, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profile-info {
+  width: 75%;
+}
+
+/* line 43, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profile-post-description {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 51, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profile-info-middle-area {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  justify-content: space-around;
+  height: 20%;
+  align-items: center;
+}
+
+/* line 60, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profile-item-image {
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+/* line 67, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.description-area {
+  border: 1px solid black;
+  height: 45%;
+}
+
+/* line 72, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profile-index-item {
+  width: 30%;
+  margin: auto auto;
+  background: black;
+  color: white;
+  margin-bottom: 25px;
+  transition: 0.5s;
+}
+
+/* line 81, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profile-index-item:hover {
+  width: 32%;
+  transition: 1s;
+}
+
+/* line 86, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.pii-bottom-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 92, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.profile-index-item:last-child {
+  margin-bottom: 150px;
+}
+
+/* line 96, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/profile/profile.scss */
+.pii-info {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/reset/reset.scss */
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+/* line 19, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/reset/reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 23, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/reset/reset.scss */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 29, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/reset/reset.scss */
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 39, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/reset/reset.scss */
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+/* line 6, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.login-form-box {
+  height: 300px;
+  opacity: 0.9;
+  padding: 20px;
+  width: 225px;
+  margin-top: 50px;
+  background-color: red;
+  margin-left: 10%;
+  transition: 5s;
+  background-image: url("images/darktrees.jpg");
+  background-size: 100% 100%;
+}
+
+/* line 22, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.form-header {
+  color: mygrey;
+  margin: 0;
+  opacity: 1.0;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-style: bottom;
+  padding-bottom: 5px;
+  text-align: center;
+  border-color: #919191;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 25px;
+  color: white;
+}
+
+/* line 40, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.pleaseblank {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* line 46, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
+
+/* line 54, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.login-form-box:hover {
+  opacity: 1.0;
+  transition: 1s;
+}
+
+/* line 59, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.login-input {
+  border: 1px solid black;
+  margin-top: 5px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 2.5px;
+  width: 95%;
+  background-color: #eaeaea;
+  /*background-color: grey;*/
+}
+
+/* line 73, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.pleaseblank {
+  color: white;
+}
+
+/* line 77, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.switchlink {
+  background-color: #4e5256;
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #f7f7f7;
+  border-radius: 5px;
+  margin-left: 7px;
+  color: white;
+}
+
+/* line 93, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.switchlink:hover {
+  background-color: #c42f0d;
+  transition: 0.5s;
+}
+
+/* line 99, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.errors {
+  font-size: 10px;
+  font-style: italic;
+  color: red;
+  text-align: center;
+}
+
+/* line 106, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.submit-button {
+  background-color: #4e5256;
+  border: 1px solid black;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 4px;
+  border-color: mygrey;
+  color: white;
+}
+
+/* line 116, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.submit-button:hover {
+  background-color: #c42f0d;
+  color: white;
+  transition: 0.5s;
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-backdrop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 14, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-modal-area {
+  background-color: white;
+  width: 80%;
+  height: 70%;
+  z-index: 9000;
+  margin: auto auto;
+  display: flex;
+}
+
+/* line 23, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-modal-photo {
+  background-color: black;
+  width: 65%;
+  height: 100%;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid black;
+}
+
+/* line 34, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.modal-ui {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+}
+
+/* line 41, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.modal-name-area {
+  height: 15%;
+  width: 100%;
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 51, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.modal-like-unlike {
+  height: 10%;
+  background-color: #70a6ff;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+/* line 62, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-modal-likes {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+  font-size: 16px;
+}
+
+/* line 71, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.modal-comment-list {
+  height: 60%;
+  background-color: #cacda1;
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+
+/* line 78, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.new-comment-form {
+  height: 20%;
+  width: 100%;
+}
+
+/* line 83, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.close-modal-button {
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* line 90, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-input-area {
+  height: 66%;
+  width: 96%;
+  padding: 2%;
+}
+
+/* line 96, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-comment-form {
+  height: 20%;
+}
+
+/* line 100, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-submit {
+  border-radius: 0px;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  transition: 0.5s;
+  width: 100%;
+}
+
+/* line 110, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-submit:hover {
+  background-color: blue;
+  transition: 0.5s;
+}
+
+/* line 115, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-comment-delete {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 120, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-comment-delete {
+  text-overflow: ellipsis;
+}
+
+/* line 124, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/show/show.scss */
+.show-delete-button-area {
+  margin-right: 20px;
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/add-photo.scss */
+.open-modal {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  position: relative;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  transition: 0.5s;
+}
+
+/* line 16, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/add-photo.scss */
+.open-modal:hover {
+  background-color: #70a6ff;
+  transition: 0.5s;
+}
+
+/* line 22, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/add-photo.scss */
+.open-modal::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: black;
+  height: 9px;
+  margin-top: -5px;
+  top: 50%;
+  left: 8px;
+  right: 8px;
+  z-index: 9;
+}
+
+/* line 34, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/add-photo.scss */
+.open-modal::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: black;
+  width: 9px;
+  margin-left: -5px;
+  left: 50%;
+  top: 8px;
+  bottom: 8px;
+  z-index: 9;
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/explorer-button.scss */
+.explorer-button {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  position: relative;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+/* line 20, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/explorer-button.scss */
+.explorer-button:hover {
+  background-color: #70a6ff;
+  transition: 0.5s;
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/profile-button.scss */
+.profile-button {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  position: relative;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+/* line 23, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/profile-button.scss */
+.profile-button:hover {
+  background-color: #70a6ff;
+  transition: 0.5s;
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.form-backdrop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 14, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.sidebar-container {
+  background-color: #818fa5;
+  height: 550px;
+  margin-top: 3px;
+  height: 550px;
+  width: 80px;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px #c2c2c2;
+}
+
+/* line 25, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.photobox {
+  z-index: 4;
+  justify-content: center;
+  width: 400px;
+  height: 523.145px;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 0.5px;
+}
+
+/* line 37, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.new-post-form {
+  height: 73.529%;
+  width: 92%;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 5px;
+  z-index: 3;
+  z-index: 4;
+}
+
+/* line 51, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.cloud-upload-button {
+  color: white;
+  background-color: #4e5256;
+  margin-top: 70%;
+}
+
+/* line 59, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.input-description {
+  position: relative;
+  background-color: #d8d8d8;
+  text-align: left;
+  padding-left: 2%;
+  top: 97px;
+  width: 96%;
+  height: 25%;
+  overflow-wrap: normal;
+  color: black;
+  font-family: Courier, Monaco, monospace;
+}
+
+/* line 72, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.new-post-submit-button {
+  top: 115px;
+  position: relative;
+  background-color: #4e5256;
+}
+
+/* line 78, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.close-button {
+  color: white;
+  margin-top: 10px;
+  margin-left: 60%;
+  margin-bottom: 5px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/reset/reset.scss */
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+/* line 19, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/reset/reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 23, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/reset/reset.scss */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 29, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/reset/reset.scss */
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 39, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/reset/reset.scss */
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.index-area {
+  width: 100%;
+  min-width: 350px;
+  height: 95%;
+}
+
+/* line 12, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.indexlist {
+  overflow: scroll;
+  height: 95vh;
+}
+
+/* line 18, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.index-item {
+  width: 60%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a5a5a5;
+  background-color: white;
+  max-width: 500px;
+  min-width: 400px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+/* line 32, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.post-author {
+  color: #5342f4;
+  float: left;
+  margin-bottom: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* line 40, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.post-description {
+  font-style: italic;
+  float: left;
+  margin-bottom: 0px;
+}
+
+/* line 46, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/index.scss */
+.post-top-text-area {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-left: 2.5%;
+}
+
+/* line 2, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/main_area/main_area.scss */
+html, body, main {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 8, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/main_area/main_area.scss */
+.main {
+  font-family: "Trebuchet MS";
+  background-image: url("https://static.pexels.com/photos/167699/pexels-photo-167699.jpeg");
+  background-size: 100% 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+/* line 17, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/main_area/main_area.scss */
+.mainflex {
+  display: flex;
+}
+
+/* line 21, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/main_area/main_area.scss */
+.loading-item-wrapper {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 28, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/main_area/main_area.scss */
+.loading-item {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.nav-container {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  background-color: #f1f1f1;
+  height: 40px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px #c2c2c2;
+  border-bottom: 1px solid #a5a5a5;
+  z-index: 5;
+  transition: 0.5s;
+  justify-content: space-between;
+}
+
+/* line 16, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.nav-container:hover {
+  height: 45px;
+  transition: 0.5s;
+}
+
+/* line 22, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.n-topright {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15px;
+  height: 100%;
+  align-items: center;
+}
+
+/* line 31, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.n-logged-in-buttons {
+  margin-left: 50px;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* line 44, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.n-logo-area {
+  margin-left: 50px;
+  height: 100%;
+}
+
+/* line 49, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.logo {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 55, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.n-logo-area:hover {
+  background-color: black;
+  color: white;
+}
+
+/* line 61, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.currentuser {
+  margin-right: 15px;
+}
+
+/* line 65, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.my-page {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* line 73, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.my-page:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 79, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.explorer-but {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* line 87, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.explorer-but:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 93, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.le-add-photo {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* line 101, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.le-add-photo:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 107, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.logout {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* line 115, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.logout:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 121, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.dashboard-but {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* line 128, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/navbar/navbar.scss */
+.dashboard-but:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 6, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.login-form-box {
+  height: 300px;
+  opacity: 0.9;
+  padding: 20px;
+  width: 225px;
+  margin-top: 50px;
+  background-color: red;
+  margin-left: 10%;
+  transition: 5s;
+  background-image: url("images/darktrees.jpg");
+  background-size: 100% 100%;
+}
+
+/* line 22, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.form-header {
+  color: mygrey;
+  margin: 0;
+  opacity: 1.0;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-style: bottom;
+  padding-bottom: 5px;
+  text-align: center;
+  border-color: #919191;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 25px;
+  color: white;
+}
+
+/* line 40, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.pleaseblank {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* line 46, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
+
+/* line 54, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.login-form-box:hover {
+  opacity: 1.0;
+  transition: 1s;
+}
+
+/* line 59, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.login-input {
+  border: 1px solid black;
+  margin-top: 5px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 2.5px;
+  width: 95%;
+  background-color: #eaeaea;
+  /*background-color: grey;*/
+}
+
+/* line 73, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.pleaseblank {
+  color: white;
+}
+
+/* line 77, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.switchlink {
+  background-color: #4e5256;
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #f7f7f7;
+  border-radius: 5px;
+  margin-left: 7px;
+  color: white;
+}
+
+/* line 93, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.switchlink:hover {
+  background-color: #c42f0d;
+  transition: 0.5s;
+}
+
+/* line 99, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.errors {
+  font-size: 10px;
+  font-style: italic;
+  color: red;
+  text-align: center;
+}
+
+/* line 106, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.submit-button {
+  background-color: #4e5256;
+  border: 1px solid black;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 4px;
+  border-color: mygrey;
+  color: white;
+}
+
+/* line 116, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/session/session.scss */
+.submit-button:hover {
+  background-color: #c42f0d;
+  color: white;
+  transition: 0.5s;
+}
+
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.form-backdrop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 14, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.sidebar-container {
+  background-color: #818fa5;
+  height: 550px;
+  margin-top: 3px;
+  height: 550px;
+  width: 80px;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px #c2c2c2;
+}
+
+/* line 25, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.photobox {
+  z-index: 4;
+  justify-content: center;
+  width: 400px;
+  height: 523.145px;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 0.5px;
+}
+
+/* line 37, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.new-post-form {
+  height: 73.529%;
+  width: 92%;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 5px;
+  z-index: 3;
+  z-index: 4;
+}
+
+/* line 51, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.cloud-upload-button {
+  color: white;
+  background-color: #4e5256;
+  margin-top: 70%;
+}
+
+/* line 59, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.input-description {
+  position: relative;
+  background-color: #d8d8d8;
+  text-align: left;
+  padding-left: 2%;
+  top: 97px;
+  width: 96%;
+  height: 25%;
+  overflow-wrap: normal;
+  color: black;
+  font-family: Courier, Monaco, monospace;
+}
+
+/* line 72, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.new-post-submit-button {
+  top: 115px;
+  position: relative;
+  background-color: #4e5256;
+}
+
+/* line 78, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/sidebar.scss */
+.close-button {
+  color: white;
+  margin-top: 10px;
+  margin-left: 60%;
+  margin-bottom: 5px;
+}
+
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/add-photo.scss */
+.open-modal {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  position: relative;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  transition: 0.5s;
+}
+
+/* line 16, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/add-photo.scss */
+.open-modal:hover {
+  background-color: #70a6ff;
+  transition: 0.5s;
+}
+
+/* line 22, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/add-photo.scss */
+.open-modal::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: black;
+  height: 9px;
+  margin-top: -5px;
+  top: 50%;
+  left: 8px;
+  right: 8px;
+  z-index: 9;
+}
+
+/* line 34, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/add-photo.scss */
+.open-modal::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: black;
+  width: 9px;
+  margin-left: -5px;
+  left: 50%;
+  top: 8px;
+  bottom: 8px;
+  z-index: 9;
+}
+
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/profile-button.scss */
+.profile-button {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  position: relative;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+/* line 23, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/sidebar/profile-button.scss */
+.profile-button:hover {
+  background-color: #70a6ff;
+  transition: 0.5s;
+}
+
+/* line 1, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.likes-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+/* line 8, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.like-button {
+  margin-left: 5%;
+}
+
+/* line 12, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.numlikes {
+  margin-right: 5%;
+}
+
+/* line 16, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.view-comments {
+  text-align: center;
+}
+
+/* line 20, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.top-comments {
+  text-align: center;
+}
+
+/* line 40, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.individual-comment {
+  width: 100%;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+}
+
+/* line 51, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.new-comment-form {
+  margin-top: 10px;
+  margin: 0 auto;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* line 62, /Users/mac/Desktop/Myfullstack/InstagramClone/app/assets/stylesheets/index/pii_item.scss */
+.body-input {
+  border: 1px solid black;
+  padding: 4px;
+}
