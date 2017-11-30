@@ -63,6 +63,7 @@ class ExplorerIndexItem extends React.Component {
           className='delete-comment-button'
           >
           x
+
         </button>
       )
     }
@@ -184,20 +185,33 @@ class ExplorerIndexItem extends React.Component {
                   key={comment.id}
                   id='comment-list'
                   >
-                  <div className='individual-comment'
 
-                    >
-                    <button
-                      className='comment-author'
-                      onClick={() => this.props.history.push(`/user/${comment.writer}`)}
-                      >
-                      {comment.writer}:
-                    </button>
-                    <p>{comment.body}</p>
+                  <div className='individual-comment'>
+
+                    <div className='e-comment-line'>
+                      <button
+                        className='e-comment-author'
+                        onClick={() => this.props.history.push(`/user/${comment.writer}`)}
+                        >
+                        {comment.writer}:
+                      </button>
+
+                      <p className='e-comment-body'>{comment.body}</p>
+                    </div>
+
+
+                    <p className='e-comment-x'>
+                      {this.deleteButton(comment)}
+                    </p>
+
+
                   </div>
 
 
-                  {this.deleteButton(comment)}
+
+
+
+
                 </div>
 
               )
@@ -225,7 +239,7 @@ class ExplorerIndexItem extends React.Component {
 
               <button
                 type="submit"
-                className='comment-submit'> submit comment
+                className='comment-submit'>
               </button>
             </form>
 

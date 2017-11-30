@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #dbdbdb;
+  background-color: #ece1d1;
   margin: 0 auto;
   padding: 5px;
   height: 70px;
@@ -38,7 +38,7 @@
 .comment-and-delete {
   display: flex;
   flex: 1 0 auto;
-  
+
 }
 
 .individual-comment {
@@ -50,10 +50,7 @@
   flex: 1 0 auto;
 }
 
-.delete-comment-button {
-  border: 1px solid black;
-  margin-right: 10px;
-}
+
 
 .new-comment-form {
   margin-top: 10px;
