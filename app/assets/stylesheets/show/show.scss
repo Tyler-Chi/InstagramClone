@@ -18,7 +18,6 @@
   z-index: 9000;
   margin: auto auto;
   display: flex;
-  box-shadow: 2px 2px 2px #c2c2c2;
 }
 
 .show-modal-photo {
@@ -47,7 +46,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 2px #c2c2c2;
 }
 
 .modal-like-unlike {
@@ -74,6 +72,7 @@
   height: 60%;
   background-color: #cacda1;
   overflow-y: scroll;
+  border: 1px solid black;
 }
 
 .new-comment-form {
@@ -111,4 +110,17 @@
 .show-submit:hover{
   background-color: blue;
   transition: 0.5s;
+}
+
+.show-comment-delete {
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-comment-delete {
+  text-overflow: ellipsis;
+}
+
+.show-delete-button-area {
+  margin-right: 20px;
 }

@@ -81,6 +81,8 @@ class ShowPost extends React.Component {
     }
   }
 
+
+
   update(property){
     return e => this.setState({[property]: e.target.value    })
   }
@@ -109,13 +111,13 @@ class ShowPost extends React.Component {
 
     return (
       <div className = 'show-backdrop'
+
         >
 
 
 
-        <div className = 'show-modal-area'>
-
-
+        <div
+          className = 'show-modal-area'>
           <div className='show-modal-photo'>
             <img src={this.props.post.img_url}/>
           </div>
