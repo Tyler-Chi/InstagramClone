@@ -56,6 +56,11 @@ post11 = Post.create!(description: 'taipei101',img_url: 'https://upload.wikimedi
 
 post12 = Post.create!(description: 'sunset',img_url: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Burning_Yellow_Sunset.jpg', authorId: user2.id)
 
+post13 = Post.create!(description: 'test?', img_url: 'http://res.cloudinary.com/deaiyjjnf/image/upload/v1512081460/orsdiipmsn7e8vargxhg.jpg', authorId: user2.id)
+
+
+post14 = Post.create!(description: 'test2?', img_url: 'http://res.cloudinary.com/deaiyjjnf/image/upload/a_ignore/v1512081460/orsdiipmsn7e8vargxhg.jpg', authorId: user2.id)
+
 
 follow1 = Follow.create!( follower_id: user1.id , followee_id: user2.id)
 follow2 = Follow.create!( follower_id: user1.id, followee_id: user3.id)
