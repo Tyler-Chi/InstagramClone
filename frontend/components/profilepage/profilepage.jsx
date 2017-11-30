@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter} from 'react-router';
 import ProfileIndexItem from './profileindexitem';
+import OtherLoading from '../shared_components/other_loading';
 
 
 class ProfilePage extends React.Component {
@@ -56,9 +57,7 @@ class ProfilePage extends React.Component {
 
     if (this.props.ui.loading){
       return (
-        <p>
-          HELLO WORLD
-        </p>
+        <OtherLoading />
       )
     } else {
 
