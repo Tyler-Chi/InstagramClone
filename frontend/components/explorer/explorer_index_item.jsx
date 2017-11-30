@@ -1,4 +1,5 @@
 import React from 'react';
+import ShowPost from '../shared_components/show';
 
 class ExplorerIndexItem extends React.Component {
 
@@ -7,10 +8,19 @@ class ExplorerIndexItem extends React.Component {
     this.state = {
       body: '',
       errors:'',
-      username: this.props.currentUser.username
+      username: this.props.currentUser.username,
+      isModalOpen: false
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  openModal(){
+    this.setState({ isModalOpen: true})
+  }
+
+  closeModal(){
+    this.setState({ isModalOpen:false })
   }
 
   handleClick(e){
@@ -115,10 +125,16 @@ class ExplorerIndexItem extends React.Component {
                 </p>
               </div>
 
+            <button onClick={()=>this.openModal()}>
               <img src={this.props.post.img_url}
-                  alt={this.props.post.description}
-                  className = 'item-image'
+                alt={this.props.post.description}
+                className = 'item-image'
                 ></img>
+            </button>
+
+
+
+
           </div>
 
           <div className= 'pii-bottom-area'>

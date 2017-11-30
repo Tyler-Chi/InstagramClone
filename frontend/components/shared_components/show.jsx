@@ -3,6 +3,7 @@ import React from 'react';
 class ShowPost extends React.Component {
   //in props, this needs createComment, deleteComment, createLike, deleteLike
   //also needs onClose
+  //MOST IMPORTANTLY, IT NEEDS THE POST LOL
 
   close(e){
     e.preventDefault()
@@ -31,8 +32,6 @@ class ShowPost extends React.Component {
 
 
   }
-
-
-
-
 }
+
+export default ShowPost;

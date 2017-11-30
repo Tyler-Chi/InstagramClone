@@ -13,18 +13,6 @@ class Explorer extends React.Component {
 
   console.log('explorer props',this.props);
 
-  // if (this.props.ui.loading){
-  //   return (
-  //     <p> LOADING </p>
-  //   )
-  // }
-
-
-
-
-
-
-
       const posts = Object.values(this.props.entities.posts)
 
       console.log('the posts are:',posts);
