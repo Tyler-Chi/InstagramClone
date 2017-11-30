@@ -5,10 +5,9 @@
 
   display: flex;
   flex-wrap: wrap;
-
-
   overflow: scroll;
   height: 95vh;
+
 }
 
 .profile-area {
@@ -40,14 +39,13 @@
   width: 75%;
 }
 
-.profile-info-top-area {
+.profile-post-description {
+  height: 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 1px solid black;
-  height: 30%;
+  justify-content: center;
   align-items: center;
 }
+
 
 .profile-info-middle-area {
   display: flex;
@@ -58,6 +56,13 @@
   align-items: center;
   }
 
+.profile-item-image {
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+
+
 .description-area {
   border: 1px solid black;
   height: 45%;
@@ -66,4 +71,18 @@
 .profile-index-item {
   width: 30%;
   margin: auto auto;
+  background: black;
+  color: white;
+  margin-bottom: 25px;
+  transition: 0.5s;
+}
+
+.profile-index-item:hover {
+  width: 32%;
+  transition: 0.5s;
+}
+
+
+.profile-index-item:last-child{
+  margin-bottom: 150px;
 }

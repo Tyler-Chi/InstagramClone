@@ -35,19 +35,14 @@ class ProfileIndexItem extends React.Component {
 
     return (
       <li className='profile-index-item'>
-        <div className = 'post-top-text-area'>
-          <p className = 'post-author'>
-            {this.props.post.author.name}:
-          </p>
-          <p className ='post-description'>
+        <div className = 'profile-post-description'>
             {this.props.post.description}
-          </p>
         </div>
 
         <button onClick={()=> this.openModal()}>
           <img src={this.props.post.img_url}
             alt={this.props.post.description}
-            className = 'item-image'
+            className = 'profile-item-image'
             ></img>
         </button>
 
