@@ -13,11 +13,7 @@ class Index extends React.Component {
   render() {
 
 
-    if (!this.props.entities.posts){
-      return(
-        <div> LOADING </div>
-      )
-    } else {
+
 
       const posts = Object.values(this.props.entities.posts)
 
@@ -55,7 +51,7 @@ class Index extends React.Component {
 
     </div>
     )
-  }
+  
   }
 }
 

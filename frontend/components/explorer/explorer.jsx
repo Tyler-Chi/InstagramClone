@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import { withRouter} from 'react-router';
 import ExplorerIndexItem from './explorer_index_item';
 
+import { CSSTransitionGroup } from 'react-transition-group';
+
+import Loading from '../shared_components/loading';
+import OtherLoading from '../shared_components/other_loading';
 
 
 class Explorer extends React.Component {
@@ -12,6 +16,13 @@ class Explorer extends React.Component {
   }
 
   render(){
+
+    if (this.props.ui.loading){
+      return (
+        <OtherLoading />
+
+      )
+    }
 
   console.log('explorer props',this.props);
 
@@ -28,6 +39,8 @@ class Explorer extends React.Component {
 
           <ul className='explorerlist'>
 
+
+
             {
               sorted_posts.reverse().map ( post => (
                 <ExplorerIndexItem
@@ -42,6 +55,8 @@ class Explorer extends React.Component {
                 />
               ))
             }
+
+
 
           </ul>
       </div>

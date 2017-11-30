@@ -18,8 +18,8 @@ export default (oldState = {}, action) => {
     case RECEIVE_POSTS:
       return Object.assign({},oldState,{loading:false})
 
-    case RECEIVE_POST:
-      return Object.assign({}, oldState, {loading: false})
+    // case RECEIVE_POST:
+    //   return Object.assign({}, oldState, {loading: false})
 
 
 

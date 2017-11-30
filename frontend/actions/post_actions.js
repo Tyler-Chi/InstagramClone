@@ -23,7 +23,11 @@ export const currentlyLoading = () => ({
 
 export const fetchPosts = () => dispatch => {
   dispatch(currentlyLoading());
+
   PostApiUtil.getPosts().then(posts => dispatch(receivePosts(posts)))
+
+
+
 }
 
 export const createPost = post => dispatch => (
@@ -51,13 +55,12 @@ export const getProfilePosts = username => dispatch => {
 }
 
 export const createComment = (id, body) => dispatch => {
-  dispatch(currentlyLoading());
+
   PostApiUtil.createComment(id,body)
     .then(post => dispatch(receivePost(post)))
 }
 
 export const deleteComment = id => dispatch => {
-  dispatch(currentlyLoading());
 
   PostApiUtil.deleteComment(id)
     .then(post => dispatch(receivePost(post)))

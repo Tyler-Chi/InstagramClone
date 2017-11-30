@@ -55,7 +55,11 @@ class ProfilePage extends React.Component {
     console.log('current props',this.props);
 
     if (this.props.ui.loading){
-      return <p className='.loading-item'> loading </p>
+      return (
+        <p>
+          HELLO WORLD
+        </p>
+      )
     } else {
 
     return (
