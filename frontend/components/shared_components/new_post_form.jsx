@@ -34,6 +34,7 @@ class NewPostForm extends React.Component {
         option: "Please choose a file to upload."
       })
     )
+    this.close();
   }
 
   update(property) {

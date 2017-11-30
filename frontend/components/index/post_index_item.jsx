@@ -85,11 +85,7 @@ class PostIndexItem extends React.Component {
 
   render(){
 
-    if (!this.props.post){
-      return(
-        <div> LOADING </div>
-      )
-    } else {
+
       let unsorted_comments = this.props.post.comments;
       let sorted_comments = unsorted_comments.sort(function(a,b){
         return (a.id - b.id)
@@ -198,7 +194,7 @@ class PostIndexItem extends React.Component {
         </li>
     )
   }
-  }
+
 }
 
 export default PostIndexItem;

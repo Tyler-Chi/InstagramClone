@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter} from 'react-router';
 import PostIndexItem from './post_index_item'
+import OtherLoading from '../shared_components/other_loading';
+
 
 class Index extends React.Component {
 
@@ -12,6 +14,11 @@ class Index extends React.Component {
 
   render() {
 
+      if (this.props.ui.loading){
+        return (
+          <OtherLoading />
+        )
+      }
 
 
 
@@ -51,7 +58,7 @@ class Index extends React.Component {
 
     </div>
     )
-  
+
   }
 }
 

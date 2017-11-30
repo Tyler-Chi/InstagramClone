@@ -59,7 +59,7 @@ class ProfilePage extends React.Component {
       return (
         <OtherLoading />
       )
-    } else {
+    }
 
     return (
 
@@ -137,7 +137,7 @@ class ProfilePage extends React.Component {
 
 
     )
-    }
+    
   }
 }
 

@@ -12,7 +12,8 @@ const mapStateToProps = ({ui, session , location , entities}) => {
 
   return {
     currentUser: session.currentUser,
-    entities
+    entities,
+    ui
   }
 }
 
