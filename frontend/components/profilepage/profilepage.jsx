@@ -47,7 +47,7 @@ class ProfilePage extends React.Component {
 
   render() {
 
-    debugger;
+    // debugger;
 
     const { viewed } = this.props.entities;
     const posts = Object.values(this.props.entities.posts)

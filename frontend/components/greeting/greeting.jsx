@@ -50,6 +50,13 @@ class Greeting extends React.Component {
           </button>
 
           <button
+            className = 'dashboard-but'
+            onClick={()=> this.props.history.push('/dashboard')}
+            >
+            Dashboard
+          </button>
+
+          <button
             className='le-add-photo'
             onClick={()=>this.openModal()}
             >
