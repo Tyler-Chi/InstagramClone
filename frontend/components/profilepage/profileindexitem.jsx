@@ -32,7 +32,6 @@ class ProfileIndexItem extends React.Component {
 
   render(){
 
-    console.log('pii props',this.props);
 
     return (
       <li className='index-item'>
