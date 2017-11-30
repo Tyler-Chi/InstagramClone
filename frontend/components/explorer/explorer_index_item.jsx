@@ -112,7 +112,7 @@ class ExplorerIndexItem extends React.Component {
     }
 
     return (
-        <li className='index-item'>
+        <li className='eii'>
           <div className = 'pii-top-area'>
               <div className = 'post-top-text-area'>
                 <button
@@ -186,7 +186,7 @@ class ExplorerIndexItem extends React.Component {
                   id='comment-list'
                   >
 
-                  <div className='individual-comment'>
+                  <div className='e-individual-comment'>
 
                     <div className='e-comment-line'>
                       <button
