@@ -19,6 +19,7 @@ class PostsController < ApplicationController
 
     @posts = @user.posts
 
+    render 'api/posts/index'
 
   end
 
