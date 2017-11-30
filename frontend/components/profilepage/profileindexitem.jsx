@@ -34,7 +34,7 @@ class ProfileIndexItem extends React.Component {
 
 
     return (
-      <li className='index-item'>
+      <li className='profile-index-item'>
         <div className = 'post-top-text-area'>
           <p className = 'post-author'>
             {this.props.post.author.name}:
