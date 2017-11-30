@@ -114,19 +114,21 @@ class ExplorerIndexItem extends React.Component {
     return (
         <li className='eii'>
           <div className = 'pii-top-area'>
-              <div className = 'post-top-text-area'>
+            <div className = 'e-post-top-text-area'>
                 <button
-                  className='post-author'
+                  className='e-post-author'
                   onClick={() => this.props.history.push(`/user/${this.props.post.author.name}`)}
                   >
                   {this.props.post.author.name}:
                 </button>
-                <p className ='post-description'>
+                <p className ='e-post-description'>
                   {this.props.post.description}
                 </p>
-              </div>
+            </div>
 
-            <button onClick={()=>this.openModal()}>
+            <button
+              className = 'e-image-area'
+              onClick={()=>this.openModal()}>
               <img src={this.props.post.img_url}
                 alt={this.props.post.description}
                 className = 'item-image'
@@ -198,12 +200,9 @@ class ExplorerIndexItem extends React.Component {
 
                       <p className='e-comment-body'>{comment.body}</p>
                     </div>
-
-
                     <p className='e-comment-x'>
                       {this.deleteButton(comment)}
                     </p>
-
 
                   </div>
 
