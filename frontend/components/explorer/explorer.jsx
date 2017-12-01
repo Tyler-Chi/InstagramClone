@@ -19,7 +19,6 @@ class Explorer extends React.Component {
     if (this.props.ui.loading){
       return (
         <OtherLoading />
-
       )
     }
 

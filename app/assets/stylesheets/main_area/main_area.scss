@@ -19,20 +19,21 @@ html, body, main {
 }
 
 .loading-item-wrapper {
-  margin-top: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  margin-left: 48vw;
+  margin-top: 30vh;
+
 }
 
 .loading-item {
-  border: 5px solid #f3f3f3 ;
-  border-top: 5px solid #3498db ;
+  border: 8px solid #f3f3f3 ;
+  border-top: 8px solid #3498db ;
   border-radius: 50%;
   margin: auto;
-  width: 30px;
-  height: 30px;
+  width: 90px;
+  height: 90px;
   animation: spin 1s linear infinite;
+
 }
 
 @keyframes spin {
