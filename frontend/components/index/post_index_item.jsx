@@ -188,7 +188,7 @@ class PostIndexItem extends React.Component {
 
               <button
                 type="submit"
-                className='comment-submit'> submit comment
+                className='comment-submit'>
               </button>
 
 

@@ -184,7 +184,7 @@ class ShowPost extends React.Component {
               <button
                 className='show-submit'
                 type="submit">
-                
+                Submit Comment
               </button>
             </form>
 
