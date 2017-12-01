@@ -177,7 +177,8 @@ class ShowPost extends React.Component {
               className='show-comment-form'
               onSubmit={this.handleSubmit}
               >
-              <textarea
+
+              <input
                 className = 'show-input-area'
                 type='text'
                 ref='body'
@@ -186,7 +187,7 @@ class ShowPost extends React.Component {
                 onChange={ this.update('body')}
                 >
 
-              </textarea>
+              </input>
 
               <button
                 className='show-submit'
