@@ -7,7 +7,7 @@ class Greeting extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = {isModalOpen: true}
+    this.state = {isModalOpen: false}
   }
 
   openModal(){

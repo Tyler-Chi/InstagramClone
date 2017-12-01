@@ -1,14 +1,17 @@
 .profileflex {
   display: flex;
 }
+
+
 .profile-list {
 
   display: flex;
   flex-wrap: wrap;
   overflow: scroll;
   height: 95vh;
-  align-items: center;
-  justify-content: center;
+  margin-top: 2px;
+  // align-items: center;
+  // justify-content: center;
 }
 
 .profile-area {
@@ -70,12 +73,15 @@
 }
 
 .profile-index-item {
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a5a5a5;
+  background-color: white;
+  margin-bottom: 20px;
   width: 30%;
-  margin: auto auto;
-  background: black;
-  color: white;
-  margin-bottom: 25px;
-  transition: 0.5s;
+  height: 300px;
+  box-shadow: 2px 2px 2px #716363;
 }
 
 .profile-index-item:hover {
