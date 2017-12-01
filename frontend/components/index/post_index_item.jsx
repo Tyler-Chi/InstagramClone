@@ -125,6 +125,12 @@ class PostIndexItem extends React.Component {
               onClick={()=>this.openModal()}
               >
 
+            <img src={this.props.post.img_url}
+              alt={this.props.post.description}
+              className = 'item-image'
+              ></img>
+          </button>
+
               <ShowPost
                 isOpen = {this.state.isModalOpen}
                 createComment = {this.props.createComment}
@@ -145,11 +151,6 @@ class PostIndexItem extends React.Component {
 
 
 
-              <img src={this.props.post.img_url}
-                alt={this.props.post.description}
-                className = 'item-image'
-                ></img>
-            </button>
 
 
           </div>

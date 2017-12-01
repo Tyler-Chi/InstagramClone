@@ -105,8 +105,6 @@ class ShowPost extends React.Component {
       return null;
     }
 
-    console.log('show props are...');
-    console.log(this.props);
 
 
     return (
