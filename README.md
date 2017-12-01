@@ -21,6 +21,8 @@ The Frontend of this web application utilized ReactJS/Redux, HTML and CSS.
 
 ## Features
 
+
+
 -Users can upload photos via cloudinary, and the url is stored in the web app's database. The photo will then appear at the top of that user's feed.
 
 -Users have three places to view pictures: the explorer, the dashboard, and their own profile pages. On the explorer, they can see all posts in the database. In the dashboard, users can view their own posts as well as the posts of the other users that they follow. In their own profile pages, they can only see their own profile pages.
@@ -28,6 +30,9 @@ The Frontend of this web application utilized ReactJS/Redux, HTML and CSS.
 -Users have profile pages, which are accessible by other users. On a profile page, users can follow each other, and view that user's posts.
 
 -Users are able to like and comment on each other's posts. Comments appear in chronological order. Users are also able to delete their own comments, but not the comments of other users.
+
+
+![alt-text](https://s3-us-west-1.amazonaws.com/bandstandapp-dev/tylersstuff/ImageInGif.gif)
 
 ## Code Example:
 
