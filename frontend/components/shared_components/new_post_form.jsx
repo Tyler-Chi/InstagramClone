@@ -59,7 +59,6 @@ class NewPostForm extends React.Component {
 
 
   render() {
-    console.log('myprops are:',this.props)
 
     if (this.props.isOpen === false ){
       return null;
@@ -88,7 +87,7 @@ class NewPostForm extends React.Component {
           <p>{this.state.message}</p>
 
 
-      
+
 
 
             <textarea

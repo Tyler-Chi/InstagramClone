@@ -53,7 +53,6 @@ class ProfilePage extends React.Component {
     const { viewed } = this.props.entities;
     const posts = Object.values(this.props.entities.posts)
 
-    console.log('current props',this.props);
 
     if (this.props.ui.loading){
       return (

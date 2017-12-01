@@ -131,7 +131,6 @@ class Greeting extends React.Component {
 
   render() {
 
-    console.log('navbar props',this.props);
 
     return(
       <div className='nav-container'>

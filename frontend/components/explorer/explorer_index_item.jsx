@@ -35,8 +35,7 @@ class ExplorerIndexItem extends React.Component {
   }
 
   handleSubmit(e){
-      e.preventDefault();
-    console.log('submit called');
+    e.preventDefault();
     this.setState({errors: '',body:''})
 
     const newComment = Object.assign({},this.state);
@@ -95,7 +94,6 @@ class ExplorerIndexItem extends React.Component {
   render(){
     // debugger
 
-    console.log('eii props',this.props);
 
     let sorted_comments = [];
 

@@ -22,11 +22,9 @@ class Explorer extends React.Component {
       )
     }
 
-  console.log('explorer props',this.props);
 
       const posts = Object.values(this.props.entities.posts)
 
-      console.log('the posts are:',posts);
 
       const sorted_posts = posts.sort(function(a,b){
         return (a.id - b.id)

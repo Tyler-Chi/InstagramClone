@@ -17,7 +17,6 @@ export default( oldState = {}, action) => {
 
     case RECEIVE_POST:
 
-      console.log('old state',oldState);
 
       newState[action.post.id] = action.post
 
