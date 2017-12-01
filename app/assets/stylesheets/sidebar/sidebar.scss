@@ -4,75 +4,74 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  z-index: 5000;
+  z-index: 2;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sidebar-container {
-
-  background-color: #818fa5;
-  height: 550px;
-  margin-top: 3px;
-  height: 550px;
-  width: 80px;
-  flex-direction: column;
-  box-shadow: 2px 2px 2px #c2c2c2;
-}
-
-.photobox {
-  z-index: 4;
-  justify-content: center;
-  width: 400px;
-  height: 523.145px;
-
-  background-color: white;
-  margin: 0 auto;
-  padding-top: 0.5px;
-}
 
 
 .new-post-form {
-  height: 73.529%;
-  width: 92%;
-  background-color: black;
-  color: white;
-  margin: 0 auto;
-  margin-top: 20px;
-  text-align: center;
-  padding-top: 5px;
-  z-index: 3;
   z-index: 4;
-
+  background-color: white;
+  width: 40%;
+  height: 60%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px 2px rgba(170 , 170, 170, .2);
+  border: 1px solid #8b8b8b;
 }
 
 .cloud-upload-button {
+  height: 70%;
+  width: 93%;
+  background-color: black;
   color: white;
-  background-color: #4e5256;
-  margin-top: 70%;
+  border-radius: 0px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
 }
-
-
 
 .input-description {
-  position: relative;
+  width: 88%;
+  height: 15%;
+  margin: 0 auto;
+  overflow: wrap;
+  font-family: Courier, Monaco, monospace;
   background-color: #d8d8d8;
   text-align: left;
-  padding-left: 2%;
-  top: 97px;
-  width: 96%;
-  height: 25%;
-  overflow-wrap: normal;
-  color: black;
-  font-family: Courier, Monaco, monospace;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  border-style: inset;
 }
 
+
+
 .new-post-submit-button {
-  top: 115px;
-  position: relative;
-  background-color: #4e5256;
+  margin: 0 auto;
+  width: 30%;
+  background-color: #186bbe;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  transition: 0.5s;
+  color: white;
+  border: 1px solid black;
+
+}
+
+.new-post-submit-button:hover {
+  background-color: green;
+  color: white;
+  transition: 0.5s;
 }
 
 .close-button {

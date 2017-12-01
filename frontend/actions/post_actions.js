@@ -27,7 +27,7 @@ export const fetchPosts = () => dispatch => {
   setTimeout(function(){
     PostApiUtil.getPosts().then(posts => dispatch(receivePosts(posts)))
   },
-  5000
+  1000
   )
 
 

@@ -4,7 +4,7 @@ class NewPostForm extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      description: "a",
+      description: "",
       img_url: "",
       authorId: this.props.currentUser.id,
       option: "Please choose a file to upload.",
@@ -72,43 +72,42 @@ class NewPostForm extends React.Component {
           className = 'close-button'
           >Close</button>
 
-      <div className = 'photobox'>
 
 
 
-      <form className='new-post-form' onSubmit={this.handleSubmit}>
-        <p>{this.props.errors}</p>
 
-        <button type='cloud'
-          onClick={this.upload}
-          className = 'cloud-upload-button'
-          >
-          {this.state.option}
-        </button>
-        <p>{this.state.message}</p>
+        <form className='new-post-form' onSubmit={this.handleSubmit}>
+          <p>{this.props.errors}</p>
 
-
-            <br/>
+          <button type='cloud'
+            onClick={this.upload}
+            className = 'cloud-upload-button'
+            >
+            {this.state.option}
+          </button>
+          <p>{this.state.message}</p>
 
 
-
-          <input
-
-            ref="description"
-            value= {this.state.description}
-            placeholder="description"
-            onChange={ this.update('description')}
-            className = 'input-description'
-          />
+      
 
 
+            <textarea
 
-          <br/>
+              ref="description"
+              value= {this.state.description}
+              placeholder="description"
+              onChange={ this.update('description')}
+              className = 'input-description'
+            />
 
-        <button className = 'new-post-submit-button'>add post</button>
-      </form>
 
-      </div>
+
+
+          <button className = 'new-post-submit-button'>add post</button>
+
+
+        </form>
+
     </div>
     )
   }

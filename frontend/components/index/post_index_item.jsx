@@ -135,7 +135,7 @@ class PostIndexItem extends React.Component {
 
             <div className = 'top-comments'>
               <button type='view'
-                > view all comments({this.props.post.numcomments})</button>
+                > comments ({this.props.post.numcomments})</button>
             </div>
 
 
