@@ -70,9 +70,10 @@
 
 .modal-comment-list {
   height: 60%;
-  background-color: #b0b1ab;
+  background-color: #dddee0;
   overflow-y: scroll;
-  border: 1px solid black;
+
+  padding: 5px;
 }
 
 .new-comment-form {
@@ -80,12 +81,19 @@
   width: 100%;
 }
 
-.close-modal-button {
+.show-very-top {
   height: 5%;
+  width: 100%;
   display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
 }
+
+.close-modal-button {
+  padding-top: 5px;
+  width: 10%;
+}
+
 
 .show-input-area {
   height: 66%;
@@ -107,6 +115,9 @@
   width: 100%;
 }
 
+
+
+
 .show-submit:hover{
   background-color: blue;
   transition: 0.5s;
@@ -122,5 +133,5 @@
 }
 
 .show-delete-button-area {
-  margin-right: 20px;
+  margin-right: 5px;
 }

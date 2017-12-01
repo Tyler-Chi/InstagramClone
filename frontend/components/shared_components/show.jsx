@@ -122,14 +122,23 @@ class ShowPost extends React.Component {
 
           <div className = 'modal-ui'>
 
-            <button onClick = {this.props.onClose}
-              className='close-modal-button'
-              >
-              X
-            </button>
+            <div className = 'show-very-top'>
+              <button onClick = {this.props.onClose}
+                className='close-modal-button'
+                >
+                X
+              </button>
+            </div>
+
 
             <div className = 'modal-name-area'>
-              <p>{this.props.post.author.name}</p>
+
+              <button
+                onClick={() => this.props.history.push(`/user/${this.props.post.author.name}`)}
+                >
+                {this.props.post.author.name}
+              </button>
+
             </div>
 
             <div className = 'modal-like-unlike'>

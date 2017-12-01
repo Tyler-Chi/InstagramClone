@@ -140,6 +140,7 @@ class PostIndexItem extends React.Component {
                 unlikePost = {this.props.unlikePost}
                 onClose={()=> this.closeModal()}
                 post={this.props.post}
+                history= {this.props.history}
               >
 
               <button onClick = {() => this.closeModal()}>
