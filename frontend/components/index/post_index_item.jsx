@@ -1,4 +1,7 @@
 import React from 'react';
+import ShowPost from '../shared_components/show';
+
+
 
 class PostIndexItem extends React.Component {
 
@@ -7,11 +10,21 @@ class PostIndexItem extends React.Component {
     this.state = {
       body: '',
       errors:'',
-      username: this.props.currentUser.username
+      username: this.props.currentUser.username,
+      isModalOpen: false
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+  openModal(){
+    this.setState({ isModalOpen: true})
+  }
+
+  closeModal(){
+    this.setState({ isModalOpen:false })
+  }
+
 
   handleClick(e){
     if (this.props.post.lbcu){
@@ -108,7 +121,29 @@ class PostIndexItem extends React.Component {
               </div>
 
             <button
-              className = 'e-image-area'>
+              className = 'e-image-area'
+              onClick={()=>this.openModal()}
+              >
+
+              <ShowPost
+                isOpen = {this.state.isModalOpen}
+                createComment = {this.props.createComment}
+                deleteComment = {this.props.deleteComment}
+                currentUser = {this.props.currentUser}
+                likePost = {this.props.likePost}
+                unlikePost = {this.props.unlikePost}
+                onClose={()=> this.closeModal()}
+                post={this.props.post}
+              >
+
+              <button onClick = {() => this.closeModal()}>
+                Close
+              </button>
+
+            </ShowPost>
+
+
+
 
               <img src={this.props.post.img_url}
                 alt={this.props.post.description}
