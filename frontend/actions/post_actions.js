@@ -24,13 +24,7 @@ export const currentlyLoading = () => ({
 export const fetchPosts = () => dispatch => {
   dispatch(currentlyLoading());
 
-  setTimeout(function(){
-    PostApiUtil.getPosts().then(posts => dispatch(receivePosts(posts)))
-  },
-  1000
-  )
-
-
+  PostApiUtil.getPosts().then(posts => dispatch(receivePosts(posts)))
 
 }
 

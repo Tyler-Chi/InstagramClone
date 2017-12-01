@@ -53,7 +53,6 @@ class NewPostForm extends React.Component {
       }
     }.bind(this));
 
-    this.forceUpdate();
   }
 
 
