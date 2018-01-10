@@ -1,7 +1,5 @@
 # README
 
-# README
-
 ## Image-in
 
 Image-in is an Instagram clone, which is a web application that allows users to upload photos, view other users photos, follow other users, as well as like/comment on posts.
@@ -23,16 +21,19 @@ The Frontend of this web application utilized ReactJS/Redux, HTML and CSS.
 
 ## Features
 
+-Users can upload photos via Cloudinary, which stores the actual image file. The url of the uploaded image is obtained from Cloudinary, and stored in Image-In's database. This vastly lowers the space requirement of this web app's database.
 
+-Users have three places to view pictures: the Explorer, the Dashboard, and their own Profile pages. 
 
--Users can upload photos via cloudinary, and the url is stored in the web app's database. The photo will then appear at the top of that user's feed.
+-On the Explorer, users can see access all posts in the database. 
 
--Users have three places to view pictures: the explorer, the dashboard, and their own profile pages. On the explorer, they can see all posts in the database. In the dashboard, users can view their own posts as well as the posts of the other users that they follow. In their own profile pages, they can only see their own profile pages.
+-In the Dashboard, posts are filtered based on whom the current user is currently following.
 
--Users have profile pages, which are accessible by other users. On a profile page, users can follow each other, and view that user's posts.
+-Profile pages only show the posts of that particular user. On this page, other users have the opportunity to follow that user.
 
--Users are able to like and comment on each other's posts. Comments appear in chronological order. Users are also able to delete their own comments, but not the comments of other users.
+-Users are able to **like** and **comment** on each other's posts. Comments appear in chronological order. Users are also able to **delete** their own comments, but not the comments of other users.
 
+-Users are also able to follow and unfollow other users.
 
 ![alt-text](https://s3-us-west-1.amazonaws.com/bandstandapp-dev/tylersstuff/ImageInGif.gif)
 
