@@ -10,8 +10,9 @@ import ProfilePage from './profilepage';
 
 import { createFollow, destroyFollow } from '../../actions/user_actions';
 
-const mapStateToProps = ({session, location, entities, ui}) => {
+const mapStateToProps = ({session, location, entities, ui}, ownProps) => {
 
+  console.log('ownprops',ownProps)
 
   return {
     currentUser: session.currentUser,

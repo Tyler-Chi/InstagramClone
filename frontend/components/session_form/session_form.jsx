@@ -86,6 +86,7 @@ class SessionForm extends React.Component {
 
   render() {
 
+    console.log(this.props)
 
     let actionType;
     if (this.props.formType === ''){

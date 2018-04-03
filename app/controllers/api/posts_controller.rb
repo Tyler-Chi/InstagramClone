@@ -15,8 +15,6 @@ class Api::PostsController < ApplicationController
 
   def show
 
-    puts('the params are')
-    puts(params)
 
   end
 

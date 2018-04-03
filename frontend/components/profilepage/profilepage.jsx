@@ -8,9 +8,16 @@ import OtherLoading from '../shared_components/other_loading';
 class ProfilePage extends React.Component {
 
   componentWillMount(){
+
+    console.log('component will mount has run')
+
     this.props.fetchUserInfo(this.props.match.params.username);
     this.props.getProfilePosts(this.props.match.params.username);
 
+  }
+
+  componentDidMount(){
+    console.log('component did mount has run')
   }
 
 
@@ -47,6 +54,8 @@ class ProfilePage extends React.Component {
 
 
   render() {
+
+    console.log('component has rendered')
 
     // debugger;
 

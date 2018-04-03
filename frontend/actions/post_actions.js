@@ -26,6 +26,7 @@ export const fetchPosts = () => dispatch => {
 
   PostApiUtil.getPosts().then(posts => dispatch(receivePosts(posts)))
 
+
 }
 
 export const createPost = post => dispatch => (
